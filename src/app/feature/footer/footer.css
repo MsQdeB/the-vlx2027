@@ -1,0 +1,272 @@
+.footer-container {
+  width: 100%;
+  background-color: #e77d1b;
+  padding: 60px 0 40px 0;
+  color: #3b0600;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 50px 0;
+  letter-spacing: 2px;
+  color: #3b0600;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #3b0600;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+  color: #3b0600;
+}
+
+.social-link i {
+  font-size: 48px;
+  transition: all 0.3s ease;
+  color: #3b0600;
+}
+
+.social-link:hover i {
+  transform: scale(1.1);
+}
+
+/* Facebook Page - Blue */
+.social-link:nth-child(1) i {
+  color: #000000;
+}
+
+.social-link:nth-child(1):hover i {
+  color: #000000;
+}
+
+/* Facebook Group - Blue */
+.social-link:nth-child(2) i {
+  color: #000000;
+}
+
+.social-link:nth-child(2):hover i {
+  color: #000000;
+}
+
+/* Instagram - Gradient */
+.social-link:nth-child(3) i {
+  background: #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-link:nth-child(3):hover i {
+  background: #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-link span {
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 200px;
+}
+
+.footer-note {
+  margin-bottom: 50px;
+}
+
+.footer-note p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  color: #3b0600;
+}
+
+.footer-copyright {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  padding-top: 30px;
+}
+
+.copyright-text {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #3b0600;
+}
+
+.contact-email {
+  font-size: 16px;
+  margin: 0;
+}
+
+.contact-email a {
+  color: #3b0600;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-email a:hover {
+  color: #3b0600;
+  text-decoration: underline;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 50px 0 35px 0;
+  }
+
+  .footer-content {
+    padding: 0 30px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .social-links {
+    gap: 60px;
+    margin-bottom: 50px;
+  }
+
+  .social-link i {
+    font-size: 42px;
+  }
+
+  .social-link span {
+    font-size: 16px;
+  }
+
+  .footer-note p {
+    font-size: 15px;
+  }
+
+  .copyright-text,
+  .contact-email {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 40px 0 30px 0;
+  }
+
+  .footer-content {
+    padding: 0 20px;
+  }
+
+  .footer-title {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+
+  .social-links {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .social-link i {
+    font-size: 38px;
+  }
+
+  .social-link span {
+    font-size: 15px;
+  }
+
+  .footer-note {
+    margin-bottom: 40px;
+  }
+
+  .footer-note p {
+    font-size: 14px;
+  }
+
+  .footer-copyright {
+    padding-top: 25px;
+  }
+
+  .copyright-text,
+  .contact-email {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 0 100px 0;
+  }
+
+  .footer-content {
+    padding: 0 15px;
+  }
+
+  .footer-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+
+  .social-links {
+    gap: 30px;
+    margin-bottom: 35px;
+  }
+
+  .social-link {
+    gap: 12px;
+  }
+
+  .social-link i {
+    font-size: 36px;
+  }
+
+  .social-link span {
+    font-size: 14px;
+  }
+
+  .footer-note {
+    margin-bottom: 35px;
+  }
+
+  .footer-note p {
+    font-size: 13px;
+  }
+
+  .footer-copyright {
+    padding-top: 20px;
+  }
+
+  .copyright-text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .contact-email {
+    font-size: 13px;
+  }
+}

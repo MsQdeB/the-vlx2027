@@ -1,0 +1,48 @@
+<div class="gallery-container" id="gallery">
+  <div class="gallery-content">
+    <h2 class="gallery-title">Gallery</h2>
+
+    <div class="slideshow-wrapper">
+      <div class="slideshow-container">
+        <!-- Main Image -->
+        <div
+          class="slide-image"
+          (touchstart)="onTouchStart($event)"
+          (touchend)="onTouchEnd($event)"
+        >
+          <img
+            [src]="currentImage.url"
+            [alt]="currentImage.alt"
+            class="main-image"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Previous Button -->
+        <button class="nav-button prev-button" (click)="previousImage()" aria-label="Previous">
+          <span class="arrow">‹</span>
+        </button>
+
+        <!-- Next Button -->
+        <button class="nav-button next-button" (click)="nextImage()" aria-label="Next">
+          <span class="arrow">›</span>
+        </button>
+
+        <!-- Image Counter -->
+        <div class="image-counter">{{ currentIndex + 1 }} / {{ images.length }}</div>
+      </div>
+
+      <!-- Thumbnail Navigation -->
+      <div class="thumbnail-container" #thumbnailContainer>
+        <div
+          *ngFor="let image of images; let i = index"
+          class="thumbnail"
+          [class.active]="i === currentIndex"
+          (click)="goToImage(i)"
+        >
+          <img [src]="image.url" [alt]="image.alt" class="thumbnail-image" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

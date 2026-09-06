@@ -1,0 +1,99 @@
+<div class="registrations-container" id="registrations">
+  <div class="registrations-content">
+    <h3 class="registrations-title">INDIVIDUAL REGISTRATION</h3>
+
+    <!-- Countdown Timer -->
+    @if (showCountdown) {
+      <div class="countdown-container">
+        <div class="countdown-item">
+          <div class="countdown-value">{{ countdown.months }}</div>
+          <div class="countdown-label">Months</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value">{{ countdown.days }}</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value">{{ countdown.hours }}</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value">{{ countdown.minutes }}</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value">{{ countdown.seconds }}</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+    }
+
+    <div class="registration-info">
+      <div class="info-section">
+        <p class="sold-out-regis">REGISTRATION OPENS SOON</p>
+        <p>
+          Full weekend passes & limited Day Pass spots for each night will be announced here and on
+          our social media. <br />Questions? Email us at info.thevlx@gmail.com.
+        </p>
+        <p class="info-text">💸 <strong>Pricing:</strong> TBA</p>
+      </div>
+
+      <div class="info-section">
+        <h4 class="info-section-title">✨ What's waiting for you at VLX 2027?</h4>
+        <ul class="features-list">
+          <li>🎧 International DJs</li>
+          <li>🎺 Live Bands</li>
+          <li>🌙 3 nights of dancing</li>
+          <li>🍖 Gala BBQ Buffet Dinner</li>
+          <li>☀️ Afternoon Tea Dance</li>
+          <li>🏖️ Dance by the beach & in the UNESCO town of Hội An</li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn-register-section">
+      <div class="register-button-section">
+        <button class="register-button" disabled (click)="onRegisterClick()">
+          REGISTRATION OPENS SOON
+        </button>
+      </div>
+    </div>
+
+    <!-- T-shirt Pre-order Section -->
+    <div class="tshirt-preorder-section">
+      <h3 class="tshirt-preorder-title">VLX 2027 T-SHIRT – PRE-ORDER</h3>
+
+      <div class="tshirt-content">
+        <div class="tshirt-image-container">
+          <img
+            src="assets/tshirt-pre-order.jpg"
+            alt="VLX 2026 T-shirt"
+            class="tshirt-image"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="tshirt-details">
+          <p class="tshirt-intro">Get your VLX 2027 T-shirt before we sell out!</p>
+          <p class="tshirt-material">
+            Made from 100% 2-way cotton (250gsm) - soft, breathable, and durable.
+          </p>
+
+          <div class="tshirt-info-list">
+            <p class="tshirt-info-item">👕 <strong>Price:</strong> 350,000 VND / $15</p>
+            <p class="tshirt-info-item">📅 <strong>Pre-order deadline:</strong> February 2027 (TBA)</p>
+            <p class="tshirt-info-item">📦 <strong>Pick-up:</strong> At VLX 2027</p>
+          </div>
+
+          <p class="tshirt-note"><strong>Pre-order only.</strong></p>
+          <p class="tshirt-disclaimer">
+            Note: Actual color may vary slightly from the design image.
+          </p>
+
+          <button class="tshirt-preorder-button" (click)="onTshirtPreorderClick()">
+            PRE-ORDER T-SHIRT (Coming soon)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
