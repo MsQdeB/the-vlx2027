@@ -1,0 +1,15 @@
+<div class="faq-container" id="faq">
+  <div class="faq-content">
+    <div class="faq-eyebrow">Questions &amp; answers</div>
+    <h2 class="faq-title">The Reader Asks</h2>
+
+    <div class="faq-list">
+      @for (item of faqs; track item.q) {
+        <details class="faq-item">
+          <summary class="faq-q">{{ item.q }}</summary>
+          <p class="faq-a">{{ item.a }}</p>
+        </details>
+      }
+    </div>
+  </div>
+</div>

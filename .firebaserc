@@ -1,5 +1,13 @@
 {
   "projects": {
     "default": "vlx-2027"
+  },
+  "targets": {
+    "vlx-2027": {
+      "hosting": {
+        "teaser": ["vlx-2027"],
+        "production": ["the-vlx2027"]
+      }
+    }
   }
 }

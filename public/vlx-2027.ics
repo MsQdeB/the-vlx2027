@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The VLX//Vietnam Lindy Exchange 2027//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Ho_Chi_Minh
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:+07
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:vlx-2027@thevlx.net
+DTSTAMP:20260906T000000Z
+DTSTART;VALUE=DATE-TIME;TZID=Asia/Ho_Chi_Minh:20270312T190000
+DTEND;VALUE=DATE-TIME;TZID=Asia/Ho_Chi_Minh:20270315T030000
+SUMMARY:Vietnam Lindy Exchange 2027 (VLX)
+LOCATION:Hội An, Vietnam
+DESCRIPTION:17th edition of the Vietnam Lindy Exchange. Three days and thr
+ ee nights of swing dancing in the UNESCO World Heritage town of Hội An. L
+ ive bands\, international DJs\, gala dinner\, beach dancing & late nights
+ . Website: https://vlx-2027.web.app
+URL:https://vlx-2027.web.app
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

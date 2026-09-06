@@ -1,0 +1,76 @@
+/* Save the date — boxed notice with letterpress buttons */
+.save-container {
+  width: 100%;
+  background: var(--ink);
+  padding: 64px 0;
+  color: var(--paper);
+  text-align: center;
+}
+
+.save-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.save-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+
+.save-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+  margin: 0 0 16px;
+}
+
+.save-content p {
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.85;
+  color: rgba(244, 239, 226, 0.85);
+}
+
+.save-content sup {
+  font-size: 0.6em;
+}
+
+.save-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 18px;
+}
+
+.save-btn {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--paper);
+  border: 1px solid rgba(244, 239, 226, 0.7);
+  padding: 13px 24px;
+  transition: all 0.25s ease;
+}
+
+.save-btn:hover {
+  background: var(--paper);
+  color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.save-note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.88rem;
+  color: rgba(244, 239, 226, 0.65);
+}

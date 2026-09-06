@@ -1,0 +1,82 @@
+/* FAQ — the reader asks, broadsheet accordion */
+.faq-container {
+  width: 100%;
+  background: var(--paper-2);
+  padding: 64px 0;
+  color: var(--ink);
+}
+
+.faq-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.faq-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.faq-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--hair);
+}
+
+.faq-q {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.08rem;
+  line-height: 1.4;
+  padding: 16px 0;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 40px;
+  transition: color 0.2s ease;
+}
+
+.faq-q::-webkit-details-marker {
+  display: none;
+}
+
+.faq-q::after {
+  content: '+';
+  position: absolute;
+  right: 6px;
+  top: 12px;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--ink-faint);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-q::after {
+  content: '−';
+}
+
+.faq-q:hover {
+  color: var(--red);
+}
+
+.faq-a {
+  font-family: var(--serif);
+  font-size: 0.96rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  padding: 0 40px 20px 0;
+  margin: 0;
+}
