@@ -26,11 +26,24 @@ Build artifacts are stored in `dist/the-vlx/browser`.
 
 ## Deploying
 
-```bash
-npx firebase deploy --only hosting
-```
+The site has **two Firebase Hosting targets**:
 
-(Firebase project: `the-vlx` — see `.firebaserc`. Create a new Firebase project for 2027 or reuse the existing one.)
+| Target | Site | URL | Content |
+|---|---|---|---|
+| `teaser` | `vlx-2027` | https://vlx-2027.web.app | Holding page (planning mode) |
+| `production` | `the-vlx2027` | https://the-vlx2027.web.app | The full website |
+
+```bash
+# Publish/refresh the public holding page
+npx firebase-tools deploy --only hosting:teaser
+
+# Publish the FULL website to the private URL (only when ready!)
+npm run build && npx firebase-tools deploy --only hosting:production
+
+# GO-LIVE: when VLX 2027 details are final, deploy production and
+# attach your custom domain in Firebase console → Hosting → the-vlx2027 → Add custom domain.
+# Also remove the `robots noindex` meta lines from src/index.html.
+```
 
 ## Things to update during the 2027 cycle
 
@@ -41,4 +54,6 @@ npx firebase deploy --only hosting
 - **Program / venues / map links** → `src/app/feature/overview/overview.html`
 - **Bands line-up** → `src/app/feature/livebands/livebands.ts`
 - **After-movie YouTube IDs** → `src/app/feature/youtube-highlights/youtube-highlights.ts`
+- **FAQ answers** → `src/app/feature/faq/faq.ts`
+- **Calendar times** → `src/app/feature/save-the-date/save-the-date.ts` and `public/vlx-2027.ics`
 - **Accommodation map link** → `src/app/feature/accommodation/accommodation.html`
