@@ -1,12 +1,14 @@
-/* Main content container - positioned directly against fixed header */
+/* Main content container — sits directly under the fixed masthead */
 .main-content {
   position: relative;
-  top: 68px; /* Push content down exactly to header bottom */
-  margin: 0 auto; /* Center the content */
-  padding: 20px;
+  top: 0;
+  margin: 0 auto;
+  padding: 0;
   min-height: calc(100vh - 90px);
-  max-width: 1000px; /* Set maximum content width */
-  width: 100%; /* Ensure it takes full width up to max-width */
+  max-width: 1160px;
+  width: 100%;
+  padding-top: 128px; /* header height */
+  background: var(--paper);
 }
 
 /* Global reset for the fixed header */
@@ -18,19 +20,7 @@
 
 @media (max-width: 768px) {
   .main-content {
-    top: 0; /* No gap from top */
-    margin-top: 52px; /* Exact header height: 15px + 22px + 15px */
-    min-height: calc(100vh - 52px);
-    padding: 0; /* Remove padding on mobile for full width */
-    max-width: none; /* Remove max-width constraint on mobile */
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-content {
-    margin-top: 44px; /* Smaller mobile header: 12px + 20px + 12px */
-    min-height: calc(100vh - 44px);
+    padding-top: 58px; /* compact mobile masthead */
+    min-height: calc(100vh - 58px);
   }
 }

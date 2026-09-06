@@ -1,172 +1,165 @@
+/* Volunteers — recruiting notice, broadsheet style */
 .volunteers-container {
   width: 100%;
-  background-color: #ffffff;
-  padding: 0 0 40px 0;
-  color: #3b0600;
+  background: var(--paper);
+  padding: 60px 0 40px;
+  color: var(--ink);
 }
 
 .volunteers-content {
-  max-width: 900px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-.volunteers-section {
-  border-radius: 12px;
-  overflow: hidden;
-  padding: 30px 0;
+  padding: 0 24px;
 }
 
 .volunteers-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
+  padding-bottom: 30px;
+  border-bottom: 3px double var(--rule);
 }
 
 .volunteers-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  letter-spacing: 1px;
-  color: #3b0600;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.volunteers-title::after {
+  content: 'Help Wanted';
+  display: block;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5.5vw, 3.2rem);
+  letter-spacing: 0;
+  margin-top: 8px;
 }
 
 .volunteers-italic {
+  font-family: var(--display);
   font-style: italic;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin: 6px 0 14px;
 }
 
 .volunteers-subtitle {
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
   margin: 0;
-  color: #555;
+}
+
+.volunteers-section {
+  padding: 0;
 }
 
 .content-section {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .section-title {
-  font-size: 20px;
+  font-family: var(--display);
   font-weight: 700;
-  margin: 0 0 15px 0;
-  color: #3b0600;
+  font-size: 1.4rem;
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--hair);
 }
 
 .section-intro {
-  font-size: 16px;
+  font-family: var(--serif);
+  font-size: 0.98rem;
   font-weight: 600;
-  margin: 0 0 10px 0;
-  color: #3b0600;
+  color: var(--ink);
+  margin: 0 0 10px;
 }
 
 .section-text {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 15px 0;
-  color: #555;
+  font-family: var(--serif);
+  font-size: 0.96rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
 }
 
 .section-text.mt-3 {
-  margin-top: 15px;
+  margin-top: 14px;
 }
 
 .section-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 14px;
 }
 
 .section-list li {
-  font-size: 16px;
+  font-family: var(--serif);
+  font-size: 0.96rem;
   line-height: 1.8;
-  margin-bottom: 10px;
-  padding-left: 25px;
+  margin-bottom: 8px;
+  padding-left: 22px;
   position: relative;
-  color: #555;
+  color: var(--ink-soft);
 }
 
 .section-list li:before {
-  content: '•';
+  content: '—';
   position: absolute;
   left: 0;
-  color: #8b5cf6;
-  font-weight: bold;
-  font-size: 18px;
+  color: var(--red);
+  font-weight: 700;
 }
 
 .spirit-quote {
-  font-size: 16px;
-  margin: 0 0 15px 0;
-  color: #555;
+  font-family: var(--serif);
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
 }
 
 .quote {
-  font-size: 18px;
+  font-family: var(--display);
   font-style: italic;
-  font-weight: 600;
-  line-height: 1.8;
-  margin: 20px 0;
-  padding-left: 20px;
-  border-left: 4px solid #8b5cf6;
-  color: #3b0600;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin: 18px 0;
+  padding-left: 18px;
+  border-left: 3px solid var(--red);
+  color: var(--ink);
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .apply-button {
   display: inline-block;
-  background: #ffb237;
-  color: white;
-  padding: 14px 40px;
-  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 15px 38px;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-  cursor: pointer;
+  border: 1px solid var(--ink);
+  transition: all 0.25s ease;
 }
 
 .apply-button:hover {
+  background: var(--red);
+  border-color: var(--red);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
 }
 
 .apply-button:active {
   transform: translateY(0);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .volunteers-title {
-    font-size: 24px;
-  }
-
-  .volunteers-subtitle {
-    font-size: 14px;
-  }
-
-  .section-title {
-    font-size: 18px;
-  }
-
-  .section-text {
-    font-size: 14px;
-  }
-
-  .section-list li {
-    font-size: 14px;
-  }
-
-  .apply-button {
-    padding: 12px 30px;
-    font-size: 14px;
-  }
 }

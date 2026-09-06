@@ -1,32 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+/* ============================================================
+   THE VLX 2027 — "Magazine Cover" theme
+   Vintage broadsheet / The New York Times aesthetic
+   ============================================================ */
 
-/* Import Montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=UnifrakturMaguntia&display=swap');
 
 /* Import Font Awesome */
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
-/* Complete reset for clean layout */
+:root {
+  --paper: #f4efe2;
+  --paper-2: #ede6d4;
+  --paper-3: #e6dcc4;
+  --ink: #1b1713;
+  --ink-soft: #4c453a;
+  --ink-faint: #857c6b;
+  --rule: #16120e;
+  --hair: #c6bba2;
+  --red: #8a2a1e;      /* oxblood — vintage press accent */
+  --orange: #b5541a;   /* nod to VLX brand orange */
+  --gold: #a87c26;
+  --serif: 'Lora', Georgia, serif;
+  --display: 'Playfair Display', 'Times New Roman', serif;
+  --sans: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+  --blackletter: 'UnifrakturMaguntia', 'Old English Text MT', cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global styles for header */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--serif);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.75;
+  font-size: 17px;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px; /* Offset for smooth scrolling with fixed header */
+  scroll-padding-top: 130px;
 }
 
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 64px;
   }
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+a {
+  color: var(--red);
+}
+
+/* Shared vintage devices ------------------------------------ */
+
+/* double rule (thick + thin), classic newspaper */
+.rule-double {
+  border: 0;
+  border-top: 3px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  height: 6px;
+  background: transparent;
+}
+
+.rule-thin {
+  border: 0;
+  border-top: 1px solid var(--hair);
+}
+
+/* Franklin uppercase label with rules — NYT section kicker */
+.kicker {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.kicker::before,
+.kicker::after {
+  content: '';
+  height: 1px;
+  background: var(--rule);
+  flex: 1;
+}
+
+.kicker.left-align::before {
+  display: none;
+}
+
+.kicker.left-align::after {
+  flex: 0 0 64px;
 }

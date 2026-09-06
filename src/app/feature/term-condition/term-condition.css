@@ -1,66 +1,91 @@
+/* Terms — the fine print, broadsheet style */
 .terms-container {
   width: 100%;
-  background-color: #ffffff;
+  background: var(--paper);
   padding: 60px 0;
-  color: #3b0600;
+  color: var(--ink);
 }
 
 .terms-content {
-  max-width: 800px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 24px;
 }
 
 .terms-main-title {
-  font-size: 32px;
-  font-weight: 700;
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
   text-align: center;
-  margin: 0 0 50px 0;
-  letter-spacing: 2px;
-  color: #3b0600;
+  margin: 0 0 10px;
+}
+
+.terms-main-title::after {
+  content: 'The Fine Print';
+  display: block;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5.5vw, 3.2rem);
+  letter-spacing: 0;
+  margin-top: 8px;
+  color: var(--ink);
+}
+
+.terms-content > .terms-main-title + .terms-section {
+  border-top: 3px double var(--rule);
+  padding-top: 34px;
 }
 
 .terms-section {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .terms-section-title {
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0 0 25px 0;
-  letter-spacing: 1px;
-  color: #3b0600;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--hair);
 }
 
 .terms-subsection-title {
-  font-size: 17px;
-  font-weight: 700;
-  margin: 25px 0 15px 0;
-  color: #3b0600;
-  text-align: center;
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 24px 0 12px;
+  color: var(--red);
 }
 
 .terms-text {
-  font-size: 16px;
-  line-height: 1.8;
-  margin: 0 0 15px 0;
-  color: #3b0600;
-  text-align: center;
+  font-family: var(--serif);
+  font-size: 0.96rem;
+  line-height: 1.85;
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  text-align: left;
+}
+
+.terms-text strong {
+  color: var(--ink);
 }
 
 .terms-list {
   list-style: disc;
-  padding-left: 40px;
-  margin: 10px 0 20px 0;
-  text-align: left;
+  padding-left: 26px;
+  margin: 8px 0 18px;
 }
 
 .terms-list li {
-  font-size: 16px;
+  font-family: var(--serif);
+  font-size: 0.96rem;
   line-height: 1.8;
-  margin-bottom: 8px;
-  color: #3b0600;
+  margin-bottom: 6px;
+  color: var(--ink-soft);
 }
 
 .terms-text:last-child {
@@ -69,143 +94,19 @@
 
 .highlight-text {
   font-weight: 600;
-  margin-top: 20px;
+  color: var(--ink);
+  border-left: 3px solid var(--red);
+  padding-left: 14px;
 }
 
 .link-text {
-  color: #3b0600;
+  color: var(--red);
   text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
   font-weight: 600;
-  transition: opacity 0.3s ease;
 }
 
 .link-text:hover {
-  opacity: 0.7;
-}
-
-/* Tablet Responsive */
-@media (max-width: 1024px) {
-  .terms-container {
-    padding: 50px 0;
-  }
-
-  .terms-content {
-    padding: 0 30px;
-  }
-
-  .terms-main-title {
-    font-size: 28px;
-    margin-bottom: 40px;
-  }
-
-  .terms-section-title {
-    font-size: 18px;
-  }
-
-  .terms-subsection-title {
-    font-size: 16px;
-  }
-
-  .terms-text {
-    font-size: 15px;
-  }
-
-  .terms-list li {
-    font-size: 15px;
-  }
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .terms-container {
-    padding: 40px 0;
-  }
-
-  .terms-content {
-    padding: 0 20px;
-  }
-
-  .terms-main-title {
-    font-size: 24px;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
-  }
-
-  .terms-section {
-    margin-bottom: 35px;
-  }
-
-  .terms-section-title {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .terms-subsection-title {
-    font-size: 15px;
-    margin: 20px 0 12px 0;
-  }
-
-  .terms-text {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .terms-list {
-    padding-left: 30px;
-  }
-
-  .terms-list li {
-    font-size: 14px;
-  }
-}
-
-/* Small Mobile Responsive */
-@media (max-width: 480px) {
-  .terms-container {
-    padding: 30px 0;
-  }
-
-  .terms-content {
-    padding: 0 15px;
-  }
-
-  .terms-main-title {
-    font-size: 20px;
-    margin-bottom: 30px;
-    letter-spacing: 0.5px;
-  }
-
-  .terms-section {
-    margin-bottom: 30px;
-  }
-
-  .terms-section-title {
-    font-size: 15px;
-    margin-bottom: 18px;
-  }
-
-  .terms-subsection-title {
-    font-size: 14px;
-    margin: 18px 0 10px 0;
-  }
-
-  .terms-text {
-    font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 12px;
-  }
-
-  .terms-list {
-    padding-left: 25px;
-    margin: 8px 0 15px 0;
-  }
-
-  .terms-list li {
-    font-size: 13px;
-    margin-bottom: 6px;
-  }
-
-  .highlight-text {
-    margin-top: 15px;
-  }
+  color: var(--ink);
 }

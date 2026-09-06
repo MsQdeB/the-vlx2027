@@ -1,312 +1,201 @@
-/* Home section styling */
+/* Home — magazine cover hero */
 .container {
   margin: 0;
   padding: 0;
 }
 
-.home-section {
-  margin: 0;
-  padding: 20px 20px 20px 20px;
-  background-color: #f5f5f5;
-  border: none;
-}
-
-.home-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.home-title {
-  font-size: 2.5rem;
-  color: #3b0600;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.home-description {
-  font-size: 1.2rem;
-  color: #666;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .home-section {
-    padding: 0; /* Remove padding for full width on mobile */
-  }
-
-  .home-title {
-    font-size: 2rem;
-  }
-
-  .home-description {
-    font-size: 1rem;
-  }
-}
-
 .hero-container {
   width: 100%;
-  max-width: 100%; /* Use full width of the container */
-  height: 500px;
+  max-width: 100%;
+  height: 640px;
   background-image: url('../../../assets/gallery/dsc02315_1_orig.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  border-radius: 0;
   overflow: hidden;
   margin: 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.hero-content {
+/* duotone press-print treatment + legibility scrim */
+.hero-container::before {
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  background:
+    linear-gradient(
+      rgba(24, 18, 12, 0.5),
+      rgba(24, 18, 12, 0.62) 60%,
+      rgba(24, 18, 12, 0.78)
+    );
+}
+
+/* paper frame inset like a mounted cover photo */
+.hero-cover {
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(244, 239, 226, 0.55);
+  outline: 4px solid rgba(244, 239, 226, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25));
-  padding: 2rem;
-  box-sizing: border-box;
+  text-align: center;
+  padding: 2rem 1.5rem 3.4rem;
 }
 
+.hero-content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-kicker {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: #f4efe2;
+  opacity: 0.85;
+  margin-bottom: 22px;
+}
+
+.cover-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(3rem, 8vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: 0.01em;
+  color: #f4efe2;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cover-dateline {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: #f4efe2;
+  padding: 9px 22px;
+  margin: 26px 0 20px;
+}
+
+.cover-lines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  justify-content: center;
+}
+
+.cover-lines span {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #f4efe2;
+}
+
+.cover-lines span::before {
+  content: '— ';
+  opacity: 0.6;
+}
+
+/* Buttons — letterpress style */
 .hero-cta {
   display: flex;
   gap: 16px;
   justify-content: center;
-  margin-top: 28px;
+  margin-top: 30px;
   flex-wrap: wrap;
 }
 
 .hero-btn {
-  font-size: 0.85rem;
+  font-family: var(--sans);
+  font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 13px 30px;
-  border-radius: 4px;
-  background: #e77d1b;
-  color: #ffffff;
+  padding: 14px 32px;
+  background: #f4efe2;
+  color: var(--ink);
+  border: 1px solid #f4efe2;
   transition: all 0.25s ease;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
 }
 
 .hero-btn:hover {
-  background: #d06d10;
+  background: var(--red);
+  color: #f4efe2;
   transform: translateY(-2px);
 }
 
 .hero-btn-outline {
   background: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  color: #f4efe2;
+  border: 1px solid #f4efe2;
 }
 
 .hero-btn-outline:hover {
-  background: rgba(255, 255, 255, 0.18);
-  transform: translateY(-2px);
+  background: #f4efe2;
+  color: var(--ink);
 }
 
-@media (max-width: 480px) {
+/* cover masthead strip at bottom */
+.cover-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #f4efe2;
+  background: rgba(24, 18, 12, 0.82);
+  border-top: 1px solid rgba(244, 239, 226, 0.35);
+  padding: 10px 16px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    height: 520px;
+  }
+
+  .hero-cover {
+    inset: 10px;
+    padding: 1.4rem 1rem 3rem;
+  }
+
+  .cover-dateline {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    padding: 7px 14px;
+  }
+
+  .cover-lines {
+    display: none;
+  }
+
   .hero-cta {
-    margin-top: 18px;
+    margin-top: 22px;
     gap: 10px;
   }
 
   .hero-btn {
-    font-size: 0.7rem;
-    padding: 10px 20px;
-  }
-}
-
-.text-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.left-content,
-.center-content,
-.right-content {
-  flex: 1;
-  text-align: center;
-}
-
-.location {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: white;
-  margin: 0;
-  line-height: 1.1;
-  text-shadow:
-    3px 3px 0px #4a1810,
-    -3px -3px 0px #4a1810,
-    3px -3px 0px #4a1810,
-    -3px 3px 0px #4a1810,
-    0px 3px 0px #4a1810,
-    3px 0px 0px #4a1810,
-    0px -3px 0px #4a1810,
-    -3px 0px 0px #4a1810,
-    6px 6px 10px rgba(0, 0, 0, 0.8);
-  -webkit-text-stroke: 0px #4a1810;
-  letter-spacing: 2px;
-}
-
-.event-vietnam,
-.event-lindy,
-.event-exchange {
-  font-size: 4rem;
-  font-weight: 900;
-  color: white;
-  margin: 0;
-  line-height: 0.9;
-  text-shadow:
-    4px 4px 0px #4a1810,
-    -4px -4px 0px #4a1810,
-    4px -4px 0px #4a1810,
-    -4px 4px 0px #4a1810,
-    0px 4px 0px #4a1810,
-    4px 0px 0px #4a1810,
-    0px -4px 0px #4a1810,
-    -4px 0px 0px #4a1810,
-    8px 8px 15px rgba(0, 0, 0, 0.8);
-  -webkit-text-stroke: 0px #4a1810;
-  letter-spacing: 3px;
-}
-
-.date {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: white;
-  margin: 0;
-  line-height: 1.1;
-  text-shadow:
-    3px 3px 0px #4a1810,
-    -3px -3px 0px #4a1810,
-    3px -3px 0px #4a1810,
-    -3px 3px 0px #4a1810,
-    0px 3px 0px #4a1810,
-    3px 0px 0px #4a1810,
-    0px -3px 0px #4a1810,
-    -3px 0px 0px #4a1810,
-    6px 6px 10px rgba(0, 0, 0, 0.8);
-  -webkit-text-stroke: 0px #4a1810;
-  letter-spacing: 2px;
-}
-
-.date sup {
-  font-size: 1.2rem;
-  vertical-align: super;
-}
-
-/* Tablet responsive */
-@media (max-width: 1024px) {
-  .hero-container {
-    height: 350px;
+    font-size: 0.64rem;
+    padding: 11px 20px;
+    letter-spacing: 0.18em;
   }
 
-  .hero-content {
-    padding: 1.5rem;
-  }
-
-  .location {
-    font-size: 2rem;
-  }
-
-  .event-vietnam,
-  .event-lindy,
-  .event-exchange {
-    font-size: 3rem;
-  }
-
-  .date {
-    font-size: 2rem;
-  }
-}
-
-/* Mobile landscape */
-@media (max-width: 768px) {
-  .hero-container {
-    height: 300px;
-    margin: 0;
-    border-radius: 0;
-  }
-
-  .hero-content {
-    padding: 1.5rem;
-  }
-
-  .text-layout {
-    gap: 0.5rem;
-  }
-
-  .location {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-
-  .event-vietnam,
-  .event-lindy,
-  .event-exchange {
-    font-size: 2.2rem;
-    line-height: 0.85;
-    letter-spacing: 1.5px;
-  }
-
-  .date {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-
-  .date sup {
-    font-size: 0.8rem;
-  }
-}
-
-/* Mobile portrait */
-@media (max-width: 480px) {
-  .hero-container {
-    height: 250px;
-    margin: 0;
-    border-radius: 0;
-  }
-
-  .hero-content {
-    padding: 1rem;
-  }
-
-  .text-layout {
-    gap: 0.3rem;
-  }
-
-  .location {
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-  }
-
-  .event-vietnam,
-  .event-lindy,
-  .event-exchange {
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    line-height: 0.85;
-  }
-
-  .date {
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-  }
-
-  .date sup {
-    font-size: 0.6rem;
+  .cover-footer {
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
   }
 }

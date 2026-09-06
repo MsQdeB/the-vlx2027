@@ -1,30 +1,42 @@
 <header class="header">
   <div class="header-container">
-    <!-- Mobile title -->
-    <div class="mobile-title">Vietnam Lindy Exchange</div>
+    <!-- Masthead -->
+    <div class="masthead">
+      <div class="mast-left">
+        <span class="mast-dateline">Hội An, Vietnam</span>
+        <span class="mast-date">March 12–14, 2027</span>
+      </div>
+      <div class="mast-center">
+        <a class="mast-name" href="#vlx2027">The VLX</a>
+        <div class="mast-sub">The Vietnam Lindy Exchange · Est. 2009</div>
+      </div>
+      <div class="mast-right">
+        <span class="mast-dateline">Vol. XVII</span>
+        <span class="mast-date">17th Edition</span>
+      </div>
+    </div>
 
-    <!-- First navigation row -->
+    <div class="nav-rule"></div>
+
+    <!-- Section index -->
     <nav class="nav-primary">
       <ul class="nav-list">
         <li class="nav-item"><a href="#vlx2027" class="nav-link">VLX 2027</a></li>
-        <li class="nav-item"><a href="#registrations" class="nav-link">REGISTRATIONS</a></li>
-        <li class="nav-item"><a href="#live-bands" class="nav-link">LIVE BANDS</a></li>
+        <li class="nav-item"><a href="#registrations" class="nav-link">Registrations</a></li>
+        <li class="nav-item"><a href="#live-bands" class="nav-link">Live Bands</a></li>
+        <li class="nav-item"><a href="#transportation" class="nav-link">Transportation</a></li>
+        <li class="nav-item"><a href="#accommodation" class="nav-link">Accommodation</a></li>
+        <li class="nav-item"><a href="/terms" class="nav-link">Terms</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
       </ul>
     </nav>
 
-    <!-- Second navigation row -->
-    <nav class="nav-secondary">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#transportation" class="nav-link">TRANSPORTATION</a></li>
-        <li class="nav-item"><a href="#accommodation" class="nav-link">ACCOMMODATION</a></li>
-        <li class="nav-item"><a href="/terms" class="nav-link">TERMS</a></li>
-        <li class="nav-item"><a href="#gallery" class="nav-link">GALLERY</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT US</a></li>
-      </ul>
-    </nav>
+    <!-- Mobile masthead -->
+    <div class="mobile-title">The VLX</div>
 
     <!-- Mobile menu toggle -->
-    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()">
+    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" aria-label="Menu">
       <span class="hamburger"></span>
       <span class="hamburger"></span>
       <span class="hamburger"></span>
@@ -40,30 +52,30 @@
         </li>
         <li class="mobile-nav-item">
           <a href="#registrations" class="mobile-nav-link" (click)="closeMobileMenu()"
-            >REGISTRATIONS</a
+            >Registrations</a
           >
         </li>
         <li class="mobile-nav-item">
-          <a href="#live-bands" class="mobile-nav-link" (click)="closeMobileMenu()">LIVE BANDS</a>
+          <a href="#live-bands" class="mobile-nav-link" (click)="closeMobileMenu()">Live Bands</a>
         </li>
         <li class="mobile-nav-item">
           <a href="#transportation" class="mobile-nav-link" (click)="closeMobileMenu()"
-            >TRANSPORTATION</a
+            >Transportation</a
           >
         </li>
         <li class="mobile-nav-item">
           <a href="#accommodation" class="mobile-nav-link" (click)="closeMobileMenu()"
-            >ACCOMMODATION</a
+            >Accommodation</a
           >
         </li>
         <li class="mobile-nav-item">
-          <a href="/terms" class="mobile-nav-link" (click)="closeMobileMenu()">TERMS</a>
+          <a href="/terms" class="mobile-nav-link" (click)="closeMobileMenu()">Terms</a>
         </li>
         <li class="mobile-nav-item">
-          <a href="#gallery" class="mobile-nav-link" (click)="closeMobileMenu()">GALLERY</a>
+          <a href="#gallery" class="mobile-nav-link" (click)="closeMobileMenu()">Gallery</a>
         </li>
         <li class="mobile-nav-item">
-          <a href="#contact" class="mobile-nav-link" (click)="closeMobileMenu()">CONTACT US</a>
+          <a href="#contact" class="mobile-nav-link" (click)="closeMobileMenu()">Contact Us</a>
         </li>
       </ul>
     </nav>
