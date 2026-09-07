@@ -38,6 +38,11 @@
     .regline{display:flex;justify-content:center;align-items:baseline;gap:14px;flex-wrap:wrap;margin:-6px 0 44px}
     .reglabel{font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
     .regdate{font-family:var(--display);font-weight:800;font-size:1.35rem;color:var(--red)}
+    .countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:0 0 10px}
+    .cd-item{background:var(--ink);color:var(--paper);min-width:78px;padding:12px 10px 10px}
+    .cd-num{font-family:var(--display);font-weight:800;font-size:2rem;line-height:1}
+    .cd-lab{font-family:var(--sans);font-size:.55rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;margin-top:7px;opacity:.75}
+    .cd-open{font-family:var(--display);font-weight:800;font-size:1.5rem;color:var(--red);margin-bottom:48px}
     .socials{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
     .socials a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:3px}
     .socials a:hover{color:var(--red)}
@@ -65,11 +70,19 @@
       and on our social media. Stay tuned — and keep the dates free.
     </p>
 
-    <div class="regline">
+    <div class="regline" id="regline">
       <span class="reglabel">Registration opens</span>
       <span class="regdate">October 10, 2026</span>
       <span class="regwhere">— right here &amp; on our socials</span>
     </div>
+
+    <div class="countdown" id="countdown" hidden>
+      <div class="cd-item"><div class="cd-num" id="cd-d">–</div><div class="cd-lab">Days</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-h">–</div><div class="cd-lab">Hours</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-m">–</div><div class="cd-lab">Minutes</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-s">–</div><div class="cd-lab">Seconds</div></div>
+    </div>
+    <div class="cd-open" id="cd-open" hidden>Registration is open — go register!</div>
 
     <div class="cal">
       <a class="btn" target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Vietnam%20Lindy%20Exchange%202027%20(VLX)&dates=20270319T120000Z%2F20270321T200000Z&details=17th%20edition%20of%20the%20Vietnam%20Lindy%20Exchange%20—%20three%20days%20and%20three%20nights%20of%20swing%20dancing%20in%20H%E1%BB%99i%20An.%20https%3A%2F%2Fvlx-2027.web.app&location=H%E1%BB%99i%20An%2C%20Vietnam">Google Calendar</a>
@@ -86,5 +99,39 @@
 
     <div class="foot">© 2027 The Vietnam Lindy Exchange · <a href="mailto:info.thevlx@gmail.com">info.thevlx@gmail.com</a></div>
   </div>
+
+  <script>
+    (function () {
+      // Registration opens Oct 10, 2026 — 00:00 Vietnam time (UTC+7)
+      var target = new Date('2026-10-10T00:00:00+07:00').getTime();
+      var elD = document.getElementById('cd-d'),
+          elH = document.getElementById('cd-h'),
+          elM = document.getElementById('cd-m'),
+          elS = document.getElementById('cd-s'),
+          box = document.getElementById('countdown'),
+          open = document.getElementById('cd-open');
+
+      function pad(n) { return String(n).padStart(2, '0'); }
+
+      function tick() {
+        var diff = target - Date.now();
+        if (diff <= 0) {
+          box.hidden = true;
+          open.hidden = false;
+          return;
+        }
+        open.hidden = true;
+        box.hidden = false;
+        var s = Math.floor(diff / 1000);
+        elD.textContent = String(Math.floor(s / 86400));
+        elH.textContent = pad(Math.floor((s % 86400) / 3600));
+        elM.textContent = pad(Math.floor((s % 3600) / 60));
+        elS.textContent = pad(s % 60);
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
 </body>
 </html>
