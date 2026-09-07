@@ -18,8 +18,8 @@ export class RegistrationsComponent implements OnInit, OnDestroy {
   showCountdown = true;
 
   private intervalId: any;
-  // Countdown target — registration opening. TODO: update when the 2027 registration opens.
-  private targetDate = new Date('2026-11-01T16:00:00+07:00'); // November 1, 2026
+  // Countdown target — registration opens October 10, 2026 (midnight, Vietnam time).
+  private targetDate = new Date('2026-10-10T00:00:00+07:00');
 
   constructor() {}
 

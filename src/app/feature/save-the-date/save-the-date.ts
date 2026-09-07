@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class SaveTheDateComponent {
   // VLX 2027: Friday 19:00 ICT (UTC+7) → Sunday 03:00 ICT
-  private readonly startUtc = '20270312T120000Z';
-  private readonly endUtc = '20270314T200000Z';
+  private readonly startUtc = '20270319T120000Z';
+  private readonly endUtc = '20270321T200000Z';
   private readonly title = 'Vietnam Lindy Exchange 2027 (VLX)';
   private readonly details =
     '17th edition of the Vietnam Lindy Exchange. ' +
@@ -35,8 +35,8 @@ export class SaveTheDateComponent {
       path: '/calendar/action/compose',
       rru: 'addevent',
       subject: this.title,
-      startdt: '2027-03-12T19:00:00',
-      enddt: '2027-03-15T03:00:00',
+      startdt: '2027-03-19T19:00:00',
+      enddt: '2027-03-22T03:00:00',
       body: this.details,
       location: this.location,
     });

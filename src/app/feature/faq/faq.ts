@@ -11,11 +11,11 @@ export class FaqComponent {
   faqs = [
     {
       q: 'When and where is VLX 2027?',
-      a: 'Friday 12 – Sunday 14 March 2027, in Hội An, Vietnam. The main evening dances will be held at Palm Garden Beach Resort & Spa, with daytime events in town and by the beach.',
+      a: 'Friday 19 – Sunday 21 March 2027, in Hội An, Vietnam. The main evening dances will be held at Palm Garden Beach Resort & Spa, with daytime events in town and by the beach.',
     },
     {
       q: 'When does registration open, and how much is a pass?',
-      a: 'Registration is not open yet — it will be announced on this website and on our social media. Pricing will be announced at the same time. When registration opens, you fill in a form, wait for a confirmation email, and only then follow the payment instructions.',
+      a: 'Registration opens on October 10, 2026, right here on this website and via our social media. Pricing will be announced at the same time. When registration opens, you fill in a form, wait for a confirmation email, and only then follow the payment instructions.',
     },
     {
       q: 'Will there be day passes?',
