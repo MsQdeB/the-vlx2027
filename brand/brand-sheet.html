@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root{
+    --paper:#F4EFE2; --paper2:#EDE6D4; --paper3:#E6DCC4;
+    --ink:#1B1713; --soft:#4C453A; --faint:#857C6B;
+    --rule:#16120E; --hair:#C6BBA2; --red:#8A2A1E; --gold:#A87C26; --orange:#B5541A;
+    --serif:'Lora',Georgia,serif; --display:'Playfair Display',Georgia,serif;
+    --sans:'Libre Franklin',Arial,sans-serif; --bl:'UnifrakturMaguntia',cursive;
+  }
+  @page { size: A4; margin: 0; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:794px;height:1123px;background:var(--paper);color:var(--ink);font-family:var(--serif);position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sheet{padding:34px 40px 26px;display:flex;flex-direction:column;height:1123px}
+
+  /* masthead */
+  .mast{text-align:center;border-top:4px solid var(--rule);padding-top:14px}
+  .mast h1{font-family:var(--bl);font-weight:400;font-size:42px;line-height:1}
+  .mast .sub{font-family:var(--sans);font-size:8px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--faint);margin-top:4px}
+  .rules{border-top:3px solid var(--rule);border-bottom:1px solid var(--rule);height:5px;margin:12px 0 18px}
+
+  .row{display:flex;gap:22px}
+  .col{flex:1}
+
+  .eyebrow{font-family:var(--sans);font-size:8px;font-weight:800;letter-spacing:.38em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+  h2{font-family:var(--display);font-weight:800;font-size:24px;margin-bottom:10px}
+
+  /* type specimens */
+  .spec{border:1px solid var(--rule);background:var(--paper2);padding:10px 14px;margin-bottom:10px}
+  .spec b{font-family:var(--sans);font-size:7.5px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--faint);display:block}
+  .m-sample{font-family:var(--bl);font-size:30px;margin:6px 0 2px}
+  .d-sample{font-family:var(--display);font-weight:800;font-size:27px;line-height:1.05;text-transform:uppercase}
+  .b-sample{font-family:var(--serif);font-size:13.5px;line-height:1.55}
+  .s-sample{font-family:var(--sans);font-size:9px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;margin-top:6px}
+  .spec .meta{font-family:var(--sans);font-size:7.5px;color:var(--faint);letter-spacing:.08em;margin-top:4px}
+
+  /* palette */
+  .swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:8px}
+  .sw{border:1px solid var(--rule);background:var(--paper)}
+  .sw .chip{height:52px;border-bottom:1px solid var(--rule)}
+  .sw .lab{padding:5px 7px 7px}
+  .sw .lab b{font-family:var(--sans);font-size:7.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;display:block}
+  .sw .lab span{font-family:var(--sans);font-size:7.5px;color:var(--faint)}
+
+  .note{font-family:var(--sans);font-size:8px;color:var(--soft);line-height:1.6;background:var(--paper2);border:1px solid var(--rule);box-shadow:3px 3px 0 var(--paper3);padding:10px 14px}
+
+  /* devices */
+  .dev{margin-bottom:11px}
+  .dev .t{font-family:var(--sans);font-size:7.5px;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);margin-bottom:5px}
+  .dbl{border-top:3px solid var(--rule);border-bottom:1px solid var(--rule);height:6px;margin-bottom:4px}
+  .hairln{border-top:1px solid var(--hair);margin-bottom:6px}
+  .letterpress{background:var(--ink);color:var(--paper);font-family:var(--display);font-weight:800;font-size:15px;display:inline-block;padding:6px 16px;box-shadow:3px 3px 0 var(--paper3)}
+  .dateline{font-family:var(--sans);font-size:9px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:7px 16px;display:inline-block;margin-bottom:6px}
+  .chip{font-family:var(--sans);font-weight:800;font-size:10px;letter-spacing:.06em;border:1px solid var(--rule);background:var(--paper);display:inline-block;padding:5px 9px}
+  .drop{font-family:var(--display);font-weight:800;font-size:34px;float:left;line-height:.85;color:var(--red);padding-right:6px}
+  .drop-p{font-family:var(--serif);font-size:10.5px;line-height:1.55;color:var(--soft)}
+  .frame{border:1px solid var(--rule);background:var(--paper);padding:5px;box-shadow:3px 3px 0 var(--paper3);height:74px}
+  .frame .ph{height:100%;background:linear-gradient(135deg, var(--paper3), var(--hair));display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:7px;letter-spacing:.3em;text-transform:uppercase;color:var(--faint)}
+
+  .foot{margin-top:auto;border-top:1px solid var(--hair);padding-top:10px;display:flex;justify-content:space-between;font-family:var(--sans);font-size:7px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sheet">
+
+  <div class="mast">
+    <h1>The VLX</h1>
+    <div class="sub">Vietnam Lindy Exchange 2027 · Brand Sheet · Magazine-Cover Theme</div>
+  </div>
+  <div class="rules"></div>
+
+  <div class="row" style="margin-bottom:16px">
+    <div class="eyebrow left" style="display:block;text-align:left">Typography &middot; 4 free Google Fonts</div>
+  </div>
+
+  <div class="row">
+    <!-- LEFT: type -->
+    <div class="col" style="flex:1.25">
+      <div class="spec">
+        <b>Masthead</b>
+        <div class="m-sample">The VLX</div>
+        <span class="meta">UnifrakturMaguntia 400 — title case only, never all-caps</span>
+      </div>
+      <div class="spec">
+        <b>Display headlines</b>
+        <div class="d-sample">Save<br>the dates</div>
+        <span class="meta">Playfair Display 700–800, uppercase; also drop caps &amp; numerals</span>
+      </div>
+      <div class="spec">
+        <b>Body text</b>
+        <div class="b-sample">Three days and three nights of swing dancing by the beach, <i>through the UNESCO old town of Hội An — many happy feet since 2009.</i></div>
+        <span class="meta">Lora 400–600 (+ italic for editorial asides)</span>
+      </div>
+      <div class="spec" style="margin-bottom:0">
+        <b>Labels · Nav · Buttons</b>
+        <span class="s-sample">Programme &nbsp;·&nbsp; Subscriptions &nbsp;·&nbsp; On stage</span>
+        <span class="meta">Libre Franklin 600–800, uppercase, letter-spacing 0.2–0.4em</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: palette -->
+    <div class="col" style="flex:1">
+      <div class="eyebrow" style="display:block;text-align:left">Color &middot; warm paper &amp; warm ink, never #000/#FFF</div>
+      <div style="height:8px"></div>
+      <div class="swatches">
+        <div class="sw"><div class="chip" style="background:#F4EFE2"></div><div class="lab"><b>Paper</b><span>#F4EFE2</span></div></div>
+        <div class="sw"><div class="chip" style="background:#EDE6D4"></div><div class="lab"><b>Paper 2</b><span>#EDE6D4</span></div></div>
+        <div class="sw"><div class="chip" style="background:#E6DCC4"></div><div class="lab"><b>Paper 3</b><span>#E6DCC4</span></div></div>
+        <div class="sw"><div class="chip" style="background:#1B1713"></div><div class="lab"><b>Ink</b><span>#1B1713</span></div></div>
+        <div class="sw"><div class="chip" style="background:#4C453A"></div><div class="lab"><b>Ink soft</b><span>#4C453A</span></div></div>
+        <div class="sw"><div class="chip" style="background:#857C6B"></div><div class="lab"><b>Ink faint</b><span>#857C6B</span></div></div>
+        <div class="sw"><div class="chip" style="background:#16120E"></div><div class="lab"><b>Rule</b><span>#16120E</span></div></div>
+        <div class="sw"><div class="chip" style="background:#8A2A1E"></div><div class="lab"><b>Oxblood</b><span>#8A2A1E</span></div></div>
+        <div class="sw"><div class="chip" style="background:#A87C26"></div><div class="lab"><b>Gold</b><span>#A87C26</span></div></div>
+        <div class="sw"><div class="chip" style="background:#B5541A"></div><div class="lab"><b>VLX orange</b><span>#B5541A</span></div></div>
+      </div>
+      <div class="note">
+<b>Roles</b> — Paper: backgrounds. Ink: text &amp; dark bands/tiles. Oxblood: links, drop caps, accents. Gold: eyebrow on ink bands. Orange: reserved (legacy VLX). Hairline: <span style="color:#C6BBA2">#C6BBA2</span>. Cream on ink = #F4EFE2 @ 85%.
+      </div>
+    </div>
+  </div>
+
+  <!-- devices -->
+  <div style="display:flex;gap:22px;margin-top:14px">
+    <div style="flex:1.25">
+      <div class="eyebrow" style="display:block;text-align:left">Signature devices</div>
+      <div style="height:6px"></div>
+      <div class="dev"><div class="t">Double rule</div><div class="dbl"></div><div class="hairln" style="margin-bottom:0"></div></div>
+      <div class="dev"><div class="t">Letterpress block (shadow = paper 3)</div><div class="letterpress">Registration opens 10/10</div></div>
+      <div class="dev"><div class="t">Dateline chip &amp; time chip</div><div class="dateline" style="margin-right:8px">Hội An · March 19–21, 2027</div><span class="chip">19:00 – 01:00</span></div>
+      <div class="dev" style="margin-bottom:0">
+        <div class="t">Drop cap &amp; press-print frame</div>
+        <span class="drop">V</span><span class="drop-re" style="font-family:var(--serif);font-size:10px;color:var(--soft);line-height:1.15">ietnam Lindy Exchange is an international swing dance weekend held annually since 2009, loved by dancers from all over the world.</span>
+      </div>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column">
+      <div class="eyebrow" style="display:block;text-align:left">Photo treatment</div>
+      <div style="height:6px"></div>
+      <div class="frame"><div class="ph">Press print &nbsp;·&nbsp; 1px ink frame &nbsp;·&nbsp; 6px paper mat</div></div>
+      <div class="note" style="margin-top:8px;flex:1">
+<b>Type hierarchy</b> — Cover H1: Playfair 800 uppercase. Section titles: Playfair 800. Event titles: Playfair 700. Body: Lora 17px/1.75. All labels: Franklin uppercase, wide tracking.<br><br>
+<b>Dark bands</b> (countdown, save-the-dates, footer) use Ink #1B1713 with cream text.<br><br>
+<b>Master tokens:</b> src/styles.css in the-vlx2027 repo.
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>THE VLX 2027 — BRANDING KIT</span>
+    <span>MAGAZINE COVER THEME · VINTAGE BROADSHEET</span>
+    <span>GITHUB.COM/MSQDEB/THE-VLX2027</span>
+  </div>
+</div>
+</body>
+</html>
