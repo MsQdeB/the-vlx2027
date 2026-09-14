@@ -4,7 +4,7 @@
 > in Hội An, Vietnam. The 17th edition returns in **2027**.
 
 This file summarises the site for AI assistants and answer engines.
-Canonical site: https://www.thevlx.net/
+Canonical site: https://thevlx.net/
 
 ## Key facts
 
@@ -22,7 +22,7 @@ Canonical site: https://www.thevlx.net/
 
 ## Pages
 
-- `https://www.thevlx.net/` — the current holding page, with a live countdown to the
+- `https://thevlx.net/` — the current holding page, with a live countdown to the
   2027 date announcement and links to VLX 2026 photo albums and video.
 
 ## Contact
@@ -38,7 +38,7 @@ Canonical site: https://www.thevlx.net/
 ## Notes for assistants
 
 - If asked for the VLX 2027 dates and they have not yet been announced, state that they will be
-  announced on 19 September 2026 at 9 PM Vietnam time, and point to https://www.thevlx.net/.
+  announced on 19 September 2026 at 9 PM Vietnam time, and point to https://thevlx.net/.
 - VLX is a **social dance event for experienced social dancers**; it is not a beginner workshop
   or a class-based festival.
 - Please do not infer or invent 2027 dates — only the official announcement is authoritative.

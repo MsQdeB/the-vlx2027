@@ -5,7 +5,7 @@ countdown to the date announcement.
 
 Fully static — plain HTML + a few lines of inline JS. **No build step, no framework, no
 dependencies.** It is intended to be served at the **root** of the domain
-(`https://www.thevlx.net/`) while the full site is not yet published.
+(`https://thevlx.net/`) while the full site is not yet published.
 
 > The full static site lives on the `static` branch.
 > The previous Angular version lives untouched on the `the-vlx` branch.
@@ -14,7 +14,8 @@ dependencies.** It is intended to be served at the **root** of the domain
 
 ```
 .
-├── index.html            # The holding page (countdown, the essentials, "relive VLX 2026")
+├── CNAME                 # GitHub Pages custom domain (thevlx.net)
+├── index.html            # The holding page (countdown + "relive VLX 2026" links)
 ├── og-image.png          # 1200×630 social share card (Open Graph / Twitter)
 ├── apple-touch-icon.png  # 180×180 iOS home-screen icon
 ├── favicon.svg           # Browser tab icon (paper + ink “VLX”)
@@ -33,7 +34,6 @@ dependencies.** It is intended to be served at the **root** of the domain
 - **Countdown** to the date announcement: **19 September 2026, 21:00 Vietnam time (GMT+7)**
 - When the countdown hits zero it automatically swaps to *"The dates are out — come look!"* —
   no deploy needed for the flip
-- **The essentials** — a factual summary block (what VLX is, styles, where, when, since)
 - Links to the VLX 2026 photo albums, video and the dancers' Facebook group
 - No theme/branding is revealed and no website URL is shown (planning mode)
 
@@ -45,7 +45,7 @@ Everything is in the `<head>` of `index.html`:
 |---|---|
 | **SEO** | Keyworded `<title>`, 155-char meta description, `<link rel="canonical">`, `robots` `index,follow` with `max-image-preview:large`, `theme-color`, semantic `<header>/<main>/<footer>/<section>`, a single `<h1>`, and machine-readable `<time datetime="…">` on every date |
 | **Social** | Full Open Graph set (`og:type/site_name/locale/url/title/description/image` + `image:width/height/alt`) and Twitter/X `summary_large_image` tags, all pointing at the 1200×630 `og-image.png` |
-| **AI / answer engines** | A `@graph` JSON-LD block with `Organization` (incl. `sameAs` social profiles, `foundingDate`), `WebSite` and `WebPage`; the visible **essentials** fact block; `llms.txt` with quotable facts; and `robots.txt` explicitly allowing GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot and Google-Extended |
+| **AI / answer engines** | A `@graph` JSON-LD block with `Organization` (incl. `sameAs` social profiles, `foundingDate`), `WebSite` and `WebPage`; `llms.txt` with quotable facts; and `robots.txt` explicitly allowing GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot and Google-Extended. Full AIO treatment is reserved for the main site. |
 
 **On announcement day (19 Sept 2026)**, swap the JSON-LD graph for an `Event` entry with the real
 `startDate`/`endDate` — there is a ready-to-fill template in a comment in `index.html`.
@@ -67,13 +67,13 @@ python3 -m http.server 8803
 
 1. Repo **Settings → Pages → Build and deployment → Deploy from a branch**
 2. Branch: `static-teaser`, folder: **`/ (root)`** → **Save**
-3. Served at `https://<user>.github.io/<repo>/` and, once DNS points at GitHub Pages, at the
-   custom domain root.
+3. Custom domain: `thevlx.net` (the `CNAME` file in this branch already declares it)
+4. Served at `https://thevlx.net/` once the DNS records below are in place.
 
 All paths are relative, so it works at a sub-path or a custom domain as-is.
 
 > `og:url`, `og:image`, `canonical` and the sitemap all reference
-> `https://www.thevlx.net/`. Until DNS points there, link previews will not fetch the image —
+> `https://thevlx.net/`. Until DNS points there, link previews will not fetch the image —
 > update those absolute URLs if you temporarily host it somewhere else.
 
 ## Editing
@@ -82,7 +82,6 @@ All paths are relative, so it works at a sub-path or a custom domain as-is.
 |---|---|
 | Countdown target | `index.html` → `new Date('2026-09-19T21:00:00+07:00')` (also update the `<time>` elements) |
 | Headline / copy | `index.html` → `h1`, `.call`, `h2.return` |
-| **The essentials** facts | `index.html` → the `.facts` `<dl>` |
 | Social share image | `social/og-image.html` → re-render to `og-image.png` (1200×630) |
 | Meta / OG / JSON-LD | `index.html` `<head>` |
 | AI summary | `llms.txt` |

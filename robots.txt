@@ -15,4 +15,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://www.thevlx.net/sitemap.xml
+Sitemap: https://thevlx.net/sitemap.xml
