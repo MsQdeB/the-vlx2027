@@ -8,6 +8,7 @@ vanilla JS. There is **no build step, no framework, and no dependencies**. Drop 
 files on any static host and it just works.
 
 > The previous Angular version lives untouched on the `the-vlx` branch.
+> The planning-mode holding page lives on the `static-teaser` branch.
 
 ## Structure
 
@@ -28,7 +29,6 @@ files on any static host and it just works.
 │   ├── overview/       #   venue / programme photos
 │   ├── fontawesome/    #   Font Awesome CSS + webfonts (no CDN needed)
 │   └── …
-├── teaser/             # The old holding page (kept working as-is)
 └── static-preview/     # Reference screenshots of the static build
 ```
 
