@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root{
+    --paper:#F4EFE2; --paper2:#EDE6D4; --paper3:#E6DCC4;
+    --ink:#1B1713; --soft:#4C453A; --faint:#857C6B;
+    --rule:#16120E; --hair:#C6BBA2; --red:#8A2A1E; --gold:#A87C26;
+    --serif:'Lora',Georgia,serif; --display:'Playfair Display',Georgia,serif;
+    --sans:'Libre Franklin',Arial,sans-serif; --bl:'UnifrakturMaguntia',cursive;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;background:var(--paper);color:var(--ink);position:relative;overflow:hidden;-webkit-font-smoothing:antialiased}
+
+  /* paper grain */
+  .grain{position:absolute;inset:0;background:
+    radial-gradient(circle at 18% 22%, rgba(27,23,19,.045) 0, transparent 42%),
+    radial-gradient(circle at 82% 78%, rgba(27,23,19,.07) 0, transparent 50%),
+    radial-gradient(circle at 60% 85%, rgba(27,23,19,.05) 0, transparent 40%);
+    pointer-events:none}
+
+  .frame{position:absolute;inset:34px;border:1.5px solid var(--rule);outline:6px solid rgba(22,18,14,.08)}
+  .inner{position:absolute;inset:34px;display:flex;flex-direction:column;align-items:center;text-align:center;padding:56px 70px 60px}
+
+  .top-rule{width:100%;border-top:4px solid var(--rule);padding-top:26px}
+  .mast{font-family:var(--bl);font-size:118px;line-height:1}
+  .mast-sub{font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:var(--faint);margin-top:14px}
+  .dbl{border-top:4px solid var(--rule);border-bottom:1px solid var(--rule);height:8px;margin:26px 0 0}
+
+  .eyebrow{font-family:var(--sans);font-size:19px;font-weight:700;letter-spacing:.5em;text-transform:uppercase;color:var(--red);margin:44px 0 22px}
+  .cover-title{font-family:var(--display);font-weight:800;font-size:92px;line-height:1.04;text-transform:uppercase}
+  .cover-title em{font-style:italic;font-weight:700}
+  .deck{font-family:var(--serif);font-style:italic;font-size:27px;color:var(--soft);margin-top:26px}
+
+  .dateline{display:inline-block;font-family:var(--sans);font-size:20px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:14px 30px;margin-top:34px}
+
+  .marker{font-family:var(--sans);font-size:15px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--red);margin-top:40px}
+  .date-stroke{font-family:var(--display);font-weight:800;font-size:34px;letter-spacing:.06em;margin-top:8px}
+
+  .foot{position:absolute;left:34px;right:34px;bottom:44px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--hair);padding-top:18px;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
+  .foot b{color:var(--ink);font-weight:800}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="frame"></div>
+  <div class="inner">
+    <div class="top">
+      <div class="mast">The VLX</div>
+      <div class="mast-sub">The Vietnam Lindy Exchange &middot; Est. 2009</div>
+      <div class="dbl"></div>
+    </div>
+
+    <div class="eyebrow">Sneak peek &middot; The Dance Issue</div>
+
+    <div class="cover-title">
+      The 17<sup style="font-size:.45em">th</sup> edition<br>
+      is <em>on the press.</em>
+    </div>
+
+    <p class="deck">A new volume is being typeset. Full story <i>very</i> soon.</p>
+
+    <div class="dateline">HỘI AN, VIETNAM</div>
+
+    <div class="marker">Dates announced</div>
+    <div class="date-stroke">September 9<sup style="font-family:var(--svg-size)" >th</sup></div>
+  </div>
+
+  <div class="foot">
+    <span><b>thevlx.net</b> · Save the dates</span>
+    <span>@vietnamlindyexchange</span>
+  </div>
+</body>
+</html>
