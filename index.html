@@ -1,876 +1,165 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>The VLX - Vietnam Lindy Exchange 2027</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="alternate icon" href="favicon.svg" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vietnam Lindy Exchange — 2027</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="The Vietnam Lindy Exchange returns in 2027. Dates announced September 19th." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --paper:#f4efe2; --paper2:#ede6d4; --paper3:#e6dcc4;
+      --ink:#1b1713; --soft:#4c453a; --faint:#857c6b;
+      --rule:#16120e; --hair:#c6bba2; --red:#8a2a1e; --gold:#a87c26;
+      --serif:'Lora',Georgia,serif; --display:'Playfair Display',Georgia,serif;
+      --sans:'Libre Franklin',Arial,sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.75;font-size:17px}
+    .page{max-width:880px;margin:0 auto;padding:44px 26px 70px;text-align:center;position:relative}
+    .page::before{content:'';position:absolute;inset:18px;border:1px solid var(--hair);pointer-events:none}
+    .inner{position:relative}
 
-    <meta
-      name="description"
-      content="Vietnam Lindy Exchange 2027 — the 17th edition. March 19–21, 2027 in the UNESCO World Heritage town of Hội An, Vietnam. Swingin' live bands, international DJs, a gala dinner, and dancing by the beach."
-    />
-    <meta property="og:title" content="The VLX - Vietnam Lindy Exchange 2027" />
-    <meta
-      property="og:description"
-      content="The 17th edition of the Vietnam Lindy Exchange. March 19–21, 2027 · Hội An, Vietnam."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.thevlx.net/" />
-    <meta property="og:image" content="https://www.thevlx.net/assets/vlx-overview.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
+    .toprule{border-top:4px solid var(--rule)}
+    .org{font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--faint);padding:16px 0 0}
+    .org b{color:var(--ink)}
 
-    <link rel="stylesheet" href="styles.css" />
+    .eyebrow{font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.42em;text-transform:uppercase;color:var(--red);margin:52px 0 24px}
 
-    <!-- PLANNING MODE — remove this robots line when the site is ready for the public (go-live) -->
-    <meta name="robots" content="noindex, nofollow" />
-  </head>
-  <body>
-    <!-- ============ HEADER / MASTHEAD ============ -->
-    <header class="header">
-      <div class="header-container">
-        <!-- Masthead -->
-        <div class="masthead">
-          <div class="mast-left">
-            <span class="mast-dateline">Hội An, Vietnam</span>
-            <span class="mast-date">March 19–21, 2027</span>
-          </div>
-          <div class="mast-center">
-            <a class="mast-name" href="index.html#vlx2027">The VLX</a>
-            <div class="mast-sub">The Vietnam Lindy Exchange · Est. 2009</div>
-          </div>
-          <div class="mast-right">
-            <span class="mast-dateline">Vol. XVII</span>
-            <span class="mast-date">17th Edition</span>
-          </div>
-        </div>
+    /* mixed-case display — no longer all caps */
+    h1{font-family:var(--display);font-weight:700;font-size:clamp(2.1rem,5.8vw,3.5rem);line-height:1.18;margin-bottom:6px}
+    h1 .em{font-style:italic;font-weight:700;color:var(--red)}
+    .call{font-family:var(--serif);font-style:italic;font-size:clamp(1rem,2.4vw,1.25rem);color:var(--soft);margin:20px 0 0}
 
-        <div class="nav-rule"></div>
+    .return{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4.2vw,2.4rem);line-height:1.15;margin-top:36px}
+    .return .yr{color:var(--red)}
 
-        <!-- Section index -->
-        <nav class="nav-primary" aria-label="Primary">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="index.html#vlx2027" class="nav-link">VLX 2027</a></li>
-            <li class="nav-item"><a href="index.html#registrations" class="nav-link">Registrations</a></li>
-            <li class="nav-item"><a href="index.html#live-bands" class="nav-link">Live Bands</a></li>
-            <li class="nav-item"><a href="index.html#transportation" class="nav-link">Transportation</a></li>
-            <li class="nav-item"><a href="index.html#accommodation" class="nav-link">Accommodation</a></li>
-            <li class="nav-item"><a href="terms.html" class="nav-link">Terms</a></li>
-            <li class="nav-item"><a href="volunteers.html" class="nav-link">Volunteers</a></li>
-            <li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
-            <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact Us</a></li>
-          </ul>
-        </nav>
+    .dbl{border-top:3px solid var(--rule);border-bottom:1px solid var(--rule);height:6px;margin:36px auto 0;max-width:280px}
 
-        <!-- Mobile masthead -->
-        <div class="mobile-title">The VLX</div>
+    .countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:34px 0 12px}
+    .cd-item{background:var(--ink);color:var(--paper);min-width:86px;padding:14px 10px 12px}
+    .cd-num{font-family:var(--display);font-weight:800;font-size:2.1rem;line-height:1}
+    .cd-lab{font-family:var(--sans);font-size:.56rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;margin-top:8px;opacity:.75}
+    .cd-cap{font-family:var(--sans);font-size:.6rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--faint)}
 
-        <!-- Mobile menu toggle -->
-        <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </button>
+    .announce{margin-top:44px;border-top:1px solid var(--hair);padding-top:30px}
+    .announce .lab{font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.4em;text-transform:uppercase;color:var(--red)}
+    .announce .when{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4.4vw,2.3rem);margin-top:10px}
+    .announce .where{font-family:var(--serif);font-style:italic;color:var(--faint);font-size:.94rem;margin-top:6px}
+    .open{font-family:var(--display);font-weight:800;font-size:1.5rem;color:var(--red);margin-top:14px}
+
+    /* memories — relive 2026 */
+    .memories{margin-top:56px;background:var(--paper2);border:1px solid var(--rule);box-shadow:5px 5px 0 var(--paper3);padding:34px 26px 30px;text-align:center}
+    .memories h2{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3.8vw,2.1rem);line-height:1.2}
+    .memories .sub{font-family:var(--serif);font-style:italic;color:var(--faint);font-size:.95rem;margin:10px 0 24px}
+    .mem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:640px;margin:0 auto}
+    .mem{display:block;text-decoration:none;border:1px solid var(--rule);background:var(--paper);padding:18px 14px;transition:.25s;color:var(--ink)}
+    .mem:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+    .mem .ico{font-family:var(--display);font-weight:800;font-size:1.4rem;color:var(--red);display:block;margin-bottom:8px}
+    .mem:hover .ico{color:var(--gold)}
+    .mem .t{display:block;font-family:var(--sans);font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+    .mem .d{display:block;font-family:var(--serif);font-size:.8rem;font-style:italic;opacity:.75;margin-top:5px}
+
+    .socials{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:44px;font-family:var(--sans);font-size:.66rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+    .socials a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:3px}
+    .socials a:hover{color:var(--red)}
+
+    .foot{border-top:1px solid var(--hair);margin-top:34px;padding-top:18px;font-family:var(--sans);font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--faint)}
+
+    @media(max-width:640px){
+      .mem-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="inner">
+      <div class="toprule"></div>
+      <div class="org"><b>Vietnam Lindy Exchange</b> &nbsp;·&nbsp; Est. 2009</div>
+
+      <div class="eyebrow">A note to all dancers</div>
+
+      <h1>We've been waiting.<br />You've been <span class="em">waiting.</span></h1>
+      <p class="call">The last dance is barely behind us — and we're already counting down to the next one.</p>
+
+      <div class="return">We will return in <span class="yr">2027</span>.</div>
+
+      <div class="dbl"></div>
+
+      <div class="countdown" id="countdown" hidden>
+        <div class="cd-item"><div class="cd-num" id="cd-d">–</div><div class="cd-lab">Days</div></div>
+        <div class="cd-item"><div class="cd-num" id="cd-h">–</div><div class="cd-lab">Hours</div></div>
+        <div class="cd-item"><div class="cd-num" id="cd-m">–</div><div class="cd-lab">Minutes</div></div>
+        <div class="cd-item"><div class="cd-num" id="cd-s">–</div><div class="cd-lab">Seconds</div></div>
+      </div>
+      <div class="cd-cap">until we announce the dates</div>
+
+      <div class="announce">
+        <div class="lab">Dates announced</div>
+        <div class="when">9 PM &middot; September 19<sup>th</sup>, 2026</div>
+        <div class="where">Vietnam time (GMT+7) — right here and on our social media</div>
+        <div class="open" id="cd-open" hidden>The dates are out — come look!</div>
       </div>
 
-      <!-- Mobile menu -->
-      <div class="mobile-menu" id="mobileMenu">
-        <nav class="mobile-nav" aria-label="Mobile">
-          <ul class="mobile-nav-list">
-            <li class="mobile-nav-item"><a href="index.html#vlx2027" class="mobile-nav-link">VLX 2027</a></li>
-            <li class="mobile-nav-item"><a href="index.html#registrations" class="mobile-nav-link">Registrations</a></li>
-            <li class="mobile-nav-item"><a href="index.html#live-bands" class="mobile-nav-link">Live Bands</a></li>
-            <li class="mobile-nav-item"><a href="index.html#transportation" class="mobile-nav-link">Transportation</a></li>
-            <li class="mobile-nav-item"><a href="index.html#accommodation" class="mobile-nav-link">Accommodation</a></li>
-            <li class="mobile-nav-item"><a href="terms.html" class="mobile-nav-link">Terms</a></li>
-            <li class="mobile-nav-item"><a href="volunteers.html" class="mobile-nav-link">Volunteers</a></li>
-            <li class="mobile-nav-item"><a href="index.html#gallery" class="mobile-nav-link">Gallery</a></li>
-            <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main-content">
-      <!-- ============ HERO COVER ============ -->
-      <div class="hero-container">
-        <div class="hero-cover">
-          <div class="hero-content">
-            <div class="cover-kicker">The Dance Issue · Vol. XVII</div>
-            <h1 class="cover-title">
-              Vietnam<br />
-              Lindy<br />
-              Exchange
-            </h1>
-            <div class="cover-dateline">
-              Hội An, Vietnam · March 19–21, 2027 · 17th Edition
-            </div>
-            <div class="cover-lines">
-              <span>Live bands</span>
-              <span>International DJs</span>
-              <span>Gala dinner</span>
-              <span>Late nights</span>
-              <span>Beach dancing</span>
-            </div>
-            <div class="hero-cta">
-              <a class="hero-btn" href="index.html#registrations">Reserve your place</a>
-              <a class="hero-btn hero-btn-outline" href="index.html#vlx2027">Inside this edition</a>
-            </div>
-          </div>
-          <div class="cover-footer">“Many happy feet since 2009” — The Vietnam Lindy Exchange</div>
-        </div>
-      </div>
-
-      <div class="mt-3">
-        <!-- ============ ANNOUNCEMENT ============ -->
-        <div class="announcement-container">
-          <div class="announcement-content">
-            <div class="announce-head">
-              <span class="announce-label">Announcement</span>
-              <h2 class="announce-title">The 17<sup>th</sup> edition is on the press</h2>
-            </div>
-            <p class="announcement-text">
-              <strong>Vietnam Lindy Exchange</strong> is an international swing dance weekend held annually
-              since 2009. In recent years, it takes place in the UNESCO World Heritage town of Hoi An,
-              Central Vietnam. Expect swingin' live bands, international DJs, a gala dinner, and dancing by
-              the beach and through the old town. While mainly a Lindy Hop event, VLX is also loved by
-              Balboa and Blues dancers for its late-night sessions and warm, welcoming vibe that draws
-              dancers from all over the world.
-            </p>
-            <p class="announcement-text announce-lead">
-              We are thrilled to announce Vietnam Lindy Exchange's 17<sup>th</sup> edition.<br />
-              March 19–20–21, 2027<br />
-              Hội An, Vietnam
-            </p>
-
-            <p class="announcement-text">
-              Mark your calendar and get ready for another unforgettable weekend filled with<br />
-              great dances, live music, amazing food and many happy feet.
-            </p>
-
-            <p class="announcement-text">
-              We will update this page along the way, so please come back to see if we've added any details.
-            </p>
-
-            <p class="announcement-text">
-              Please note that the photos do not necessarily represent the venues we will dance at.
-            </p>
-
-            <p class="announcement-text">
-              We reserve the right to change the program at any moment without notice.
-            </p>
-          </div>
-        </div>
-
-        <!-- ============ PROGRAMME / OVERVIEW ============ -->
-        <div class="overview-container" id="vlx2027">
-          <div class="overview-content">
-            <!-- VLX 2027 Overview Section -->
-            <div class="overview-section friday">
-              <div class="overview-header">
-                <h2 class="overview-title">VLX 2027 OVERVIEW</h2>
-                <div class="mb-2">
-                  <span class="suggest-title"
-                    >Draft program — details are being confirmed and may change. Follow our social media for
-                    the latest updates.</span
-                  >
-                </div>
-                <h3 class="day-title">Friday, March 19<sup>th</sup></h3>
-              </div>
-
-              <div class="event-layout">
-                <div class="event-details">
-                  <div class="time-slot">
-                    <span class="time">19:00 - 01:00</span>
-                  </div>
-                  <div class="event-info">
-                    <p class="event-title">19:00: Registration and Welcome dance</p>
-                    <p class="event-detail">Theme: Tropical Garden</p>
-                    <p class="event-detail">
-                      Venue:
-                      <a href="https://maps.app.goo.gl/yKgs2QXdzDuvEkecA" target="_blank" rel="noopener noreferrer" class="venue-link"
-                        >Lotus Room, Palm Garden</a
-                      >
-                    </p>
-                    <p class="event-detail">DJ music</p>
-                    <p class="event-detail">Floor: Indoors, tiles</p>
-                  </div>
-                </div>
-
-                <div class="photo-section">
-                  <div class="photo-placeholder">
-                    <img
-                      src="assets/overview/lotus-ballroom.jpg"
-                      alt="Lotus Room ballroom at Palm Garden"
-                      class="event-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Saturday Section -->
-            <div class="overview-section saturday">
-              <div class="overview-header">
-                <h3 class="day-title">Saturday, March 20<sup>th</sup></h3>
-              </div>
-
-              <!-- Afternoon Event -->
-              <div class="event-layout">
-                <div class="photo-section left">
-                  <div class="photo-placeholder">
-                    <img
-                      src="assets/overview/soul%20kitchen.jpg"
-                      alt="Soul Kitchen Bar"
-                      class="event-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-
-                <div class="event-details right">
-                  <div class="time-slot">
-                    <span class="time">10:00 - 15:30</span>
-                  </div>
-
-                  <div class="event-info">
-                    <p class="event-title">Dance By The Beach</p>
-                    <p class="event-detail">
-                      Venue:
-                      <a href="https://maps.app.goo.gl/hFQcg2dw3YmAGP7d9" target="_blank" rel="noopener noreferrer" class="venue-link"
-                        >Soul Kitchen Bar</a
-                      >
-                    </p>
-                    <p class="event-detail">DJ music &amp; HAT Jazz Band Live</p>
-                    <p class="event-detail">Floor: Sand, grass, concrete. No dance shoes.</p>
-                    <p class="event-detail">Flip flops, sneakers, barefoot are OK.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Evening Event -->
-              <div class="event-layout">
-                <div class="event-details left">
-                  <div class="time-slot">
-                    <span class="time">18:30 - 00:00</span>
-                  </div>
-                  <div class="event-info">
-                    <p class="event-title">Gala Buffet Dinner &amp; Dance</p>
-                    <p class="event-detail">Theme: Savannah</p>
-                    <p class="event-detail">
-                      Venue:
-                      <a href="https://maps.app.goo.gl/d47Hz56YfA91BeAq8" target="_blank" rel="noopener noreferrer" class="venue-link"
-                        >Palm Court Ballroom, Palm Garden</a
-                      >
-                    </p>
-                    <p class="event-detail">DJ music</p>
-                    <p class="event-detail">Bands: Asian Golden Swing Quartet &amp; HAT Jazz Band</p>
-                    <p class="event-detail">Floor: Indoors, wooden floor</p>
-                  </div>
-                </div>
-                <div class="photo-section right">
-                  <div class="photo-placeholder">
-                    <img
-                      src="assets/overview/palm-court-ballroom.jpg"
-                      alt="Palm Court Ballroom at Palm Garden"
-                      class="event-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Night Event -->
-              <div class="event-layout">
-                <div class="photo-section left">
-                  <div class="photo-placeholder">
-                    <img
-                      src="assets/overview/contino%20bar.jpg"
-                      alt="Contino Bar at Palm Garden"
-                      class="event-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-
-                <div class="event-details right">
-                  <div class="time-slot">
-                    <span class="time">00:00 - 03:00</span>
-                  </div>
-                  <div class="event-info">
-                    <p class="event-title">Late Night Dance</p>
-                    <p class="event-detail">
-                      Venue:
-                      <a href="https://maps.app.goo.gl/d47Hz56YfA91BeAq8" target="_blank" rel="noopener noreferrer" class="venue-link"
-                        >Contino Bar, Palm Garden</a
-                      >
-                    </p>
-                    <p class="event-detail">DJ music</p>
-
-                    <p class="event-detail">Floor: Indoors, tiles</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sunday Section -->
-            <div class="overview-section sunday">
-              <div class="overview-header">
-                <h3 class="day-title">Sunday, March 21<sup>th</sup></h3>
-              </div>
-
-              <!-- Daytime Event -->
-              <div class="event-layout">
-                <div class="event-details">
-                  <div class="time-slot">
-                    <span class="time"> 13:00 - 16:00 </span>
-                  </div>
-                  <div class="event-info">
-                    <p class="event-title">Afternoon Tea Dance in Old Town</p>
-                    <p class="event-detail">
-                      Venue:
-                      <a href="https://maps.app.goo.gl/CHwNJjGMRJZLnd7SA" target="_blank" rel="noopener noreferrer" class="venue-link"
-                        >LaQue Restaurant &amp; Coffee <br />
-                        Art Exhibition Room, 2nd floor
-                      </a>
-                    </p>
-                    <p class="event-detail">DJ music</p>
-                    <p class="event-detail">Floor: Indoors, wooden floor</p>
-                  </div>
-                </div>
-
-                <div class="photo-section">
-                  <div class="photo-placeholder">
-                    <img
-                      src="assets/overview/afternoon-tea-dance.jpg"
-                      alt="Afternoon tea dance"
-                      class="event-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Evening Event -->
-              <div class="event-layout">
-                <div class="photo-section left">
-                  <div class="photo-placeholder">
-                    <img
-                      src="assets/overview/lotus-ballroom.jpg"
-                      alt="Lotus Room at Palm Garden"
-                      class="event-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-
-                <div class="event-details right">
-                  <div class="time-slot">
-                    <span class="time">20:00 - 00:00</span>
-                  </div>
-                  <div class="event-info">
-                    <p class="event-title">Theme: Oceania</p>
-                    <p class="event-detail">
-                      Venue:
-                      <a href="https://maps.app.goo.gl/1iCzJN13aAB9e6y99" target="_blank" rel="noopener noreferrer" class="venue-link"
-                        >Lotus Room, Palm Garden</a
-                      >
-                    </p>
-                    <p class="event-detail">Band: Asian Golden Swing Quartet</p>
-                    <p class="event-detail">Floor: Indoors, tiles</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Late Night Event -->
-              <div class="event-layout">
-                <div class="event-details">
-                  <div class="time-slot">
-                    <span class="time"> 00:00 - 03:00 </span>
-                  </div>
-                  <div class="event-info">
-                    <p class="event-title">Late Night Dance</p>
-                    <p class="event-detail">
-                      Venue:
-                      <a href="https://maps.app.goo.gl/1iCzJN13aAB9e6y99" target="_blank" rel="noopener noreferrer" class="venue-link"
-                        >Contino Bar, Palm Garden</a
-                      >
-                    </p>
-                    <p class="event-detail">DJ music</p>
-                    <p class="event-detail">Floor: Indoors, tiles</p>
-                  </div>
-                </div>
-
-                <div class="photo-section">
-                  <div class="photo-placeholder">
-                    <img
-                      src="assets/overview/contino%20bar.jpg"
-                      alt="Contino Bar at Palm Garden"
-                      class="event-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ============ REGISTRATIONS + T-SHIRT ============ -->
-        <div class="registrations-container" id="registrations">
-          <div class="registrations-content">
-            <h3 class="registrations-title">INDIVIDUAL REGISTRATION</h3>
-
-            <!-- Countdown Timer (target: registration opens 10 Oct 2026, midnight Vietnam time) -->
-            <div class="countdown-container" id="countdown">
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownMonths">0</div>
-                <div class="countdown-label">Months</div>
-              </div>
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownDays">0</div>
-                <div class="countdown-label">Days</div>
-              </div>
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownHours">0</div>
-                <div class="countdown-label">Hours</div>
-              </div>
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownMinutes">0</div>
-                <div class="countdown-label">Minutes</div>
-              </div>
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownSeconds">0</div>
-                <div class="countdown-label">Seconds</div>
-              </div>
-            </div>
-
-            <div class="registration-info">
-              <div class="info-section">
-                <p class="sold-out-regis">REGISTRATION OPENS 10/10</p>
-                <p>
-                  Registration opens <strong>October 10, 2026</strong>. Full weekend passes &amp; limited
-                  Day Pass spots for each night — the form will appear right here. <br />Questions? Email us
-                  at info.thevlx@gmail.com.
-                </p>
-                <p class="info-text">💸 <strong>Pricing:</strong> TBA</p>
-              </div>
-
-              <div class="info-section">
-                <h4 class="info-section-title">✨ What's waiting for you at VLX 2027?</h4>
-                <ul class="features-list">
-                  <li>🎧 International DJs</li>
-                  <li>🎺 Live Bands</li>
-                  <li>🌙 3 nights of dancing</li>
-                  <li>🍖 Gala BBQ Buffet Dinner</li>
-                  <li>☀️ Afternoon Tea Dance</li>
-                  <li>🏖️ Dance by the beach &amp; in the UNESCO town of Hội An</li>
-                </ul>
-              </div>
-            </div>
-            <div class="btn-register-section">
-              <div class="register-button-section">
-                <!-- Registration form (used once registration opens):
-                     https://docs.google.com/forms/d/e/1FAIpQLSegnsMdwTXmkvnNPksnrTlwK6dWzqmEo3yXc8czvQHiNgsCWg/closedform -->
-                <button class="register-button" type="button" disabled>
-                  REGISTRATION OPENS 10/10
-                </button>
-              </div>
-            </div>
-
-            <!-- T-shirt Pre-order Section -->
-            <div class="tshirt-preorder-section">
-              <h3 class="tshirt-preorder-title">VLX 2027 T-SHIRT – PRE-ORDER</h3>
-
-              <div class="tshirt-content">
-                <div class="tshirt-image-container">
-                  <img
-                    src="assets/tshirt-pre-order.jpg"
-                    alt="VLX 2027 T-shirt design"
-                    class="tshirt-image"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div class="tshirt-details">
-                  <p class="tshirt-intro">Get your VLX 2027 T-shirt before we sell out!</p>
-                  <p class="tshirt-material">
-                    Made from 100% 2-way cotton (250gsm) - soft, breathable, and durable.
-                  </p>
-
-                  <div class="tshirt-info-list">
-                    <p class="tshirt-info-item">👕 <strong>Price:</strong> 350,000 VND / $15</p>
-                    <p class="tshirt-info-item">📅 <strong>Pre-order deadline:</strong> February 2027 (TBA)</p>
-                    <p class="tshirt-info-item">📦 <strong>Pick-up:</strong> At VLX 2027</p>
-                  </div>
-
-                  <p class="tshirt-note"><strong>Pre-order only.</strong></p>
-                  <p class="tshirt-disclaimer">
-                    Note: Actual color may vary slightly from the design image.
-                  </p>
-
-                  <button class="tshirt-preorder-button" type="button">
-                    PRE-ORDER T-SHIRT (Coming soon)
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ============ LIVE BANDS ============ -->
-        <div class="livebands-container" id="live-bands">
-          <div class="livebands-content">
-            <h2 class="livebands-title">LIVE BANDS</h2>
-            <p class="band-note">More bands &amp; international DJs to be announced — follow us on social media.</p>
-
-            <div class="bands-grid">
-              <div class="band-card">
-                <div class="band-image-wrapper">
-                  <h3 class="band-name">HAT JAZZ BAND</h3>
-                  <div class="band-image">
-                    <img
-                      src="assets/live-bands/Band-HATJAZZBAND.jpg"
-                      alt="HAT Jazz Band"
-                      class="band-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <p class="band-description">
-                  "Our very own local Jazz band whose positivity have made our past events so full of
-                  energy! Our local band, the <a href="https://www.facebook.com/hatjazzband" target="_blank" rel="noopener noreferrer">HAT Jazz Band</a>, simply the best Jazz band in Da Nang, Vietnam."
-                </p>
-              </div>
-
-              <div class="band-card">
-                <div class="band-image-wrapper">
-                  <h3 class="band-name">ASIAN GOLDEN SWING QUARTET</h3>
-                  <div class="band-image">
-                    <img
-                      src="assets/live-bands/Band%20Asian-Golden-Swing-Quartet.jpg"
-                      alt="Asian Golden Swing Quartet"
-                      class="band-photo"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <p class="band-description">
-                  "Coming all the way from Japan, <a href="https://www.facebook.com/asiangoldenswingquartet" target="_blank" rel="noopener noreferrer">Asian Golden Swing Quartet</a> + <a href="https://www.facebook.com/profile.php?id=100003553186281" target="_blank" rel="noopener noreferrer">Ryohei</a> have played at big Swing Dance events and are loved by many dancers. Join us in welcoming them back to Vietnam!"
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ============ TRANSPORTATION ============ -->
-        <div class="transportation-container" id="transportation">
-          <div class="transportation-content">
-            <h2 class="transportation-title">TRANSPORTATION BETWEEN DA NANG AIRPORT &amp; HOI AN</h2>
-
-            <div class="transportation-info">
-              <p class="info-text">
-                The closest airport to the VLX event is the Da Nang International Airport - DAD.
-                The VLX participants are responsible for making their own way to their hotel from
-                the airport. It is roughly a 40 minutes drive to most places in Hoi An. You can use
-                our <a href="https://www.facebook.com/groups/theVLX/" target="_blank" rel="noopener noreferrer" class="link-text">Facebook Event</a> if you wish to share a ride together with some other dancers
-                with similar arrival time. Grab Car &amp; Xanh SM are also available at the airport.
-              </p>
-
-              <p class="info-text highlight-text">
-                VLXers can also book private car with Mr Hai:
-              </p>
-
-              <ul class="price-list">
-                <li class="price-item">4 seaters: 250,000 VND per trip (2 people)</li>
-                <li class="price-item">7 seaters: 300,000 VND per trip (max 4 people with luggage)</li>
-                <li class="price-item">16-seat van: 400,000 VND per trip (max 10 people with luggage)</li>
-                <li class="price-item">Before 6am and after 10pm pick up: add 50,000 VND/trip</li>
-              </ul>
-
-              <p class="contact-info">
-                Email: honghainguyen143@gmail.com. Mobile: +84 (0)919 433 201
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- ============ ACCOMMODATION ============ -->
-        <div class="accommodation-container" id="accommodation">
-          <div class="accommodation-content">
-            <h2 class="accommodation-title">ACCOMMODATION</h2>
-
-            <p class="accommodation-intro">
-              For VLX 2027 we're bringing back the vibe of our Palm Garden Resort partnership — an
-              unforgettable swingin' weekend, with all three main evening dances held here.
-            </p>
-
-            <p class="accommodation-text">
-              Palm Garden Resort is offering special rates for VLXers (around 15% off the website price;
-              discount varies by room type). If you'd like to stay at the resort, select the Palm Garden
-              option on the registration form and we'll send booking instructions in your confirmation
-              email. (Details will be confirmed when registration opens.)
-            </p>
-
-            <div class="accommodation-important">
-              <p class="accommodation-important-title">Important from the resort:</p>
-              <p class="accommodation-important-text">
-                You will receive a Reservation Form to request your preferred room type. Their Reservations
-                team will check availability and confirm directly with you via email or WhatsApp.
-              </p>
-              <p class="accommodation-important-text">
-                Please note: this form is not an online instant-confirmation booking, so no payment is
-                required when submitting the form.
-              </p>
-            </div>
-
-            <p class="accommodation-availability">Limited availability — first come, first served.</p>
-
-            <p class="accommodation-website">
-              Website:
-              <a
-                href="https://palmgardenresort.com.vn/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="accommodation-link"
-                >https://palmgardenresort.com.vn/</a
-              >
-            </p>
-
-            <hr class="accommodation-divider" />
-
-            <h3 class="accommodation-subtitle">Other Accommodation Options</h3>
-
-            <p class="accommodation-text">
-              If Palm Garden Resort isn’t your pick, we’ve also curated a list of accommodation options near
-              our main venue to help you plan your VLX weekend.
-            </p>
-
-            <p class="accommodation-disclaimer">
-              Please note: These recommendations are not affiliated with Vietnam Lindy Exchange. All
-              bookings must be made directly with the accommodation of your choice.
-            </p>
-
-            <p class="accommodation-map">
-              👉 VLX'27 Accommodation Map<br />
-              <a
-                href="https://maps.app.goo.gl/igDawzYhuqnmqit3A"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="accommodation-link"
-                >https://maps.app.goo.gl/igDawzYhuqnmqit3A</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <!-- ============ YOUTUBE HIGHLIGHTS ============ -->
-        <div class="youtube-container" id="highlights">
-          <div class="youtube-content">
-            <h2 class="youtube-heading">VLX HIGHLIGHTS</h2>
-            <p class="youtube-note">The VLX 2027 after-movie will land here after the event — enjoy the 2024 highlights meanwhile.</p>
-            <div class="videos-grid">
-              <div class="video-card">
-                <div class="video-wrapper">
-                  <iframe
-                    src="https://www.youtube.com/embed/FNKgiRwGkEs"
-                    title="VLX 2024 Highlights"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <h3 class="video-title">VLX 2024 Highlights</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ============ GALLERY (slideshow) ============ -->
-        <div class="gallery-container" id="gallery">
-          <div class="gallery-content">
-            <h2 class="gallery-title">Gallery</h2>
-
-            <div class="slideshow-wrapper">
-              <div class="slideshow-container">
-                <!-- Main Image -->
-                <div class="slide-image" id="slideImage">
-                  <img id="mainImage" src="assets/gallery/group-photo-1_1_orig.jpg" alt="Group Photo 1" class="main-image" loading="lazy" />
-                </div>
-
-                <!-- Previous Button -->
-                <button class="nav-button prev-button" id="prevBtn" type="button" aria-label="Previous image">
-                  <span class="arrow">&lsaquo;</span>
-                </button>
-
-                <!-- Next Button -->
-                <button class="nav-button next-button" id="nextBtn" type="button" aria-label="Next image">
-                  <span class="arrow">&rsaquo;</span>
-                </button>
-
-                <!-- Image Counter -->
-                <div class="image-counter" id="imageCounter">1 / 35</div>
-              </div>
-
-              <!-- Thumbnail Navigation -->
-              <div class="thumbnail-container" id="thumbnailContainer">
-                <div class="thumbnail active" data-index="0" role="button" tabindex="0" aria-label="Show image 1 of 35"><img src="assets/gallery/group-photo-1_1_orig.jpg" alt="Group Photo 1" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="1" role="button" tabindex="0" aria-label="Show image 2 of 35"><img src="assets/gallery/group-photo_1_orig.jpg" alt="Group Photo 2" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="2" role="button" tabindex="0" aria-label="Show image 3 of 35"><img src="assets/gallery/dsc01096_1_orig.jpg" alt="Dance Event 1" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="3" role="button" tabindex="0" aria-label="Show image 4 of 35"><img src="assets/gallery/dsc01104_1_orig.jpg" alt="Dance Event 2" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="4" role="button" tabindex="0" aria-label="Show image 5 of 35"><img src="assets/gallery/dsc01457_1_orig.jpg" alt="Dance Event 3" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="5" role="button" tabindex="0" aria-label="Show image 6 of 35"><img src="assets/gallery/dsc02057_1_orig.jpg" alt="Dance Event 4" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="6" role="button" tabindex="0" aria-label="Show image 7 of 35"><img src="assets/gallery/dsc02315_1_orig.jpg" alt="Dance Event 5" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="7" role="button" tabindex="0" aria-label="Show image 8 of 35"><img src="assets/gallery/dsc02320_1_orig.jpg" alt="Dance Event 6" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="8" role="button" tabindex="0" aria-label="Show image 9 of 35"><img src="assets/gallery/dsc02628_1_orig.jpg" alt="Dance Event 7" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="9" role="button" tabindex="0" aria-label="Show image 10 of 35"><img src="assets/gallery/dsc02911_1_orig.jpg" alt="Dance Event 8" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="10" role="button" tabindex="0" aria-label="Show image 11 of 35"><img src="assets/gallery/dsc02937_1_orig.jpg" alt="Dance Event 9" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="11" role="button" tabindex="0" aria-label="Show image 12 of 35"><img src="assets/gallery/dsc03024_1_orig.jpg" alt="Dance Event 10" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="12" role="button" tabindex="0" aria-label="Show image 13 of 35"><img src="assets/gallery/dsc03040_1_orig.jpg" alt="Dance Event 11" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="13" role="button" tabindex="0" aria-label="Show image 14 of 35"><img src="assets/gallery/dsc03074_1_orig.jpg" alt="Dance Event 12" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="14" role="button" tabindex="0" aria-label="Show image 15 of 35"><img src="assets/gallery/dsc03339_1_orig.jpg" alt="Dance Event 13" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="15" role="button" tabindex="0" aria-label="Show image 16 of 35"><img src="assets/gallery/dsc03376_1_orig.jpg" alt="Dance Event 14" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="16" role="button" tabindex="0" aria-label="Show image 17 of 35"><img src="assets/gallery/dsc03384_1_orig.jpg" alt="Dance Event 15" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="17" role="button" tabindex="0" aria-label="Show image 18 of 35"><img src="assets/gallery/prom-night-4_1_orig.jpg" alt="Prom Night 1" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="18" role="button" tabindex="0" aria-label="Show image 19 of 35"><img src="assets/gallery/prom-night-8_1_orig.jpg" alt="Prom Night 2" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="19" role="button" tabindex="0" aria-label="Show image 20 of 35"><img src="assets/gallery/sat-night-1_1.jpg" alt="Saturday Night 1" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="20" role="button" tabindex="0" aria-label="Show image 21 of 35"><img src="assets/gallery/sat-night-2_1_orig.jpg" alt="Saturday Night 2" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="21" role="button" tabindex="0" aria-label="Show image 22 of 35"><img src="assets/gallery/sat-night-3_1_orig.jpg" alt="Saturday Night 3" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="22" role="button" tabindex="0" aria-label="Show image 23 of 35"><img src="assets/gallery/sat-night-5_1_orig.jpg" alt="Saturday Night 5" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="23" role="button" tabindex="0" aria-label="Show image 24 of 35"><img src="assets/gallery/1002929_1_orig.jpg" alt="Event Photo 1" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="24" role="button" tabindex="0" aria-label="Show image 25 of 35"><img src="assets/gallery/6636380_1_orig.jpg" alt="Event Photo 2" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="25" role="button" tabindex="0" aria-label="Show image 26 of 35"><img src="assets/gallery/6828278_1.jpg" alt="Event Photo 3" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="26" role="button" tabindex="0" aria-label="Show image 27 of 35"><img src="assets/gallery/__1548151_orig.jpg" alt="Event Photo 4" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="27" role="button" tabindex="0" aria-label="Show image 28 of 35"><img src="assets/gallery/__4697668_orig.jpg" alt="Event Photo 5" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="28" role="button" tabindex="0" aria-label="Show image 29 of 35"><img src="assets/gallery/__4738051_orig.jpg" alt="Event Photo 6" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="29" role="button" tabindex="0" aria-label="Show image 30 of 35"><img src="assets/gallery/__517281_orig.jpg" alt="Event Photo 7" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="30" role="button" tabindex="0" aria-label="Show image 31 of 35"><img src="assets/gallery/__6235635_orig.jpg" alt="Event Photo 8" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="31" role="button" tabindex="0" aria-label="Show image 32 of 35"><img src="assets/gallery/__6498303_orig.jpg" alt="Event Photo 9" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="32" role="button" tabindex="0" aria-label="Show image 33 of 35"><img src="assets/gallery/__6648912_orig.jpg" alt="Event Photo 10" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="33" role="button" tabindex="0" aria-label="Show image 34 of 35"><img src="assets/gallery/__7527881_orig.jpg" alt="Event Photo 11" class="thumbnail-image" loading="lazy" /></div>
-                <div class="thumbnail" data-index="34" role="button" tabindex="0" aria-label="Show image 35 of 35"><img src="assets/gallery/__8876263_orig.jpg" alt="Event Photo 12" class="thumbnail-image" loading="lazy" /></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ============ SAVE THE DATE ============ -->
-        <div class="save-container" id="save-the-date">
-          <div class="save-content">
-            <div class="save-eyebrow">Notice to all dancers</div>
-            <h2 class="save-title">Save the dates</h2>
-            <p class="save-lead">
-              Friday 19<sup>th</sup> — Sunday 21<sup>st</sup> March 2027, Hội An, Vietnam.
-              Put it in the calendar now; the details will follow in this paper.
-            </p>
-
-            <div class="save-buttons">
-              <a class="save-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Vietnam+Lindy+Exchange+2027+%28VLX%29&amp;dates=20270319T120000Z%2F20270321T200000Z&amp;details=17th+edition+of+the+Vietnam+Lindy+Exchange.+Three+days+and+three+nights+of+swing+dancing+in+the+UNESCO+World+Heritage+town+of+H%E1%BB%99i+An.+Live+bands%2C+international+DJs%2C+gala+dinner%2C+beach+dancing+%26+late+nights.+Details%3A+https%3A%2F%2Fvlx-2027.web.app&amp;location=H%E1%BB%99i+An%2C+Vietnam" target="_blank" rel="noopener noreferrer">
-                Google Calendar
-              </a>
-              <a class="save-btn" href="https://outlook.live.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;subject=Vietnam+Lindy+Exchange+2027+%28VLX%29&amp;startdt=2027-03-19T19%3A00%3A00&amp;enddt=2027-03-22T03%3A00%3A00&amp;body=17th+edition+of+the+Vietnam+Lindy+Exchange.+Three+days+and+three+nights+of+swing+dancing+in+the+UNESCO+World+Heritage+town+of+H%E1%BB%99i+An.+Live+bands%2C+international+DJs%2C+gala+dinner%2C+beach+dancing+%26+late+nights.+Details%3A+https%3A%2F%2Fvlx-2027.web.app&amp;location=H%E1%BB%99i+An%2C+Vietnam" target="_blank" rel="noopener noreferrer">
-                Outlook
-              </a>
-              <a class="save-btn" href="https://calendar.yahoo.com/?v=60&amp;title=Vietnam+Lindy+Exchange+2027+%28VLX%29&amp;st=20270319T120000Z&amp;et=20270321T200000Z&amp;desc=17th+edition+of+the+Vietnam+Lindy+Exchange.+Three+days+and+three+nights+of+swing+dancing+in+the+UNESCO+World+Heritage+town+of+H%E1%BB%99i+An.+Live+bands%2C+international+DJs%2C+gala+dinner%2C+beach+dancing+%26+late+nights.+Details%3A+https%3A%2F%2Fvlx-2027.web.app&amp;in_loc=H%E1%BB%99i+An%2C+Vietnam" target="_blank" rel="noopener noreferrer">
-                Yahoo
-              </a>
-              <a class="save-btn" href="vlx-2027.ics" download="vlx-2027.ics">
-                Apple / .ics file
-              </a>
-            </div>
-            <p class="save-note">Three days, three nights — all times Vietnam time (GMT+7).</p>
-          </div>
-        </div>
-
-        <!-- ============ FAQ ============ -->
-        <div class="faq-container" id="faq">
-          <div class="faq-content">
-            <div class="faq-eyebrow">Questions &amp; answers</div>
-            <h2 class="faq-title">The Reader Asks</h2>
-
-            <div class="faq-list">
-              <details class="faq-item">
-                <summary class="faq-q">When and where is VLX 2027?</summary>
-                <p class="faq-a">Friday 19 – Sunday 21 March 2027, in Hội An, Vietnam. The main evening dances will be held at Palm Garden Beach Resort &amp; Spa, with daytime events in town and by the beach.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">When does registration open, and how much is a pass?</summary>
-                <p class="faq-a">Registration opens on October 10, 2026, right here on this website and via our social media. Pricing will be announced at the same time. When registration opens, you fill in a form, wait for a confirmation email, and only then follow the payment instructions.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">Will there be day passes?</summary>
-                <p class="faq-a">Yes — a limited number of day passes for individual nights will be available once registration opens. Full weekend passes are prioritised.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">What dance levels is VLX for?</summary>
-                <p class="faq-a">VLX is a social event for intermediate and above social dancers — there are no classes or taster sessions, so you should feel comfortable dancing socially. If you are unsure, email us and we will help you decide.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">Which dance styles can I expect?</summary>
-                <p class="faq-a">Mainly Lindy Hop, with dedicated late-night sessions loved by Balboa and Blues dancers. DJs and live bands play across all three nights.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">How do I get there?</summary>
-                <p class="faq-a">Fly into Da Nang International Airport (DAD), then take a 40-minute car ride to Hội An. We will share ride-coordination tips and private-car options closer to the event — see the Transportation section on this page.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">Where should I stay?</summary>
-                <p class="faq-a">Palm Garden Beach Resort hosts all main evening dances and offers special rates for VLXers. Alternative accommodation near the venue is listed in the Accommodation section once details are confirmed.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">What is the cancellation policy?</summary>
-                <p class="faq-a">VLX does not offer refunds, but passes can be transferred to another dancer — see the Terms page for the full policy and deadlines.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">Can I volunteer?</summary>
-                <p class="faq-a">We will open applications for a small core volunteer team closer to the event. Watch our social media or email info.thevlx@gmail.com to be notified.</p>
-              </details>
-              <details class="faq-item">
-                <summary class="faq-q">My question is not answered here.</summary>
-                <p class="faq-a">Write to us at info.thevlx@gmail.com — or send a message on the VLX Facebook page or Instagram. We love hearing from you.</p>
-              </details>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- ============ FOOTER / COLOPHON ============ -->
-    <footer class="footer-container" id="contact">
-      <div class="footer-content">
-        <h2 class="footer-title">CONTACT US</h2>
-
-        <div class="social-links">
-          <a href="https://www.facebook.com/vietnamlindyexchange" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook Page">
-            <i class="fab fa-facebook-square" aria-hidden="true"></i>
-            <span>Facebook Page</span>
+      <div class="memories">
+        <h2>Meanwhile — relive VLX 2026</h2>
+        <p class="sub">Photos, videos and all the happy feet from our last edition.</p>
+        <div class="mem-grid">
+          <a class="mem" href="https://www.facebook.com/vietnamlindyexchange/photos_albums" target="_blank" rel="noopener noreferrer">
+            <span class="ico">&#9633;</span>
+            <span class="t">Photo albums</span>
+            <span class="d">Full sets on Facebook</span>
           </a>
-          <a href="https://www.facebook.com/groups/TheVLX" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook Group">
-            <i class="fab fa-facebook" aria-hidden="true"></i>
-            <span>Facebook Group</span>
+          <a class="mem" href="https://www.facebook.com/share/v/19Y2bpMi6w/" target="_blank" rel="noopener noreferrer">
+            <span class="ico">&#9654;</span>
+            <span class="t">Video</span>
+            <span class="d">Watch the highlights</span>
           </a>
-          <a href="https://www.instagram.com/vietnamlindyexchange" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-            <span>Instagram</span>
+          <a class="mem" href="https://www.facebook.com/groups/TheVLX" target="_blank" rel="noopener noreferrer">
+            <span class="ico">&#9829;</span>
+            <span class="t">Dancers' group</span>
+            <span class="d">Everyone's own shots</span>
           </a>
         </div>
-
-        <div class="footer-copyright">
-          <p class="copyright-text">
-            © <span id="copyrightYear">2026</span> THE VIETNAM LINDY EXCHANGE, All Rights Reserved
-          </p>
-          <p class="contact-email">
-            <a href="mailto:info.thevlx@gmail.com">info.thevlx@gmail.com</a>
-          </p>
-        </div>
       </div>
-    </footer>
 
-    <!-- Scroll to top -->
-    <button class="scroll-to-top-btn" id="scrollToTopBtn" type="button" aria-label="Scroll to top">
-      <i class="fas fa-arrow-up" aria-hidden="true"></i>
-    </button>
+      <nav class="socials">
+        <a href="https://www.facebook.com/vietnamlindyexchange" target="_blank" rel="noopener noreferrer">Facebook Page</a>
+        <a href="https://www.facebook.com/groups/TheVLX" target="_blank" rel="noopener noreferrer">Facebook Group</a>
+        <a href="https://www.instagram.com/vietnamlindyexchange" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
 
-    <script src="app.js"></script>
-  </body>
+      <div class="foot">Vietnam Lindy Exchange &nbsp;·&nbsp; Hội An &nbsp;·&nbsp; info.thevlx@gmail.com</div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // Announcement: September 19, 2026 at 21:00 Vietnam time (UTC+7)
+      var target = new Date('2026-09-19T21:00:00+07:00').getTime();
+      var elD = document.getElementById('cd-d'),
+          elH = document.getElementById('cd-h'),
+          elM = document.getElementById('cd-m'),
+          elS = document.getElementById('cd-s'),
+          box = document.getElementById('countdown'),
+          open = document.getElementById('cd-open');
+      function pad(n) { return String(n).padStart(2, '0'); }
+      function tick() {
+        var diff = target - Date.now();
+        if (diff <= 0) { box.hidden = true; open.hidden = false; return; }
+        open.hidden = true; box.hidden = false;
+        var s = Math.floor(diff / 1000);
+        elD.textContent = String(Math.floor(s / 86400));
+        elH.textContent = pad(Math.floor((s % 86400) / 3600));
+        elM.textContent = pad(Math.floor((s % 3600) / 60));
+        elS.textContent = pad(s % 60);
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+  </script>
+</body>
 </html>

@@ -1,13 +1,2 @@
-# The VLX 2027 — robots.txt
-#
-# The site is currently in PLANNING MODE, so crawlers are asked to stay away.
-# This mirrors the <meta name="robots" content="noindex, nofollow"> tags in
-# index.html / terms.html / volunteers.html.
-#
-# AT GO-LIVE: remove the noindex meta tags in the HTML files and replace the
-# two lines below with:
-#   User-agent: *
-#   Allow: /
-
 User-agent: *
 Disallow: /
