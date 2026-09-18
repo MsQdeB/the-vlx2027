@@ -45,49 +45,43 @@
   }
 
   /* ----------------------------------------------------- registration timer
-     Three registration windows, all opening 00:00 Vietnam time (UTC+7).
-     The timer counts down to the NEXT window, labels it, and flags the
-     matching tier card.                                        */
+     Three registration windows. Opening TIMES are not yet announced, so the
+     counter works at DATE level only (whole days), computed in Vietnam time
+     (UTC+7) so it rolls over at local midnight.                     */
   var countdownBox = document.getElementById('countdown');
   if (countdownBox) {
     var MILESTONES = [
-      { key: 'group',   time: new Date('2026-10-10T00:00:00+07:00').getTime(), label: 'Group registration opens in' },
-      { key: 'early',   time: new Date('2026-10-17T00:00:00+07:00').getTime(), label: 'Early bird registration opens in' },
-      { key: 'regular', time: new Date('2026-10-24T00:00:00+07:00').getTime(), label: 'Regular registration opens in' }
+      { key: 'group',   date: [2026, 9, 10], label: 'Group registration opens in' },      // 10 Oct 2026
+      { key: 'early',   date: [2026, 9, 17], label: 'Early bird registration opens in' }, // 17 Oct 2026
+      { key: 'regular', date: [2026, 9, 24], label: 'Regular registration opens in' }     // 24 Oct 2026
     ];
 
-    var el = {
-      months: document.getElementById('countdownMonths'),
-      days: document.getElementById('countdownDays'),
-      hours: document.getElementById('countdownHours'),
-      minutes: document.getElementById('countdownMinutes'),
-      seconds: document.getElementById('countdownSeconds')
-    };
+    var daysEl = document.getElementById('countdownDays');
     var labelEl = document.getElementById('countdownLabel');
+    var unitEl = document.getElementById('countdownUnit');
     var openEl = document.getElementById('countdownOpen');
-    var pad = function (n) {
-      return n < 10 ? '0' + n : String(n);
-    };
     var timerId;
 
-    var nextMilestone = function () {
-      var now = Date.now();
-      for (var i = 0; i < MILESTONES.length; i++) {
-        if (MILESTONES[i].time > now) {
-          return { m: MILESTONES[i], index: i };
-        }
-      }
-      return null;
+    // today's [y, m, d] in Vietnam time (UTC+7)
+    var todayICT = function () {
+      var t = new Date(Date.now() + 7 * 3600 * 1000);
+      return [t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()];
     };
 
-    var markTiers = function (activeIndex) {
+    // whole calendar days from a -> b (both [y, m, d])
+    var dayDiff = function (a, b) {
+      return Math.round((Date.UTC(b[0], b[1], b[2]) - Date.UTC(a[0], a[1], a[2])) / 86400000);
+    };
+
+    var markTiers = function (activeIndex, today) {
       MILESTONES.forEach(function (m, i) {
         var card = document.getElementById('tier-' + m.key);
         if (!card) {
           return;
         }
         var badge = card.querySelector('.tier-badge');
-        card.classList.toggle('is-open', m.time <= Date.now());
+        var opened = dayDiff(m.date, today) > 0; // its date is in the past
+        card.classList.toggle('is-open', opened);
         card.classList.toggle('is-next', i === activeIndex);
         if (badge) {
           badge.hidden = i !== activeIndex;
@@ -96,53 +90,39 @@
     };
 
     var tick = function () {
-      var next = nextMilestone();
+      var today = todayICT();
+      var next = null;
+
+      for (var i = 0; i < MILESTONES.length; i++) {
+        if (dayDiff(today, MILESTONES[i].date) >= 0) { // today or later
+          next = { m: MILESTONES[i], index: i };
+          break;
+        }
+      }
 
       if (!next) {
-        // All windows have opened — retire the countdown.
+        // every window has opened
         countdownBox.style.display = 'none';
-        if (labelEl) {
-          labelEl.style.display = 'none';
-        }
-        if (openEl) {
-          openEl.hidden = false;
-        }
-        markTiers(-1);
-        if (timerId) {
-          clearInterval(timerId);
-        }
+        if (labelEl) labelEl.style.display = 'none';
+        if (openEl) openEl.hidden = false;
+        markTiers(-1, today);
+        if (timerId) clearInterval(timerId);
         return;
       }
 
-      var target = new Date(next.m.time);
-      var now = new Date();
-      var diff = target.getTime() - now.getTime();
+      var days = dayDiff(today, next.m.date);
 
       if (labelEl) {
-        labelEl.textContent = next.m.label;
+        labelEl.textContent = days === 0 ? next.m.label.replace(' opens in', ' opens') : next.m.label;
       }
-      markTiers(next.index);
+      if (daysEl) daysEl.textContent = days === 0 ? '—' : String(days);
+      if (unitEl) unitEl.textContent = days === 0 ? 'Today!' : (days === 1 ? 'Day' : 'Days');
 
-      // Calendar-accurate months & days (not a fixed 30-day month)
-      var months =
-        (target.getFullYear() - now.getFullYear()) * 12 + (target.getMonth() - now.getMonth());
-      var anchor = new Date(target.getFullYear(), target.getMonth(), now.getDate());
-      if (anchor > target) {
-        months--;
-      }
-      var afterMonths = new Date(now);
-      afterMonths.setMonth(afterMonths.getMonth() + months);
-      var days = Math.floor((target.getTime() - afterMonths.getTime()) / (1000 * 60 * 60 * 24));
-
-      el.months.textContent = String(Math.max(months, 0));
-      el.days.textContent = String(Math.max(days, 0));
-      el.hours.textContent = pad(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-      el.minutes.textContent = pad(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)));
-      el.seconds.textContent = pad(Math.floor((diff % (1000 * 60)) / 1000));
+      markTiers(next.index, today);
     };
 
     tick();
-    timerId = setInterval(tick, 1000);
+    timerId = setInterval(tick, 60000); // date-level: a minute is plenty
   }
 
   /* ------------------------------------------------------------ gallery */

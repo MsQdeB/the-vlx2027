@@ -2477,6 +2477,20 @@ a {
 /* ============================================================
    Registration timeline (three windows)
    ============================================================ */
+.countdown-item-days {
+  min-width: 168px;
+  padding: 20px 22px 18px;
+}
+
+.countdown-item-days .countdown-value {
+  font-size: 3.4rem;
+}
+
+.countdown-item-days .countdown-label {
+  font-size: 0.66rem;
+  margin-top: 10px;
+}
+
 .countdown-eyebrow {
   font-family: var(--sans);
   font-size: 0.68rem;
