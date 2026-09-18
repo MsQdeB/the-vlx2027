@@ -15,6 +15,18 @@
 /* Import Font Awesome */
 @import url('assets/fontawesome/css/all.min.css');
 
+/* ---- Brand masthead face: Chomsky (SIL Open Font License 1.1) ---- */
+@font-face {
+  font-family: 'Chomsky';
+  src: url('assets/fonts/chomsky.woff') format('woff'),
+       url('assets/fonts/chomsky.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 :root {
   --paper: #f4efe2;
   --paper-2: #ede6d4;
@@ -30,7 +42,7 @@
   --serif: 'Lora', Georgia, serif;
   --display: 'Playfair Display', 'Times New Roman', serif;
   --sans: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
-  --blackletter: 'UnifrakturMaguntia', 'Old English Text MT', cursive;
+  --blackletter: 'Chomsky', 'UnifrakturMaguntia', 'Old English Text MT', cursive;
 }
 
 * {
@@ -395,6 +407,21 @@ a {
   display: block;
 }
 
+.mast-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.mast-dancers {
+  height: 58px;
+  width: auto;
+  display: block;
+  flex: none;
+}
+
 .mast-name {
   font-family: var(--blackletter);
   font-size: 2.5rem;
@@ -470,16 +497,6 @@ a {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
-}
-
-/* Mobile masthead ------------------------------------------- */
-.mobile-title {
-  display: none;
-  font-family: var(--blackletter);
-  font-size: 1.5rem;
-  color: var(--ink);
-  text-align: center;
-  padding: 6px 0;
 }
 
 /* Mobile Menu Toggle */
@@ -590,16 +607,20 @@ a {
   }
 
   .mast-name {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+  }
+
+  .mast-dancers {
+    height: 40px;
+  }
+
+  .mast-lockup {
+    gap: 9px;
   }
 
   .mast-sub {
     display: block;
     margin-bottom: 2px;
-  }
-
-  .mobile-title {
-    display: block;
   }
 
   .mobile-menu-toggle {
