@@ -113,8 +113,8 @@
               <span>Beach dancing</span>
             </div>
             <div class="hero-cta">
-              <a class="hero-btn" href="index.html#registrations">Reserve your place</a>
-              <a class="hero-btn hero-btn-outline" href="index.html#vlx2027">Inside this edition</a>
+              <a class="hero-btn" href="index.html#registrations">Registration opens 10 Oct</a>
+              <a class="hero-btn hero-btn-outline" href="index.html#vlx2027">The programme</a>
             </div>
           </div>
           <div class="cover-footer">“Many happy feet since 2009” — The Vietnam Lindy Exchange</div>
@@ -159,6 +159,107 @@
             <p class="announcement-text">
               We reserve the right to change the program at any moment without notice.
             </p>
+          </div>
+        </div>
+
+        <!-- ============ REGISTRATION DATES ============ -->
+        <div class="registrations-container" id="registrations">
+          <div class="registrations-content">
+            <h3 class="registrations-title">Registration</h3>
+
+            <!-- Countdown to the next registration window (see app.js) -->
+            <p class="countdown-eyebrow" id="countdownLabel">Group registration opens in</p>
+            <div class="countdown-container" id="countdown">
+              <div class="countdown-item">
+                <div class="countdown-value" id="countdownMonths">0</div>
+                <div class="countdown-label">Months</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-value" id="countdownDays">0</div>
+                <div class="countdown-label">Days</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-value" id="countdownHours">0</div>
+                <div class="countdown-label">Hours</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-value" id="countdownMinutes">0</div>
+                <div class="countdown-label">Minutes</div>
+              </div>
+              <div class="countdown-item">
+                <div class="countdown-value" id="countdownSeconds">0</div>
+                <div class="countdown-label">Seconds</div>
+              </div>
+            </div>
+            <p class="countdown-open" id="countdownOpen" hidden>Registration is open — the form is below.</p>
+
+            <!-- Three registration windows -->
+            <div class="tier-grid">
+              <div class="tier" id="tier-group" data-milestone="group">
+                <span class="tier-badge" hidden>Open next</span>
+                <div class="tier-date">Saturday 10 October 2026</div>
+                <h4 class="tier-title">Group registration</h4>
+                <p class="tier-note">Groups of <strong>6–10 dancers</strong>.</p>
+                <p class="tier-note">Maximum <strong>10 groups</strong> — first come, first served.</p>
+              </div>
+
+              <div class="tier" id="tier-early" data-milestone="early">
+                <span class="tier-badge" hidden>Open next</span>
+                <div class="tier-date">Saturday 17 October 2026</div>
+                <h4 class="tier-title">Early bird</h4>
+                <p class="tier-note">The <strong>first 50 registrations</strong> get the early bird price.</p>
+                <p class="tier-note">Full weekend passes.</p>
+              </div>
+
+              <div class="tier" id="tier-regular" data-milestone="regular">
+                <span class="tier-badge" hidden>Open next</span>
+                <div class="tier-date">Saturday 24 October 2026</div>
+                <h4 class="tier-title">Regular registration</h4>
+                <p class="tier-note">Open to everyone, subject to availability.</p>
+                <p class="tier-note">Day passes will be announced closer to the event.</p>
+              </div>
+            </div>
+
+            <p class="tier-footnote">
+              Every window opens at <strong>00:00 Vietnam time (GMT+7)</strong> and the registration form
+              will appear right here. Prices to be announced.
+            </p>
+
+            <div class="registration-info">
+              <div class="info-section">
+                <h4 class="info-section-title">✨ What's waiting for you at VLX 2027?</h4>
+                <ul class="features-list">
+                  <li>🎧 International DJs</li>
+                  <li>🎺 Live Bands</li>
+                  <li>🌙 3 nights of dancing</li>
+                  <li>🍖 Gala BBQ Buffet Dinner</li>
+                  <li>☀️ Afternoon Tea Dance</li>
+                  <li>🏖️ Dance by the beach &amp; in the UNESCO town of Hội An</li>
+                </ul>
+              </div>
+
+              <div class="info-section">
+                <h4 class="info-section-title">How registration works</h4>
+                <ol class="steps-list">
+                  <li>Fill in the registration form when a window opens.</li>
+                  <li>You'll get an acknowledgement email — <strong>don't pay yet</strong>.</li>
+                  <li>When a place is confirmed, we email you payment instructions.</li>
+                  <li>Pay by the deadline to secure your spot.</li>
+                </ol>
+                <p>Questions? Email us at
+                  <a href="mailto:info.thevlx@gmail.com">info.thevlx@gmail.com</a>.</p>
+              </div>
+            </div>
+
+            <div class="btn-register-section">
+              <div class="register-button-section">
+                <!-- Registration form (used once registration opens):
+                     https://docs.google.com/forms/d/e/1FAIpQLSegnsMdwTXmkvnNPksnrTlwK6dWzqmEo3yXc8czvQHiNgsCWg/closedform -->
+                <button class="register-button" type="button" disabled>
+                  REGISTRATION OPENS 10 OCTOBER
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -417,108 +518,6 @@
           </div>
         </div>
 
-        <!-- ============ REGISTRATIONS + T-SHIRT ============ -->
-        <div class="registrations-container" id="registrations">
-          <div class="registrations-content">
-            <h3 class="registrations-title">INDIVIDUAL REGISTRATION</h3>
-
-            <!-- Countdown Timer (target: registration opens 10 Oct 2026, midnight Vietnam time) -->
-            <div class="countdown-container" id="countdown">
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownMonths">0</div>
-                <div class="countdown-label">Months</div>
-              </div>
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownDays">0</div>
-                <div class="countdown-label">Days</div>
-              </div>
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownHours">0</div>
-                <div class="countdown-label">Hours</div>
-              </div>
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownMinutes">0</div>
-                <div class="countdown-label">Minutes</div>
-              </div>
-              <div class="countdown-item">
-                <div class="countdown-value" id="countdownSeconds">0</div>
-                <div class="countdown-label">Seconds</div>
-              </div>
-            </div>
-
-            <div class="registration-info">
-              <div class="info-section">
-                <p class="sold-out-regis">REGISTRATION OPENS 10/10</p>
-                <p>
-                  Registration opens <strong>October 10, 2026</strong>. Full weekend passes &amp; limited
-                  Day Pass spots for each night — the form will appear right here. <br />Questions? Email us
-                  at info.thevlx@gmail.com.
-                </p>
-                <p class="info-text">💸 <strong>Pricing:</strong> TBA</p>
-              </div>
-
-              <div class="info-section">
-                <h4 class="info-section-title">✨ What's waiting for you at VLX 2027?</h4>
-                <ul class="features-list">
-                  <li>🎧 International DJs</li>
-                  <li>🎺 Live Bands</li>
-                  <li>🌙 3 nights of dancing</li>
-                  <li>🍖 Gala BBQ Buffet Dinner</li>
-                  <li>☀️ Afternoon Tea Dance</li>
-                  <li>🏖️ Dance by the beach &amp; in the UNESCO town of Hội An</li>
-                </ul>
-              </div>
-            </div>
-            <div class="btn-register-section">
-              <div class="register-button-section">
-                <!-- Registration form (used once registration opens):
-                     https://docs.google.com/forms/d/e/1FAIpQLSegnsMdwTXmkvnNPksnrTlwK6dWzqmEo3yXc8czvQHiNgsCWg/closedform -->
-                <button class="register-button" type="button" disabled>
-                  REGISTRATION OPENS 10/10
-                </button>
-              </div>
-            </div>
-
-            <!-- T-shirt Pre-order Section -->
-            <div class="tshirt-preorder-section">
-              <h3 class="tshirt-preorder-title">VLX 2027 T-SHIRT – PRE-ORDER</h3>
-
-              <div class="tshirt-content">
-                <div class="tshirt-image-container">
-                  <img
-                    src="assets/tshirt-pre-order.jpg"
-                    alt="VLX 2027 T-shirt design"
-                    class="tshirt-image"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div class="tshirt-details">
-                  <p class="tshirt-intro">Get your VLX 2027 T-shirt before we sell out!</p>
-                  <p class="tshirt-material">
-                    Made from 100% 2-way cotton (250gsm) - soft, breathable, and durable.
-                  </p>
-
-                  <div class="tshirt-info-list">
-                    <p class="tshirt-info-item">👕 <strong>Price:</strong> 350,000 VND / $15</p>
-                    <p class="tshirt-info-item">📅 <strong>Pre-order deadline:</strong> February 2027 (TBA)</p>
-                    <p class="tshirt-info-item">📦 <strong>Pick-up:</strong> At VLX 2027</p>
-                  </div>
-
-                  <p class="tshirt-note"><strong>Pre-order only.</strong></p>
-                  <p class="tshirt-disclaimer">
-                    Note: Actual color may vary slightly from the design image.
-                  </p>
-
-                  <button class="tshirt-preorder-button" type="button">
-                    PRE-ORDER T-SHIRT (Coming soon)
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- ============ LIVE BANDS ============ -->
         <div class="livebands-container" id="live-bands">
           <div class="livebands-content">
@@ -754,6 +753,47 @@
           </div>
         </div>
 
+        <!-- ============ T-SHIRT PRE-ORDER ============ -->
+        <div class="tshirt-section">
+            <!-- T-shirt Pre-order Section -->
+            <div class="tshirt-preorder-section">
+              <h3 class="tshirt-preorder-title">VLX 2027 T-SHIRT – PRE-ORDER</h3>
+
+              <div class="tshirt-content">
+                <div class="tshirt-image-container">
+                  <img
+                    src="assets/tshirt-pre-order.jpg"
+                    alt="VLX 2027 T-shirt design"
+                    class="tshirt-image"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="tshirt-details">
+                  <p class="tshirt-intro">Get your VLX 2027 T-shirt before we sell out!</p>
+                  <p class="tshirt-material">
+                    Made from 100% 2-way cotton (250gsm) - soft, breathable, and durable.
+                  </p>
+
+                  <div class="tshirt-info-list">
+                    <p class="tshirt-info-item">👕 <strong>Price:</strong> 350,000 VND / $15</p>
+                    <p class="tshirt-info-item">📅 <strong>Pre-order deadline:</strong> February 2027 (TBA)</p>
+                    <p class="tshirt-info-item">📦 <strong>Pick-up:</strong> At VLX 2027</p>
+                  </div>
+
+                  <p class="tshirt-note"><strong>Pre-order only.</strong></p>
+                  <p class="tshirt-disclaimer">
+                    Note: Actual color may vary slightly from the design image.
+                  </p>
+
+                  <button class="tshirt-preorder-button" type="button">
+                    PRE-ORDER T-SHIRT (Coming soon)
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+
         <!-- ============ SAVE THE DATE ============ -->
         <div class="save-container" id="save-the-date">
           <div class="save-content">
@@ -795,7 +835,7 @@
               </details>
               <details class="faq-item">
                 <summary class="faq-q">When does registration open, and how much is a pass?</summary>
-                <p class="faq-a">Registration opens on October 10, 2026, right here on this website and via our social media. Pricing will be announced at the same time. When registration opens, you fill in a form, wait for a confirmation email, and only then follow the payment instructions.</p>
+                <p class="faq-a">There are three windows, all opening at 00:00 Vietnam time (GMT+7) right here on this website: <strong>group registration on 10 October 2026</strong> (groups of 6–10 dancers, maximum 10 groups), <strong>early bird on 17 October 2026</strong> (the first 50 registrations get the early bird price), and <strong>regular registration on 24 October 2026</strong>. Prices will be announced before registration opens.</p>
               </details>
               <details class="faq-item">
                 <summary class="faq-q">Will there be day passes?</summary>

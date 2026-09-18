@@ -45,11 +45,17 @@
   }
 
   /* ----------------------------------------------------- registration timer
-     Target: registration opens 10 October 2026, midnight Vietnam time
-     (UTC+7) — mirror of registrations.ts (targetDate).                 */
+     Three registration windows, all opening 00:00 Vietnam time (UTC+7).
+     The timer counts down to the NEXT window, labels it, and flags the
+     matching tier card.                                        */
   var countdownBox = document.getElementById('countdown');
   if (countdownBox) {
-    var target = new Date('2026-10-10T00:00:00+07:00');
+    var MILESTONES = [
+      { key: 'group',   time: new Date('2026-10-10T00:00:00+07:00').getTime(), label: 'Group registration opens in' },
+      { key: 'early',   time: new Date('2026-10-17T00:00:00+07:00').getTime(), label: 'Early bird registration opens in' },
+      { key: 'regular', time: new Date('2026-10-24T00:00:00+07:00').getTime(), label: 'Regular registration opens in' }
+    ];
+
     var el = {
       months: document.getElementById('countdownMonths'),
       days: document.getElementById('countdownDays'),
@@ -57,23 +63,65 @@
       minutes: document.getElementById('countdownMinutes'),
       seconds: document.getElementById('countdownSeconds')
     };
+    var labelEl = document.getElementById('countdownLabel');
+    var openEl = document.getElementById('countdownOpen');
     var pad = function (n) {
       return n < 10 ? '0' + n : String(n);
     };
     var timerId;
 
-    var tick = function () {
-      var now = new Date();
-      var diff = target.getTime() - now.getTime();
+    var nextMilestone = function () {
+      var now = Date.now();
+      for (var i = 0; i < MILESTONES.length; i++) {
+        if (MILESTONES[i].time > now) {
+          return { m: MILESTONES[i], index: i };
+        }
+      }
+      return null;
+    };
 
-      if (diff <= 0) {
-        // Registration has opened / passed — hide the countdown (as Angular did).
+    var markTiers = function (activeIndex) {
+      MILESTONES.forEach(function (m, i) {
+        var card = document.getElementById('tier-' + m.key);
+        if (!card) {
+          return;
+        }
+        var badge = card.querySelector('.tier-badge');
+        card.classList.toggle('is-open', m.time <= Date.now());
+        card.classList.toggle('is-next', i === activeIndex);
+        if (badge) {
+          badge.hidden = i !== activeIndex;
+        }
+      });
+    };
+
+    var tick = function () {
+      var next = nextMilestone();
+
+      if (!next) {
+        // All windows have opened — retire the countdown.
         countdownBox.style.display = 'none';
+        if (labelEl) {
+          labelEl.style.display = 'none';
+        }
+        if (openEl) {
+          openEl.hidden = false;
+        }
+        markTiers(-1);
         if (timerId) {
           clearInterval(timerId);
         }
         return;
       }
+
+      var target = new Date(next.m.time);
+      var now = new Date();
+      var diff = target.getTime() - now.getTime();
+
+      if (labelEl) {
+        labelEl.textContent = next.m.label;
+      }
+      markTiers(next.index);
 
       // Calendar-accurate months & days (not a fixed 30-day month)
       var months =
