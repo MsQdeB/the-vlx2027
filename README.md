@@ -71,23 +71,30 @@ python3 -m http.server 8803
 > `__*.jpg` (leading underscores) and GitHub Pages' Jekyll processor **skips files
 > that start with `_`**. `.nojekyll` disables Jekyll so every asset is served.
 
-### Publish a review build at a separate address
+### Review preview (separate address — never touches the live domain)
 
-You can serve this branch for review **without** touching the live domain:
+`thevlx.net` is the **live** site: the main repo's GitHub Pages site is bound to that
+custom domain and to the `static-teaser` branch. Because a repo can have only **one**
+Pages site, the review build lives in a **separate repo with no custom domain**:
 
-- **GitHub Pages branch preview** — Repo **Settings → Pages → Build and deployment**,
-  source **Deploy from a branch**, pick this branch and **`/ (root)`**. Without a
-  custom domain the site appears at
-  `https://msqdeb.github.io/the-vlx2027/` — a different address from
-  `www.thevlx.net`. (A custom domain set in Pages settings would override this.)
-- **Netlify / Cloudflare Pages** — connect the repo; every branch gets its own
-  preview URL (e.g. `https://<branch>--<site>.netlify.app`), and the review build
-  never touches the apex domain.
-- **Firebase Hosting** — `firebase hosting:channel:deploy review` gives a temporary
-  preview channel URL.
+- Repo: **`MsQdeB/the-vlx2027-preview`** (branch `main`, no CNAME)
+- Review URL: **https://msqdeb.github.io/the-vlx2027-preview/**
 
-Keep the `noindex` meta + `robots.txt` in place for the review build so the preview
-URL isn't crawled; flip them only at go-live.
+Refresh the preview by pushing this work to it:
+
+```bash
+git push origin vlx-2027-minimal-homepage         # source of truth (the-vlx2027)
+git push preview vlx-2027-minimal-homepage:main    # refresh the review build
+```
+
+(The `preview` remote points at the preview repo.) The preview keeps `noindex` +
+`robots.txt` in place so the review URL isn't crawled.
+
+> Do **not** point the main repo's Pages at this branch — that would replace the live
+> `thevlx.net`. Only do that at go-live (see the checklist below).
+
+Other hosts also work for a separate review URL: **Netlify / Cloudflare Pages**
+(branch preview URLs) or **Firebase Hosting** (`hosting:channel:deploy review`).
 
 ### GitHub Pages (recommended, for go-live)
 
