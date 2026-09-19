@@ -67,7 +67,29 @@ python3 -m http.server 8803
 
 ## Publishing
 
-### GitHub Pages (recommended)
+> A `.nojekyll` file is included. It matters: several gallery images are named
+> `__*.jpg` (leading underscores) and GitHub Pages' Jekyll processor **skips files
+> that start with `_`**. `.nojekyll` disables Jekyll so every asset is served.
+
+### Publish a review build at a separate address
+
+You can serve this branch for review **without** touching the live domain:
+
+- **GitHub Pages branch preview** — Repo **Settings → Pages → Build and deployment**,
+  source **Deploy from a branch**, pick this branch and **`/ (root)`**. Without a
+  custom domain the site appears at
+  `https://msqdeb.github.io/the-vlx2027/` — a different address from
+  `www.thevlx.net`. (A custom domain set in Pages settings would override this.)
+- **Netlify / Cloudflare Pages** — connect the repo; every branch gets its own
+  preview URL (e.g. `https://<branch>--<site>.netlify.app`), and the review build
+  never touches the apex domain.
+- **Firebase Hosting** — `firebase hosting:channel:deploy review` gives a temporary
+  preview channel URL.
+
+Keep the `noindex` meta + `robots.txt` in place for the review build so the preview
+URL isn't crawled; flip them only at go-live.
+
+### GitHub Pages (recommended, for go-live)
 
 1. Push this branch (or merge it into the branch Pages serves).
 2. Repo **Settings → Pages → Build and deployment → Deploy from a branch**.
@@ -76,8 +98,9 @@ python3 -m http.server 8803
 Because every link is relative, it works whether Pages serves the site at the
 repository sub-path (`…github.io/the-vlx2027/`) or at a custom domain.
 
-> At go-live remember to (a) delete the `noindex` meta lines from the HTML files
-> (there is a comment marking them) and (b) open `robots.txt` back up.
+> **Go-live checklist:** (a) delete the `noindex` meta lines from the HTML files
+> (there is a comment marking them) and (b) open `robots.txt` back up (replace the
+> `Disallow: /` with `Allow: /`).
 
 ### Any other static host
 
