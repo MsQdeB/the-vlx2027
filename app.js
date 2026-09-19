@@ -45,42 +45,40 @@
   }
 
   /* ----------------------------------------------------- registration timer
-     Three registration windows. Opening TIMES are not yet announced, so the
-     counter works at DATE level only (whole days), computed in Vietnam time
-     (UTC+7) so it rolls over at local midnight.                     */
+     Three registration windows. Opening times are Vietnam time (UTC+7).
+     Group registration opens at a confirmed 16:00 ICT; the later windows are
+     assumed at the same time of day until confirmed. Counts down at second
+     resolution to the next window, then advances on its own. */
   var countdownBox = document.getElementById('countdown');
   if (countdownBox) {
+    // 16:00 ICT (UTC+7) == 09:00 UTC
     var MILESTONES = [
-      { key: 'group',   date: [2026, 9, 10], label: 'Group registration opens in' },      // 10 Oct 2026
-      { key: 'early',   date: [2026, 9, 17], label: 'Early bird registration opens in' }, // 17 Oct 2026
-      { key: 'regular', date: [2026, 9, 24], label: 'Regular registration opens in' }     // 24 Oct 2026
+      { key: 'group',   ts: Date.UTC(2026, 9, 10, 9, 0, 0), label: 'Group registration opens in' },      // Sat 10 Oct 2026, 16:00 ICT
+      { key: 'early',   ts: Date.UTC(2026, 9, 17, 9, 0, 0), label: 'Early bird registration opens in' }, // Sat 17 Oct 2026, 16:00 ICT
+      { key: 'regular', ts: Date.UTC(2026, 9, 24, 9, 0, 0), label: 'Regular registration opens in' }     // Sat 24 Oct 2026, 16:00 ICT
     ];
 
     var daysEl = document.getElementById('countdownDays');
+    var hoursEl = document.getElementById('countdownHours');
+    var minutesEl = document.getElementById('countdownMinutes');
+    var secondsEl = document.getElementById('countdownSeconds');
     var labelEl = document.getElementById('countdownLabel');
     var unitEl = document.getElementById('countdownUnit');
     var openEl = document.getElementById('countdownOpen');
     var timerId;
 
-    // today's [y, m, d] in Vietnam time (UTC+7)
-    var todayICT = function () {
-      var t = new Date(Date.now() + 7 * 3600 * 1000);
-      return [t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()];
+    var pad = function (n) {
+      return (n < 10 ? '0' : '') + n;
     };
 
-    // whole calendar days from a -> b (both [y, m, d])
-    var dayDiff = function (a, b) {
-      return Math.round((Date.UTC(b[0], b[1], b[2]) - Date.UTC(a[0], a[1], a[2])) / 86400000);
-    };
-
-    var markTiers = function (activeIndex, today) {
+    var markTiers = function (activeIndex, now) {
       MILESTONES.forEach(function (m, i) {
         var card = document.getElementById('tier-' + m.key);
         if (!card) {
           return;
         }
         var badge = card.querySelector('.tier-badge');
-        var opened = dayDiff(m.date, today) > 0; // its date is in the past
+        var opened = now >= m.ts; // its instant is in the past
         card.classList.toggle('is-open', opened);
         card.classList.toggle('is-next', i === activeIndex);
         if (badge) {
@@ -90,11 +88,11 @@
     };
 
     var tick = function () {
-      var today = todayICT();
+      var now = Date.now();
       var next = null;
 
       for (var i = 0; i < MILESTONES.length; i++) {
-        if (dayDiff(today, MILESTONES[i].date) >= 0) { // today or later
+        if (now < MILESTONES[i].ts) { // first window still in the future
           next = { m: MILESTONES[i], index: i };
           break;
         }
@@ -105,24 +103,29 @@
         countdownBox.style.display = 'none';
         if (labelEl) labelEl.style.display = 'none';
         if (openEl) openEl.hidden = false;
-        markTiers(-1, today);
+        markTiers(-1, now);
         if (timerId) clearInterval(timerId);
         return;
       }
 
-      var days = dayDiff(today, next.m.date);
+      var diff = next.m.ts - now;
+      var days = Math.floor(diff / 86400000);
+      var hours = Math.floor((diff % 86400000) / 3600000);
+      var minutes = Math.floor((diff % 3600000) / 60000);
+      var seconds = Math.floor((diff % 60000) / 1000);
 
-      if (labelEl) {
-        labelEl.textContent = days === 0 ? next.m.label.replace(' opens in', ' opens') : next.m.label;
-      }
-      if (daysEl) daysEl.textContent = days === 0 ? '—' : String(days);
-      if (unitEl) unitEl.textContent = days === 0 ? 'Today!' : (days === 1 ? 'Day' : 'Days');
+      if (labelEl) labelEl.textContent = next.m.label;
+      if (daysEl) daysEl.textContent = String(days);
+      if (unitEl) unitEl.textContent = days === 1 ? 'Day' : 'Days';
+      if (hoursEl) hoursEl.textContent = pad(hours);
+      if (minutesEl) minutesEl.textContent = pad(minutes);
+      if (secondsEl) secondsEl.textContent = pad(seconds);
 
-      markTiers(next.index, today);
+      markTiers(next.index, now);
     };
 
     tick();
-    timerId = setInterval(tick, 60000); // date-level: a minute is plenty
+    timerId = setInterval(tick, 1000);
   }
 
   /* ------------------------------------------------------------ gallery */
