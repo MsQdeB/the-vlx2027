@@ -2727,52 +2727,12 @@ a {
   transform: translateY(-2px);
 }
 
-/* In Motion — click-through video card (for clips that cannot be embedded) */
-.video-card-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-.video-link-wrapper {
-  padding-bottom: 0;
-  aspect-ratio: 16 / 9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(135deg, #2a231c, #17130f);
-}
-
-.play-badge {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: var(--paper);
-  color: var(--ink);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.35rem;
-  line-height: 1;
-  padding-left: 4px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
-  transition: all 0.25s ease;
-}
-
-.video-card-link:hover .play-badge {
-  background: var(--red);
-  color: var(--paper);
-  transform: scale(1.08);
-}
-
-.video-link-label {
-  margin-top: 14px;
-  font-family: var(--sans);
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: rgba(244, 239, 226, 0.85);
+/* In Motion — follow-us call to action under the videos */
+.videos-cta {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink-faint);
+  text-align: center;
+  margin: 40px 0 0;
 }
