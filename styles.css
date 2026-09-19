@@ -2639,3 +2639,90 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   VLX 2027 — minimal homepage additions
+   (branch: vlx-2027-minimal-homepage)
+   ============================================================ */
+
+/* Programme — theme line sits quietly below the details */
+.event-theme {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--ink-faint);
+  margin: 8px 0 0;
+}
+
+/* Live bands — line-up teaser (announced soon) */
+.band-teaser {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  box-shadow: 4px 4px 0 var(--paper-3);
+  padding: 40px 38px 34px;
+  text-align: center;
+}
+
+.band-teaser-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3.6vw, 2.3rem);
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: var(--ink);
+}
+
+.band-teaser-text {
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  margin: 0 0 1em;
+}
+
+.band-teaser-text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .band-teaser {
+    padding: 30px 22px 26px;
+  }
+}
+
+/* Archive — link out to the full Facebook album */
+.archive-cta {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.archive-cta-note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-faint);
+  margin: 0 0 16px;
+}
+
+.archive-cta a {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 13px 26px;
+  transition: all 0.25s ease;
+}
+
+.archive-cta a:hover {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-2px);
+}
