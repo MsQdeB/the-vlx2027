@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face { font-family: 'Chomsky'; src: url('../../assets/fonts/chomsky.woff') format('woff'); }
+
+html, body { margin: 0; padding: 0; width: 1080px; height: 1350px; overflow: hidden; background: #f4efe2; }
+.page { width: 1080px; height: 1350px; box-sizing: border-box; background: #f4efe2; color: #1b1713; font-family: 'Lora', Georgia, serif; padding: 26px; }
+.frame { border: 1px solid #16120e; height: 100%; box-sizing: border-box; padding: 24px 40px 22px; display: flex; flex-direction: column; }
+
+.emblem { text-align: center; }
+.emblem img { height: 104px; width: auto; }
+.title { font-family: 'Chomsky', serif; font-size: 76px; text-align: center; line-height: 1; margin: 2px 0 0; }
+.dateline { font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: #4c453a; text-align: center; padding: 8px 0; margin-top: 10px; border-top: 3px solid #16120e; border-bottom: 1px solid #16120e; }
+
+.kicker { font-family: 'Libre Franklin', sans-serif; font-size: 16px; font-weight: 800; letter-spacing: 0.42em; text-transform: uppercase; color: #8a2a1e; text-align: center; margin-top: 18px; }
+.headline { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 70px; line-height: 1.0; text-align: center; margin: 14px 0 0; }
+.headline.sm { font-size: 52px; }
+.deck { font-family: 'Lora', serif; font-style: italic; font-size: 25px; line-height: 1.35; text-align: center; color: #4c453a; margin: 14px 8px 0; }
+.hr { border-top: 1px solid #16120e; margin: 18px 0 0; }
+
+.cols { margin-top: 16px; column-count: 2; column-gap: 34px; column-rule: 1px solid #c6bba2; font-size: 20px; line-height: 1.5; text-align: justify; color: #1b1713; }
+.cols p { margin: 0 0 12px; }
+.cols p:first-child::first-letter { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 3.2em; float: left; line-height: 0.78; padding: 5px 9px 0 0; color: #8a2a1e; }
+
+.pull { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; font-size: 30px; line-height: 1.3; text-align: center; color: #1b1713; margin: 18px 24px 0; padding: 12px 0; border-top: 1px solid #16120e; border-bottom: 1px solid #16120e; }
+
+.photo { margin: 16px 0 0; text-align: center; }
+.photo img { width: 100%; max-height: 430px; object-fit: cover; display: block; border: 1px solid #16120e; padding: 6px; background: #f4efe2; filter: grayscale(28%) sepia(10%); }
+.photo figcaption { font-family: 'Lora', serif; font-style: italic; font-size: 16px; color: #857c6b; margin-top: 9px; }
+
+.box { border: 1px solid #16120e; margin-top: 16px; }
+.box-head { font-family: 'Libre Franklin', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.28em; text-transform: uppercase; background: #1b1713; color: #f4efe2; padding: 9px 16px; text-align: center; }
+.box-row { display: flex; align-items: baseline; gap: 22px; padding: 12px 18px; border-top: 1px solid #c6bba2; }
+.box-date { flex: 0 0 168px; font-family: 'Libre Franklin', sans-serif; font-weight: 800; font-size: 28px; line-height: 1; }
+.box-date span { display: block; font-size: 12px; letter-spacing: 0.18em; color: #8a2a1e; margin-top: 6px; }
+.box-desc strong { display: block; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 23px; line-height: 1.1; }
+.box-desc em { font-family: 'Lora', serif; font-style: italic; font-size: 19px; color: #4c453a; }
+.box-list { list-style: none; margin: 0; padding: 0 18px 6px; }
+.box-list li { font-family: 'Lora', serif; font-size: 19px; color: #1b1713; padding: 9px 0 9px 26px; position: relative; border-bottom: 1px solid #c6bba2; }
+.box-list li:last-child { border-bottom: none; }
+.box-list li::before { content: '\2014'; position: absolute; left: 0; color: #8a2a1e; font-weight: 700; }
+
+.bignum { text-align: center; margin: 6px 0 0; }
+.bignum span { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 300px; line-height: 0.92; color: #8a2a1e; display: block; }
+.bignum em { font-family: 'Libre Franklin', sans-serif; font-style: normal; font-weight: 800; font-size: 22px; letter-spacing: 0.3em; text-transform: uppercase; color: #1b1713; }
+
+.byline { font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #8a2a1e; text-align: center; margin: 16px 0 0; }
+.foot { margin-top: auto; border-top: 3px double #16120e; padding-top: 12px; display: flex; justify-content: space-between; align-items: center; font-family: 'Libre Franklin', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #4c453a; }
