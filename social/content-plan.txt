@@ -1,0 +1,365 @@
+# VLX 2027 — Social media content plan
+
+> Fill in one block per post (leave fields blank if not needed), or paste your own
+> list and I'll adapt. Reference "last year's schedule" is fine too — attach it as a
+> PDF / screenshot / text and I'll mirror the structure.
+>
+> Where images are listed as "photo", you can name a file in the repo (e.g.
+> `assets/gallery/dsc02057_1_orig.jpg`) or just say "from last year, beach" and I'll
+> pick one — or I'll generate a typographic graphic from the brand.
+
+---
+
+## Post 1
+- **Order / date:** 1 · 2026-09-19 (tonight)
+- **Platform:** IG + FB
+- **Format:** feed square 1080×1080
+- **Pillar:** Save the date
+- **Headline (big text on graphic):** SAVE THE DATE
+- **Sub text / details:** 19–21 March 2027 · Hội An, Vietnam
+- **Caption notes:** registration opens 10 Oct, follow us, link in bio
+- **CTA:** Follow for updates
+- **Link:** https://thevlx.net/
+- **Hashtags:** #VLX2027 #VietnamLindyExchange #LindyHop #HoiAn
+- **Image:** typographic (paper + dancers) OR last year's group photo
+- **Notes:** reuse the "Save the date" image I already have
+
+---
+
+## Post 2
+- **Order / date:**
+- **Platform:**
+- **Format:**  (square / portrait 1080×1350 / story 1080×1920 / reel)
+- **Pillar:**  (e.g. Registration, Bands, DJs, Programme, Venue, FAQ, Reminder)
+- **Headline:**
+- **Sub text / details:**
+- **Caption notes:**
+- **CTA:**
+- **Link:**
+- **Hashtags:**
+- **Image:**
+- **Notes:**
+
+---
+
+<!-- copy the Post 2 block for each additional post -->
+
+---
+
+## Brand / house style (for my reference — change if you like)
+- Paper `#f4efe2` · Ink `#1b1713` · Red `#8a2a1e` · Gold `#a87c26`
+- Fonts: blackletter (Chomsky) for titles, Playfair Display for headlines,
+  Libre Franklin (uppercase, letterspaced) for labels/buttons, Lora for body.
+- Voice: warm, a little vintage-newspaper playful; short sentences; light emoji.
+- Sizes: feed square 1080×1080, portrait 1080×1350, story/reel cover 1080×1920.
+
+guidelines:
+-All posts are for both instagram and Facebook.
+-We posted save the dates on September 19th. Registration opens on October 10th. Come up with a good plan + timing (parallell: need to update the website accordingly as important infos must be on the website: instructions for registration for example.
+-All infos below are references from last year
+-all posts should have vlx logo (choose the suitable version)
+
+1. registration schedule: 🎟️ VLX 2026 Registration opens soon!
+VLXers, get ready to grab your spot for a fun, swingin’ weekend in Hội An, Vietnam! 💃✨
+
+🗓️ Oct 10, 16:00 GMT+7: Group Registration
+(Maximum 10 groups, each with 8–10 dancers)
+🗓️ 29 Nov, 16:00 GMT+7: Individual Registration
+(First 50 dancers get the Early Bird price!)
+
+💸 Group: to be updated (because we havent finalized)
+💸 Early Bird: to be updated
+💸 Regular: to be updated
+
+What’s waiting for you at VLX 2026?
+🎧 International DJs
+🎺 Live Bands
+🌙 3 nights of dancing
+🍖 Gala BBQ Buffet Dinner
+☀️ Afternoon Tea Dance
+🏖️ Dance by the beach & in the UNESCO town of Hội An
+
+Mark your calendars! Instructions for each type of registration are coming soon - stay tuned! 💃🕺
+
+~~~
+✨ Vietnam Lindy Exchange 2026, 16th edition.
+🗓️ March 13–15, 2026
+📍 Hội An, Vietnam
+
+#VietnamLindyExchange #SwingDance #VLX2026
+
+2. venue + accommodation detail
+🌴 Venue & Accommodation Reveal!
+
+This year, we’re bringing a fresh vibe as VLX teams up with Palm Garden Resort for an unforgettable swingin’ weekend! 💃✨
+
+Just less than 15 minutes from Hội An Ancient Town, this 5-star beachfront resort blends traditional Vietnamese charm with lush tropical gardens and white-sand views of Cửa Đại Beach.
+
+Our 3 nights of live bands, DJs, late-night dancing, and the Gala BBQ Buffet will all take place indoors in Palm Garden’s beautiful ballrooms, so we can dance the night away, rain or shine! 🌙🎶
+
+Special room rates for VLXers will be available (limited to capacity). Full details in the registration form.
+🗓️ Group Registration: 22 Nov, 16:00 GMT+7
+🗓️ Individual Registration: 29 Nov, 16:00 GMT+7
+
+~~~
+✨ Vietnam Lindy Exchange 2026, 16th edition
+🗓️ March 13–15, 2026
+📍 Hội An, Vietnam
+
+#VietnamLindyExchange #SwingDance #VLX2026 #HoiAn
+Note: we'll come back to Palm garden this year
+Idea: carousel
+
+first photo: Venue & Accommodation Reveal + logo VLX (use this same style for all designs of reveal later on)
+next photos: photos of venue
+
+ratio social media: 4:5
+
+3.Band introduction
+🎺 Band Reveal - VLX 2026 Line-up!
+
+We’ve got plenty of new things coming to VLX this year, and one of the most exciting is our live music lineup! 🎶
+
+✨ Asian Golden Swing Quartet (Japan)
+
+“We play swing jazz for swing dancers.”
+Loved by dancers across Asia, the Asian Golden Swing Quartet recently lit up Jeju Swing Camp 2025, and now they’re coming to Vietnam for the very first time! We’re beyond excited to welcome them to the VLX stage this March! 🇯🇵🎷
+👉 facebook.com/asiangoldenswingquartet
+
+Get ready for two nights of swingin’ live music, good vibes, and endless dancing! 💃🕺
+
+🗓️ Group Registration: 22 Nov, 16:00 GMT+7
+🗓️ Individual Registration: 29 Nov, 16:00 GMT+7
+
+~~~
+📅 Vietnam Lindy Exchange 2026, 16th edition
+🗓️ March 13–15, 2026
+📍 Hội An, Vietnam
+
+#VietnamLindyExchange #SwingDance #VLX2026 #AsianGoldenSwingQuartet #HATJazzBand 
+
+They played last year and will come back this year
+
+4. website ready
+Preview website
+
+5.Band introduction
+🎺 Band Reveal - VLX 2026 Line-up!
+
+🎷 HAT Jazz Band (Vietnam)
+Our very own local favorite: @HAT Jazz Band who brings the heart and soul of Da Nang’s jazz scene! Their positivity and energy have made every VLX “Dance by the Beach” day unforgettable, and this year they’ll also be lighting up our main evening dance . 🇻🇳💫
+
+👉 Check out their tunes: facebook.com/hatjazzband
+
+Get ready for two nights of swingin’ live music, good vibes, and endless dancing! 💃🕺
+
+🗓️ Group Registration: 22 Nov, 16:00 GMT+7
+🗓️ Individual Registration: 29 Nov, 16:00 GMT+7
+
+~~~
+📅 Vietnam Lindy Exchange 2026, 16th edition
+🗓️ March 13–15, 2026
+📍 Hội An, Vietnam
+
+#VietnamLindyExchange #SwingDance #VLX2026 #HATJazzBand 
+
+6. instructions for group registration
+📣 Thinking of joining VLX with your friends? Here’s how Group Registration works — in just 4 easy steps!
+Swipe through to see how your team can secure a spot 💃🕺
+
+Group Registration opens on 22 Nov, 16:00 GMT+7.
+Each group has 8–10 dancers — and you don’t need to be from the same country or the same dance community.
+Only 10 groups will be accepted, so get ready… and good luck! 🍀✨
+
+If you have any questions, comment below or message us. 
+
+~~~
+📅 Vietnam Lindy Exchange 2026, 16th edition
+🗓️ March 13–15, 2026
+📍 Hội An, Vietnam
+💫 https://www.thevlx.net/
+Instructions in words:
+Format: Instagram carousel (4–5 slides) 
+Style: Clean, VLX colors, tropical accents (leaf silhouettes, subtle sand/sea vibes)
+
+Slide 1 — Title
+
+Big bold header:
+🌺 VLX 2026 — Group Registration Guide
+Subtext: Simple 4-step process
+
+Background: light tropical gradient + palm leaf shadow.
+
+⸻
+
+Slide 2 — Step 1
+
+Step 1 — Group Leader Registers
+Short bullet:
+        •        When registration opens
+        •        Group leader fills the form
+        •        Submit for your group
+
+Visual: small icon of a clipboard or form.
+
+⸻
+
+Slide 3 — Step 2
+
+Step 2 — Be Among the First 10
+        •        If your group is top 10, you’ll receive payment details
+
+Visual: “Top 10” badge or lightning bolt.
+
+⸻
+
+Slide 4 — Step 3
+
+Step 3 — Pay Within 24 Hours
+        •        Complete payment
+        •        Reply with receipt
+        •        If late → spot goes to next group
+
+Visual: clock icon + warning sign.
+
+⸻
+
+Slide 5 — Step 4
+
+Step 4 — Members Register Individually
+        •        Group leader gets indidivual registration link to share
+        •        Everyone must submit by Nov 28 (inc. group leader)
+        •        Receive your confirmation email 🎉
+
+Visual: group of dancers / envelope icon.
+
+⸻
+
+Optional Slide 6 — Dates
+
+Registration Dates
+        •        Group: 22 Nov, 16:00 GMT+7
+        •        Individual: 29 Nov, 16:00 GMT+7
+
+Visual: calendar icons.
+
+7. timeline reminder
+⏳ 2 days to go!
+Group Registration for VLX 2026 opens this Saturday, 22 Nov at 16:00 GMT+7!
+
+If you’re joining with friends, make sure your group leader is ready, your team is confirmed, and your Wi-Fi is strong 😎 The group registration form will ask for a few basic details, such as your group leader’s name, number of dancers, and everyone’s full names. Super simple.
+
+Only 10 groups can join. Fastest fingers win!
+See you at the starting line 💃🕺✨
+
+#VLX2026 #VietnamLindyExchange #SwingDance #HoiAn
+Slide 1 (or Main Post)
+
+BIG TEXT (center):
+2 DAYS TO GO!
+Group Registration Opens Soon
+
+Subtext:
+22 Nov — 16:00 GMT+7
+Only 10 groups accepted
+
+Visual style:
+        •        Bright, bold background (VLX color palette)
+        •        Large countdown number “2”
+        •        Tropical accents (palm leaf silhouette, beach tone gradient)
+        •        Tiny swing dancer silhouettes or a subtle lindy hop outline
+
+⸻
+
+Slide 2 (Optional)
+
+Header:
+🔥 Be Ready Before Registration Opens!
+
+Checklist icons:
+        •        ✔️ Appoint your group leader
+        •        ✔️ Confirm 8–10 dancers
+        •        ✔️ Prepare payment
+        •        ✔️ Stay close to your inbox
+
+Footer:
+Group Registration — 22 Nov, 16:00 GMT+7
+Individual Registration — 25 Nov, 16:00 GMT+7
+
+8. group sold out + individual reminder 
+🎉 CONGRATULATIONS to all the groups who made it into VLX 2026!
+And a huge shout-out to all group leaders!! You were insanely fast this year, easily 220 bpm at least (iykyk) 💛🔥
+
+📝 Group leaders, one more important step:
+Please make sure every single member submits their individual registration form no later than November 28th. This helps us confirm your spots smoothly.
+
+~ 
+🌟 Not in a group? You still have a chance!
+Individual registration opens on Saturday, November 29th at 16:00 GMT+7.
+
+✨ The first 50 lucky dancers will receive the Early Bird price (4,380,000 VND) -counted strictly based on the timestamp we receive after the form goes live on our website (under /registrations).
+
+Can't wait to swing out with y'all! 
+~~~
+📅 Vietnam Lindy Exchange 2026, 16th edition
+🗓️ March 13–15, 2026
+📍 Hội An, Vietnam
+💫 https://www.thevlx.net/ (all details and registrations)
+
+9. individual reminder + early bird
+🔥 INDIVIDUAL REGISTRATION - Tomorrow!
+Set your alarms for Nov 29, 16:00 GMT+7 ⏰
+First 50 entries get Early Bird pricing 💛
+👉 Form will open at thevlx.net/registrations
+
+✨ In the form, besides basic info, you can also choose to let us connect you with rooms at Palm Garden Resort, our main venue for VLX. VLXers enjoy around 15% off on room rates!
+~~~
+📅 Vietnam Lindy Exchange 2026, 16th edition
+🗓️ March 13–15, 2026
+📍 Hội An, Vietnam
+💫 https://www.thevlx.net/ (all details and registrations)
+
+10. early bird payment reminder
+[PAYMENT DETAIL EMAIL SENT OUT]
+🔥 It’s almost 24 hours since INDIVIDUAL REGISTRATION opened, and once again, so many of you were insanely fast this year… easily 230 BPM this time 😎
+
+A quick reminder for our Early Bird dancers:
+
+💛 Please complete your payment within 24 hours after receiving our email with payment details.
+We offer multiple payment methods, so choose whatever works best for you!
+
+✨ Your spot is officially secured only after payment is completed and you receive a confirmation email from us (thank you for your patience, we’re processing as fast as we can!).
+
+⸻
+
+For those who haven’t received an Early Bird payment email yet:
+👀 Yes… you still have a chance.
+Early Bird only officially closes once all payments are completed on time. If someone doesn’t pay within 24 hours, the next person in line will get the EB spot. We haven't announced Early Bird Sold Out yet ;) 
+
+⸻
+
+Thank you so much for all the love and excitement.
+VLX 2026 is already swinging hard because of you! 💛🌿
+~~~
+📅 Vietnam Lindy Exchange 2026, 16th edition
+🗓️ March 13–15, 2026
+📍 Hội An, Vietnam
+💫 https://www.thevlx.net/ (all details and registrations)
+
+11. EB Sold Out
+[EARLY BIRD SOLD OUT – REGULAR BIRD STILL FLIES HIGH]
+
+Yayyy, huge congrats to all the early birds and fast feet! And thank you for completing your payments on time 🙌🏼
+
+Registrations are still open! Head to our website at /registrations for all the details and sign up while spots are still available.
+After you submit the form, please remember to check your inbox within 48 hours. We’ll send you payment instructions, and your spot for VLX 2026 is only confirmed once your payment is completed and you’ve received our confirmation email (thank you for your patience - we’re processing as quickly as we can!).
+
+Thank you again for all the love. VLX 2026 is going to be a beautiful one, and we can’t wait to reveal more very soon. 
+~~~
+📅 Vietnam Lindy Exchange 2026, 16th edition
+🗓️ March 13–14-15, 2026
+📍 Hội An, Vietnam
+💫 https://www.thevlx.net/ (all details and registrations)
+
+12. VLX TShirt pre order
+Before registration day so they can choose to buy tshirt 

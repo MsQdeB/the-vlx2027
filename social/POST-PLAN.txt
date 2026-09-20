@@ -1,0 +1,55 @@
+# VLX 2027 — Social media plan & schedule (draft)
+
+Reference: your 12-post list (from VLX 2026) + guidelines.
+Most posts = editorial / newspaper "announcement" cards (validated sample:
+social/samples/sample-registration-1080.png). All posts: IG + FB, with the VLX logo.
+FORMAT DEFAULT: portrait 1080x1350 (4:5) for reveals/carousels; square 1080x1080 for
+simple statements. Stories optional.
+
+## ✅ CONFIRMED (this year's facts)
+1. YEAR/EDITION: **VLX 2027 · 17th edition · 19–21 March 2027**.
+2. DATES (all 16:00 GMT+7): Group **Sat 10 Oct 2026**; Early bird **Sat 17 Oct 2026**;
+   Regular **Sat 24 Oct 2026** (or earlier if early bird sells out).
+3. GROUP SIZE: **6–10 dancers** (new for this year). Max 10 groups.
+4. PRICES: to be updated (placeholder "to be announced" until provided).
+5. MAIN VENUE: **Palm Garden Resort** — re-add venue + accommodation to the site.
+6. T-SHIRT: yes, pre-order (finalise once the design is ready).
+7. sneak-peek assets: deleted on purpose.
+
+## Website updates needed (the posts depend on these)
+- BEFORE "Registration opens soon": registration section final copy + countdown ✅
+  (done) + registration **instructions** (group steps, individual steps) on-site.
+- Group instructions page/section (post 1 & 6): 4-step group guide
+  (leader registers → top 10 → pay within 24h → members register individually).
+- Individual/early-bird instructions + "first 50 = early bird" (post 8 & 9).
+- Payment/confirmation wording (posts 10 & 11) — on site + in emails.
+- Venue & accommodation info re-added (post 2 & 9).
+- Bands section updated as each reveal goes out (posts 3 & 5).
+- "Website ready / preview" moment (post 4).
+- (If kept) T-shirt pre-order (post 12).
+
+## Proposed schedule (2026 dates; all 16:00 GMT+7 unless noted)
+| # | Post | Proposed date | Format | Site dependency |
+|---|------|---------------|--------|-----------------|
+| — | Save the date ✅ | Sep 19 (done) | 1080x1080 | — |
+| 1 | Registration opens soon (schedule) | ~Sep 24 | 1080x1350 | reg copy final |
+| 2 | Venue & Accommodation reveal | ~Oct 1 | carousel 1080x1350 | venue+accom re-added |
+| 3 | Band reveal 1 — Asian Golden Swing Quartet | ~Oct 5 | 1080x1350 | bands section |
+| 4 | Website ready / preview | ~Oct 6 | 1080x1080 | site live |
+| 5 | Band reveal 2 — HAT Jazz Band | ~Oct 7 | 1080x1350 | bands section |
+| 6 | Group registration instructions | ~Oct 8 | carousel (4–6) | instructions page |
+| 7 | "2 days to go" reminder | Oct 8/9 | 1080x1350 + story | countdown |
+| ★ | GROUP REG OPENS | Oct 10, 16:00 | 1080x1350 + story | form live |
+| 8 | Group sold out + individual reminder | ~Oct 11 | 1080x1350 | — |
+| 9 | Individual reg tomorrow + early bird | ~Oct 16 | 1080x1350 | individual info |
+| ★ | EARLY BIRD OPENS | Oct 17, 16:00 | 1080x1080 + story | form live |
+| 10 | Early bird payment reminder | ~Oct 18 | 1080x1080 | payment email |
+| 11 | Early bird sold out | ~Oct 20 | 1080x1080 | — |
+| ★ | REGULAR OPENS | Oct 24, 16:00 | 1080x1080 | form live |
+| 12 | T-shirt pre-order | before Oct 10 | 1080x1350 | t-shirt section |
+
+Delivery: I generate each graphic (editorial cards; photos from assets/gallery where
+wanted) + a ready-to-paste caption (IG hashtags at end; FB link handled for reach),
+saved as social/posts/NN-<slug>/ (image + caption.txt).
+
+## Open questions answered → then I start building

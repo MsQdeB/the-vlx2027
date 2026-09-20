@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+      @font-face { font-family: 'Chomsky'; src: url('../../assets/fonts/chomsky.woff') format('woff'); }
+
+      html, body { margin: 0; padding: 0; width: 1080px; height: 1350px; overflow: hidden; background: #f4efe2; }
+      .page { width: 1080px; height: 1350px; box-sizing: border-box; background: #f4efe2; color: #1b1713; font-family: 'Lora', Georgia, serif; padding: 26px; }
+      .frame { border: 1px solid #16120e; height: 100%; box-sizing: border-box; padding: 26px 40px 24px; display: flex; flex-direction: column; }
+      .emblem { text-align: center; }
+      .emblem img { height: 118px; width: auto; }
+      .title { font-family: 'Chomsky', serif; font-size: 80px; text-align: center; line-height: 1; margin: 2px 0 0; }
+      .dateline { font-family: 'Libre Franklin', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: #4c453a; text-align: center; padding: 9px 0; margin-top: 10px; border-top: 3px solid #16120e; border-bottom: 1px solid #16120e; }
+      .headline { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 78px; line-height: 1.0; text-align: center; margin: 22px 0 0; }
+      .deck { font-family: 'Lora', serif; font-style: italic; font-size: 27px; line-height: 1.35; text-align: center; color: #4c453a; margin: 16px 6px 0; }
+      .hr { border-top: 1px solid #16120e; margin: 20px 0 0; }
+      .cols { margin-top: 18px; column-count: 2; column-gap: 36px; column-rule: 1px solid #c6bba2; font-size: 21px; line-height: 1.52; text-align: justify; color: #1b1713; }
+      .cols p { margin: 0 0 13px; }
+      .cols p:first-child::first-letter { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 3.2em; float: left; line-height: 0.78; padding: 5px 9px 0 0; color: #8a2a1e; }
+      .byline { font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #8a2a1e; text-align: center; margin: 18px 0 0; }
+      .box { border: 1px solid #16120e; margin-top: 18px; }
+      .box-head { font-family: 'Libre Franklin', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.28em; text-transform: uppercase; background: #1b1713; color: #f4efe2; padding: 9px 16px; text-align: center; }
+      .box-row { display: flex; align-items: baseline; gap: 22px; padding: 13px 18px; border-top: 1px solid #c6bba2; }
+      .box-date { flex: 0 0 168px; font-family: 'Libre Franklin', sans-serif; font-weight: 800; font-size: 30px; line-height: 1; }
+      .box-date span { display: block; font-size: 13px; letter-spacing: 0.18em; color: #8a2a1e; margin-top: 6px; }
+      .box-desc strong { display: block; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 25px; line-height: 1.1; }
+      .box-desc em { font-family: 'Lora', serif; font-style: italic; font-size: 20px; color: #4c453a; }
+      .foot { margin-top: auto; border-top: 3px double #16120e; padding-top: 13px; display: flex; justify-content: space-between; align-items: center; font-family: 'Libre Franklin', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #4c453a; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="frame">
+        <div class="emblem"><img src="../../assets/brand/dancers.png" alt="" /></div>
+        <div class="title">The VLX Times</div>
+        <div class="dateline">Hội An, Vietnam · 17th Edition · Established 2009</div>
+
+        <h1 class="headline">Registration opens soon</h1>
+        <p class="deck">Three windows open this October — here is when, and how to be ready to grab your pass.</p>
+        <div class="hr"></div>
+
+        <div class="cols">
+          <p>The Vietnam Lindy Exchange returns to Hội An for its seventeenth edition — three days and three nights of live bands, international DJs and dancing, from 19 to 21 March 2027.</p>
+          <p>Registration opens in three windows this autumn. Group registration leads the way on Saturday 10 October, for teams of six to ten dancers; a maximum of ten groups will be accepted.</p>
+          <p>Individual registration follows on 17 October, with the first fifty dancers taking the early-bird price. Regular registration opens on 24 October — or sooner, should the early bird sell out.</p>
+          <p>Bands, DJs and the full weekend programme will be revealed over the coming weeks. Follow us — and keep this page bookmarked — so you don't miss a beat.</p>
+        </div>
+
+        <p class="byline">Prices will be announced shortly · full instructions to follow</p>
+
+        <div class="box">
+          <div class="box-head">Registration · Three Windows</div>
+          <div class="box-row">
+            <div class="box-date">10 OCT<span>16:00 GMT+7</span></div>
+            <div class="box-desc"><strong>Group Registration</strong><em>Teams of 6–10 dancers · max 10 groups</em></div>
+          </div>
+          <div class="box-row">
+            <div class="box-date">17 OCT<span>16:00 GMT+7</span></div>
+            <div class="box-desc"><strong>Individual Registration</strong><em>First 50 dancers get the early-bird price</em></div>
+          </div>
+          <div class="box-row" style="border-bottom: none;">
+            <div class="box-date">24 OCT<span>16:00 GMT+7</span></div>
+            <div class="box-desc"><strong>Regular Registration</strong><em>Or earlier, if early bird sells out</em></div>
+          </div>
+        </div>
+
+        <div class="foot"><span>thevlx.net</span><span>VLX 2027 · 19–21 March 2027</span></div>
+      </div>
+    </div>
+  </body>
+</html>
