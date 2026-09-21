@@ -225,17 +225,22 @@
               <p class="world-clock-lead">
                 One moment, worldwide: <strong>Saturday 10 October, 18:00 in Hội An (GMT+7)</strong>.
               </p>
-              <ul class="world-grid">
-                <li><span class="wc-city">Hội An · Bangkok · Jakarta</span><span class="wc-time">18:00</span></li>
-                <li><span class="wc-city">China · Taiwan · Singapore · Bali · Perth</span><span class="wc-time">19:00</span></li>
-                <li><span class="wc-city">South Korea</span><span class="wc-time">20:00</span></li>
-                <li><span class="wc-city">Brisbane</span><span class="wc-time">21:00</span></li>
-                <li><span class="wc-city">Sydney · Melbourne</span><span class="wc-time">22:00</span></li>
-                <li><span class="wc-city">France</span><span class="wc-time">13:00</span></li>
-                <li><span class="wc-city">New York · Toronto</span><span class="wc-time">07:00</span></li>
-                <li><span class="wc-city">Houston</span><span class="wc-time">06:00</span></li>
-                <li><span class="wc-city">Vancouver</span><span class="wc-time">04:00</span></li>
-              </ul>
+          <div class="tz-tool">
+            <input id="tzInput" class="tz-input" type="text" autocomplete="off" spellcheck="false"
+                   placeholder="Type your city — e.g. Seoul, Toronto, Perth…" aria-label="Your city or time zone" />
+            <p class="tz-result" id="tzResult">Finding your local time…</p>
+          </div>
+          <div class="tz-quick" id="tzQuick">
+            <button type="button" data-tz="Asia/Ho_Chi_Minh" data-label="Vietnam">Vietnam</button>
+            <button type="button" data-tz="Asia/Bangkok" data-label="Bangkok">Bangkok</button>
+            <button type="button" data-tz="Asia/Shanghai" data-label="Shanghai">Shanghai</button>
+            <button type="button" data-tz="Asia/Singapore" data-label="Singapore">Singapore</button>
+            <button type="button" data-tz="Asia/Seoul" data-label="Seoul">Seoul</button>
+            <button type="button" data-tz="Australia/Sydney" data-label="Sydney">Sydney</button>
+            <button type="button" data-tz="Europe/Paris" data-label="Paris">Paris</button>
+            <button type="button" data-tz="America/New_York" data-label="New York">New York</button>
+            <button type="button" data-tz="America/Vancouver" data-label="Vancouver">Vancouver</button>
+          </div>
               <div class="world-clock-buttons">
                 <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=VLX%202027%20%E2%80%94%20Group%20registration%20opens&amp;dates=20261010T110000Z%2F20261010T120000Z&amp;details=Group%20registration%20opens%20at%2018%3A00%20%28GMT%2B7%29.%20Only%2010%20groups.%20All%20details%3A%20thevlx.net&amp;ctz=Asia%2FHo_Chi_Minh" target="_blank" rel="noopener noreferrer">Add group registration to calendar</a>
                 <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=VLX%202027%20%E2%80%94%20Individual%20registration%20opens&amp;dates=20261017T110000Z%2F20261017T120000Z&amp;details=Individual%20registration%20opens%20at%2018%3A00%20%28GMT%2B7%29.%20First%2050%20dancers%20get%20the%20early-bird%20price.%20All%20details%3A%20thevlx.net&amp;ctz=Asia%2FHo_Chi_Minh" target="_blank" rel="noopener noreferrer">Add individual registration to calendar</a>

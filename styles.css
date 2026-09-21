@@ -3062,3 +3062,48 @@ a {
   background: var(--ink);
   color: var(--paper);
 }
+
+/* Registration — local-time converter */
+.tz-tool { margin: 4px 0 0; }
+.tz-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 12px 14px;
+  text-align: center;
+}
+.tz-input:focus { outline: none; border-color: var(--red); }
+.tz-result {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin: 12px 0 0;
+  line-height: 1.4;
+}
+.tz-result strong { color: var(--red); }
+.tz-quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin: 14px 0 0;
+}
+.tz-quick button {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 1px solid var(--hair);
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.tz-quick button:hover { border-color: var(--ink); color: var(--ink); }
