@@ -3038,3 +3038,27 @@ a {
   margin: 14px 0 0;
 }
 @media (max-width: 560px) { .world-grid { grid-template-columns: 1fr; } }
+
+.world-clock-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 16px 0 0;
+}
+.world-clock-buttons a {
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 10px 16px;
+  transition: all 0.25s ease;
+}
+.world-clock-buttons a:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
