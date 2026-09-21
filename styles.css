@@ -2936,3 +2936,49 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   Announcement — highlighted registration callout
+   ============================================================ */
+.announce-callout {
+  max-width: 640px;
+  margin: 8px auto 36px;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  box-shadow: 5px 5px 0 var(--paper-3);
+  padding: 26px 32px 24px;
+  text-align: center;
+}
+
+.announce-callout-kicker {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.announce-callout-text {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0;
+}
+
+.announce-callout-text strong {
+  color: var(--red);
+}
+
+.announce-callout-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 10px 0 0;
+}
