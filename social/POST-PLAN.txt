@@ -8,7 +8,7 @@ simple statements. Stories optional.
 
 ## ✅ CONFIRMED (this year's facts)
 1. YEAR/EDITION: **VLX 2027 · 17th edition · 19–21 March 2027**.
-2. DATES (all 16:00 GMT+7): Group **Sat 10 Oct 2026**; Early bird **Sat 17 Oct 2026**;
+2. DATES (all 18:00 GMT+7): Group **Sat 10 Oct 2026**; Early bird **Sat 17 Oct 2026**;
    Regular **Sat 24 Oct 2026** (or earlier if early bird sells out).
 3. GROUP SIZE: **6–10 dancers** (new for this year). Max 10 groups.
 4. PRICES: to be updated (placeholder "to be announced" until provided).
@@ -28,7 +28,7 @@ simple statements. Stories optional.
 - "Website ready / preview" moment (post 4).
 - (If kept) T-shirt pre-order (post 12).
 
-## Proposed schedule (2026 dates; all 16:00 GMT+7 unless noted)
+## Proposed schedule (2026 dates; all 18:00 GMT+7 unless noted)
 | # | Post | Proposed date | Format | Site dependency |
 |---|------|---------------|--------|-----------------|
 | — | Save the date ✅ | Sep 19 (done) | 1080x1080 | — |
@@ -39,13 +39,13 @@ simple statements. Stories optional.
 | 5 | Band reveal 2 — HAT Jazz Band | ~Oct 7 | 1080x1350 | bands section |
 | 6 | Group registration instructions | ~Oct 8 | carousel (4–6) | instructions page |
 | 7 | "2 days to go" reminder | Oct 8/9 | 1080x1350 + story | countdown |
-| ★ | GROUP REG OPENS | Oct 10, 16:00 | 1080x1350 + story | form live |
+| ★ | GROUP REG OPENS | Oct 10, 18:00 | 1080x1350 + story | form live |
 | 8 | Group sold out + individual reminder | ~Oct 11 | 1080x1350 | — |
 | 9 | Individual reg tomorrow + early bird | ~Oct 16 | 1080x1350 | individual info |
-| ★ | EARLY BIRD OPENS | Oct 17, 16:00 | 1080x1080 + story | form live |
+| ★ | EARLY BIRD OPENS | Oct 17, 18:00 | 1080x1080 + story | form live |
 | 10 | Early bird payment reminder | ~Oct 18 | 1080x1080 | payment email |
 | 11 | Early bird sold out | ~Oct 20 | 1080x1080 | — |
-| ★ | REGULAR OPENS | Oct 24, 16:00 | 1080x1080 | form live |
+| ★ | REGULAR OPENS | Oct 24, 18:00 | 1080x1080 | form live |
 | 12 | T-shirt pre-order | before Oct 10 | 1080x1350 | t-shirt section |
 
 Delivery: I generate each graphic (editorial cards; photos from assets/gallery where

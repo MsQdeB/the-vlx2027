@@ -101,17 +101,17 @@ POSTS = [
             ]},
             {"t": "byline", "text": "Prices will be announced shortly · full instructions to follow"},
             {"t": "box", "head": "Registration · Three Windows", "rows": [
-                {"date": "10 OCT", "span": "16:00 GMT+7", "title": "Group Registration", "sub": "Teams of 6–10 dancers · max 10 groups"},
-                {"date": "17 OCT", "span": "16:00 GMT+7", "title": "Individual Registration", "sub": "First 50 dancers get the early-bird price"},
-                {"date": "24 OCT", "span": "16:00 GMT+7", "title": "Regular Registration", "sub": "Or earlier, if early bird sells out"},
+                {"date": "10 OCT", "span": "18:00 GMT+7", "title": "Group Registration", "sub": "Teams of 6–10 dancers · max 10 groups"},
+                {"date": "17 OCT", "span": "18:00 GMT+7", "title": "Individual Registration", "sub": "First 50 dancers get the early-bird price"},
+                {"date": "24 OCT", "span": "18:00 GMT+7", "title": "Regular Registration", "sub": "Or earlier, if early bird sells out"},
             ]},
         ],
         caption=(
             "🎟️ VLX 2027 registration opens soon!\n\n"
             "Get ready to grab your spot for a swingin' weekend in Hội An, Vietnam 💃✨\n\n"
-            "🗓️ 10 Oct, 16:00 (GMT+7) — Group Registration (teams of 6–10 · max 10 groups)\n"
-            "🗓️ 17 Oct, 16:00 (GMT+7) — Individual Registration (first 50 get the early-bird price)\n"
-            "🗓️ 24 Oct, 16:00 (GMT+7) — Regular Registration (or earlier if early bird sells out)\n\n"
+            "🗓️ 10 Oct, 18:00 (GMT+7) — Group Registration (teams of 6–10 · max 10 groups)\n"
+            "🗓️ 17 Oct, 18:00 (GMT+7) — Individual Registration (first 50 get the early-bird price)\n"
+            "🗓️ 24 Oct, 18:00 (GMT+7) — Regular Registration (or earlier if early bird sells out)\n\n"
             "💸 Prices to be announced soon.\n\n"
             "What's waiting for you at VLX 2027?\n"
             "🎧 International DJs\n🎺 Live bands\n🌙 3 nights of dancing\n🍖 Gala BBQ buffet dinner\n"
@@ -140,7 +140,7 @@ POSTS = [
             "“We play swing jazz for swing dancers.” Loved by dancers across Asia — they recently lit up Jeju Swing Camp 2025, and now they're coming to Vietnam for the very first time! We're beyond excited to welcome them to the VLX stage this March 🇯🇵🎷\n"
             "👉 facebook.com/asiangoldenswingquartet\n\n"
             "Get ready for two nights of swingin' live music, good vibes and endless dancing! 💃🕺\n\n"
-            "🗓️ Group: 10 Oct · 16:00 GMT+7   🗓️ Individual: 17 Oct · 16:00 GMT+7"
+            "🗓️ Group: 10 Oct · 18:00 GMT+7   🗓️ Individual: 17 Oct · 18:00 GMT+7"
         ),
     ),
     dict(
@@ -182,13 +182,13 @@ POSTS = [
             "Our very own local favourite — the HAT Jazz Band brings the heart and soul of Da Nang's jazz scene! Their positivity and energy have made every VLX 'Dance by the Beach' unforgettable, and this year they'll also light up our main evening dance 🇻🇳💫\n"
             "👉 facebook.com/hatjazzband\n\n"
             "Get ready for two nights of swingin' live music, good vibes and endless dancing! 💃🕺\n\n"
-            "🗓️ Group: 10 Oct · 16:00 GMT+7   🗓️ Individual: 17 Oct · 16:00 GMT+7"
+            "🗓️ Group: 10 Oct · 18:00 GMT+7   🗓️ Individual: 17 Oct · 18:00 GMT+7"
         ),
     ),
     dict(
         slug="07-two-days-to-go", kicker="Reminder",
         headline="Two days to go",
-        deck="Group registration opens Saturday 10 October, 16:00 (GMT+7).",
+        deck="Group registration opens Saturday 10 October, 18:00 (GMT+7).",
         blocks=[
             {"t": "bignum", "num": "2", "label": "Days to go"},
             {"t": "list", "head": "Be ready before it opens", "items": [
@@ -201,7 +201,7 @@ POSTS = [
         ],
         caption=(
             "⏳ 2 days to go!\n\n"
-            "Group registration for VLX 2027 opens this Saturday, 10 Oct at 16:00 GMT+7!\n\n"
+            "Group registration for VLX 2027 opens this Saturday, 10 Oct at 18:00 GMT+7!\n\n"
             "Joining with friends? Make sure your group leader is ready, your team is confirmed (6–10 dancers) and your Wi-Fi is strong 😎 The form only asks a few basics — group leader's name, number of dancers, and everyone's full names. Super simple.\n\n"
             "Only 10 groups can join. Fastest fingers win — see you at the starting line 💃🕺✨"
         ),
@@ -217,24 +217,24 @@ POSTS = [
                 "Not in a group? You still have your chance — individual registration opens on Saturday 17 October.",
             ]},
             {"t": "box", "head": "Next Up", "rows": [
-                {"date": "17 OCT", "span": "16:00 GMT+7", "title": "Individual Registration", "sub": "First 50 dancers get the early-bird price"},
+                {"date": "17 OCT", "span": "18:00 GMT+7", "title": "Individual Registration", "sub": "First 50 dancers get the early-bird price"},
             ]},
         ],
         caption=(
             "🎉 Congratulations to all the groups who made it into VLX 2027!\n\n"
             "And a huge shout-out to all group leaders — you were insanely fast this year, easily 220 bpm at least (iykyk) 💛🔥\n\n"
             "📝 Group leaders: please make sure every member submits their individual registration form so we can confirm your spots smoothly.\n\n"
-            "🌟 Not in a group? You still have a chance! Individual registration opens Saturday 17 Oct at 16:00 GMT+7 — the first 50 dancers get the early-bird price.\n\n"
+            "🌟 Not in a group? You still have a chance! Individual registration opens Saturday 17 Oct at 18:00 GMT+7 — the first 50 dancers get the early-bird price.\n\n"
             "Can't wait to swing out with y'all!"
         ),
     ),
     dict(
         slug="09-individual-tomorrow", kicker="Registration",
         headline="Individual registration opens tomorrow",
-        deck="Set your alarm — Saturday 17 October, 16:00 (GMT+7).",
+        deck="Set your alarm — Saturday 17 October, 18:00 (GMT+7).",
         blocks=[
             {"t": "box", "head": "Tomorrow", "rows": [
-                {"date": "17 OCT", "span": "16:00 GMT+7", "title": "Individual Registration", "sub": "First 50 through the form get the early-bird price"},
+                {"date": "17 OCT", "span": "18:00 GMT+7", "title": "Individual Registration", "sub": "First 50 through the form get the early-bird price"},
             ]},
             {"t": "cols", "paras": [
                 "The form goes live at thevlx.net. The first fifty dancers to submit take the early-bird price — counted strictly by the timestamp we receive.",
@@ -244,7 +244,7 @@ POSTS = [
         ],
         caption=(
             "🔥 INDIVIDUAL REGISTRATION — tomorrow!\n\n"
-            "Set your alarms for 17 Oct, 16:00 GMT+7 ⏰ First 50 entries get early-bird pricing 💛\n"
+            "Set your alarms for 17 Oct, 18:00 GMT+7 ⏰ First 50 entries get early-bird pricing 💛\n"
             "👉 The form opens at thevlx.net\n\n"
             "✨ In the form, besides basic info, you can also choose to let us connect you with rooms at Palm Garden Resort, our main venue — VLXers enjoy special rates (details coming soon)."
         ),
