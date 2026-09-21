@@ -3057,8 +3057,11 @@ a {
   border: 1px solid var(--ink);
   padding: 10px 16px;
   transition: all 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
 }
-.world-clock-buttons a:hover {
+.world-clock-buttons a:hover,
+.world-clock-buttons a:active,
+.world-clock-buttons a:focus-visible {
   background: var(--red);
   border-color: var(--red);
   color: #f4efe2;
