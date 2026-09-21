@@ -2639,3 +2639,42 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   Group registration guide (go-live prep)
+   ============================================================ */
+.group-guide {
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  box-shadow: 4px 4px 0 var(--paper-3);
+  padding: 28px 30px 22px;
+  margin: 0 0 40px;
+  text-align: left;
+}
+
+.group-guide-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--hair);
+}
+
+.group-guide-steps {
+  margin: 0 0 14px;
+}
+
+.group-guide-steps li {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.group-guide-note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  margin: 6px 0 0;
+}
