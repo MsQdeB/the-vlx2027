@@ -53,9 +53,8 @@
   if (countdownBox) {
     // 16:00 ICT (UTC+7) == 09:00 UTC
     var MILESTONES = [
-      { key: 'group',   ts: Date.UTC(2026, 9, 10, 9, 0, 0), label: 'Group registration opens in' },      // Sat 10 Oct 2026, 16:00 ICT
-      { key: 'early',   ts: Date.UTC(2026, 9, 17, 9, 0, 0), label: 'Early bird registration opens in' }, // Sat 17 Oct 2026, 16:00 ICT
-      { key: 'regular', ts: Date.UTC(2026, 9, 24, 9, 0, 0), label: 'Regular registration opens in' }     // Sat 24 Oct 2026, 16:00 ICT
+      { key: 'group',      ts: Date.UTC(2026, 9, 10, 9, 0, 0), label: 'Group registration opens in' },      // Sat 10 Oct 2026, 16:00 ICT
+      { key: 'individual', ts: Date.UTC(2026, 9, 17, 9, 0, 0), label: 'Individual registration opens in' } // Sat 17 Oct 2026, 16:00 ICT
     ];
 
     var daysEl = document.getElementById('countdownDays');
