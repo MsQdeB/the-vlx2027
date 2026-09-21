@@ -46,15 +46,15 @@
 
   /* ----------------------------------------------------- registration timer
      Three registration windows. Opening times are Vietnam time (UTC+7).
-     Group registration opens at a confirmed 16:00 ICT; the later windows are
+     Group registration opens at a confirmed 18:00 ICT; the later windows are
      assumed at the same time of day until confirmed. Counts down at second
      resolution to the next window, then advances on its own. */
   var countdownBox = document.getElementById('countdown');
   if (countdownBox) {
-    // 16:00 ICT (UTC+7) == 09:00 UTC
+    // 18:00 ICT (UTC+7) == 11:00 UTC
     var MILESTONES = [
-      { key: 'group',      ts: Date.UTC(2026, 9, 10, 9, 0, 0), label: 'Group registration opens in' },      // Sat 10 Oct 2026, 16:00 ICT
-      { key: 'individual', ts: Date.UTC(2026, 9, 17, 9, 0, 0), label: 'Individual registration opens in' } // Sat 17 Oct 2026, 16:00 ICT
+      { key: 'group',      ts: Date.UTC(2026, 9, 10, 11, 0, 0), label: 'Group registration opens in' },      // Sat 10 Oct 2026, 18:00 ICT
+      { key: 'individual', ts: Date.UTC(2026, 9, 17, 11, 0, 0), label: 'Individual registration opens in' } // Sat 17 Oct 2026, 18:00 ICT
     ];
 
     var daysEl = document.getElementById('countdownDays');
