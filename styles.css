@@ -2641,40 +2641,298 @@ a {
 }
 
 /* ============================================================
-   Group registration guide (go-live prep)
+   VLX 2027 — minimal homepage additions
+   (branch: vlx-2027-minimal-homepage)
    ============================================================ */
-.group-guide {
+
+/* Programme — theme line sits quietly below the details */
+.event-theme {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--ink-faint);
+  margin: 8px 0 0;
+}
+
+/* Live bands — line-up teaser (announced soon) */
+.band-teaser {
+  max-width: 640px;
+  margin: 0 auto;
   background: var(--paper-2);
   border: 1px solid var(--rule);
   box-shadow: 4px 4px 0 var(--paper-3);
-  padding: 28px 30px 22px;
-  margin: 0 0 40px;
-  text-align: left;
+  padding: 40px 38px 34px;
+  text-align: center;
 }
 
-.group-guide-title {
+.band-teaser-title {
   font-family: var(--display);
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: clamp(1.6rem, 3.6vw, 2.3rem);
+  line-height: 1.15;
   margin: 0 0 16px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--hair);
+  color: var(--ink);
 }
 
-.group-guide-steps {
-  margin: 0 0 14px;
+.band-teaser-text {
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  margin: 0 0 1em;
 }
 
-.group-guide-steps li {
-  font-size: 0.98rem;
-  line-height: 1.7;
-  margin-bottom: 12px;
+.band-teaser-text:last-child {
+  margin-bottom: 0;
 }
 
-.group-guide-note {
+@media (max-width: 768px) {
+  .band-teaser {
+    padding: 30px 22px 26px;
+  }
+}
+
+/* Archive — link out to the full Facebook album */
+.archive-cta {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.archive-cta-note {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--ink-faint);
-  margin: 6px 0 0;
+  margin: 0 0 16px;
+}
+
+.archive-cta a {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 13px 26px;
+  transition: all 0.25s ease;
+}
+
+.archive-cta a:hover {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-2px);
+}
+
+/* In Motion — follow-us call to action under the videos */
+.videos-cta {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink-faint);
+  text-align: center;
+  margin: 40px 0 0;
+}
+
+/* Countdown — smaller tiles for hours / minutes / seconds */
+.countdown-item-sm {
+  min-width: 74px;
+  padding: 14px 10px 12px;
+}
+
+.countdown-item-sm .countdown-value {
+  font-size: 1.9rem;
+}
+
+/* Announcement — muted legal-ish note */
+.announcement-note {
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
+/* ============================================================
+   Venue + registration guide (branch: vlx-2027-minimal-homepage)
+   ============================================================ */
+.venue-container {
+  width: 100%;
+  background: var(--paper-2);
+  padding: 64px 0;
+  color: var(--ink);
+  border-top: 3px double var(--rule);
+}
+
+.venue-content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.venue-title {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 34px;
+}
+
+.venue-title::after {
+  content: 'The Venue';
+  display: block;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5.5vw, 3.2rem);
+  letter-spacing: 0;
+  margin-top: 8px;
+}
+
+.venue-lead {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+
+.venue-text {
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  margin-bottom: 1em;
+}
+
+.venue-flag {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  box-shadow: 4px 4px 0 var(--paper-3);
+  padding: 24px 26px 20px;
+  margin: 24px 0 0;
+  text-align: center;
+}
+
+.venue-flag-title {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+
+/* Registration guide — two columns (group / individual) */
+.guide-container {
+  width: 100%;
+  background: var(--paper);
+  padding: 64px 0;
+  color: var(--ink);
+  border-top: 3px double var(--rule);
+}
+
+.guide-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.guide-title {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 34px;
+}
+
+.guide-title::after {
+  content: 'How to Register';
+  display: block;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+  letter-spacing: 0;
+  margin-top: 8px;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.guide-col {
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  box-shadow: 4px 4px 0 var(--paper-3);
+  padding: 28px 26px 22px;
+}
+
+.guide-col h4 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.35rem;
+  margin: 0 0 4px;
+}
+
+.guide-when {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+.guide-col ol {
+  list-style: none;
+  counter-reset: g;
+  padding: 0;
+  margin: 0;
+}
+
+.guide-col li {
+  counter-increment: g;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.guide-col li::before {
+  content: counter(g);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--red);
+}
+
+.guide-note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  text-align: center;
+  margin: 26px 0 0;
+}
+
+@media (max-width: 860px) {
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
 }
