@@ -1,0 +1,66 @@
+VLX 2027 — FULL SITE (branch: static) GO-LIVE CHECKLIST
+========================================================
+Keep this private (lives in social/, not published).
+
+HOW IT WORKS
+- Live now: the MINIMAL homepage (branch production → thevlx.net).
+- Full site: branch static — NOT served yet. When everything below is done, we point
+  GitHub Pages at static (and remove noindex) so it goes live all at once.
+
+"2026" THAT IS CORRECT — do NOT change
+- Registration dates are in 2026 (group 10 Oct 2026, individual 17 Oct 2026) — correct.
+- "VLX 2026 Recap" video title — correct (it's the 2026 edition).
+- Copyright year is auto-filled by app.js (current year) — fine.
+The only wrongly-dated thing found was the terms transfer date (now fixed).
+
+────────────────────────────────────────
+A. CONTENT STILL NEEDING REAL INFO
+[ ] Palm Garden offer → Venue + Accommodation (room types, rates, booking how-to)
+[ ] Prices: group + individual (early-bird) → replace "to be announced"
+[ ] Band profiles: HAT Jazz Band + Asian Golden Swing Quartet (photo + bio) once revealed
+[ ] DJ line-up (if any)
+[ ] T-shirt: FINAL design image + details (price, pre-order deadline, sizes)
+        → assets/tshirt-pre-order.jpg + the t-shirt section text
+[ ] Registration forms: group form + individual form links → wire the button(s) when open
+[ ] Programme: fill venues / music / floors / themes as confirmed (now "To be updated")
+[ ] (Optional) refresh programme + gallery photos
+
+B. TERMS & POLICY (terms.html)
+[x] Pass transfer deadline → March 8th, 2027
+[x] Clause 2 reworded: email us, we connect you with someone looking for a pass;
+        you two finalise payment with each other and email us by March 8 for the transfer
+[x] Payment methods added:
+        • Group — local collectors, pay in your local currency to our appointed account,
+          or via Wise to our Vietnam account (details in the confirmation email)
+        • Individual — pay via our partner Megatix (bank transfer, MoMo, or credit card;
+          different processing fee per method)
+[ ] Review the rest of terms.html for any last-year specifics
+
+C. 2026 → 2027 AUDIT (current static site)
+[x] terms.html transfer date (was "March 8th, 2026") → 2027  (done)
+[ ] Nothing else outstanding (registration dates + "2026 Recap" are correct)
+
+D. REGISTRATION SECTION
+[x] Two windows: Group (10 Oct) + Individual (17 Oct, first 50 = early-bird)
+[x] "Around the world" clock (local times by city) added
+[ ] Enable + link the Register button when a window opens
+[ ] Optional: add the around-the-world clock to the minimal homepage too
+
+E. FAQ
+[ ] Re-check dates/wording (event 2027, registration Oct 2026)
+[ ] "How do I get there?" / "Where should I stay?" now that Transportation +
+        Accommodation exist on the full site
+
+F. LAUNCH / SEO / HOSTING
+[ ] Remove <meta name="robots" content="noindex, nofollow"> from index.html + volunteers.html
+[ ] robots.txt → Allow: /
+[x] CNAME = thevlx.net present
+[x] .nojekyll present
+[ ] Social share image: consider a dedicated 1200×630 OG card (currently assets/hero.jpg)
+[ ] Switch GitHub Pages source branch → static  (this is the "go live" step)
+
+G. HOUSEKEEPING (keep private / tidy)
+[ ] Decide whether internal folders publish on the site branch
+        (brand/, static-preview/, social/) — move out if not wanted public
+[ ] Refresh README for the full site
+[ ] Confirm thevlx.net DNS + HTTPS still good after the switch
