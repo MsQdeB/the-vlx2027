@@ -3059,8 +3059,9 @@ a {
   transition: all 0.25s ease;
 }
 .world-clock-buttons a:hover {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--red);
+  border-color: var(--red);
+  color: #f4efe2;
 }
 
 /* Registration — local-time converter */
