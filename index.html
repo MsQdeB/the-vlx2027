@@ -60,6 +60,7 @@
             <li class="nav-item"><a href="index.html#vlx2027" class="nav-link">VLX 2027</a></li>
             <li class="nav-item"><a href="index.html#registrations" class="nav-link">Registrations</a></li>
             <li class="nav-item"><a href="index.html#live-bands" class="nav-link">Live Bands</a></li>
+            <li class="nav-item"><a href="index.html#venue" class="nav-link">Venue</a></li>
             <li class="nav-item"><a href="index.html#highlights" class="nav-link">In Motion</a></li>
             <li class="nav-item"><a href="index.html#gallery" class="nav-link">Archives</a></li>
             <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact Us</a></li>
@@ -83,6 +84,7 @@
             <li class="mobile-nav-item"><a href="index.html#vlx2027" class="mobile-nav-link">VLX 2027</a></li>
             <li class="mobile-nav-item"><a href="index.html#registrations" class="mobile-nav-link">Registrations</a></li>
             <li class="mobile-nav-item"><a href="index.html#live-bands" class="mobile-nav-link">Live Bands</a></li>
+            <li class="mobile-nav-item"><a href="index.html#venue" class="mobile-nav-link">Venue</a></li>
             <li class="mobile-nav-item"><a href="index.html#highlights" class="mobile-nav-link">In Motion</a></li>
             <li class="mobile-nav-item"><a href="index.html#gallery" class="mobile-nav-link">Archives</a></li>
             <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">Contact Us</a></li>
@@ -184,7 +186,7 @@
             </div>
             <p class="countdown-open" id="countdownOpen" hidden>Registration is open — the form is below.</p>
 
-            <!-- Three registration windows -->
+            <!-- Two registration windows -->
             <div class="tier-grid">
               <div class="tier" id="tier-group" data-milestone="group">
                 <span class="tier-badge" hidden>Open next</span>
@@ -207,9 +209,35 @@
               The dates are set. Opening times, prices and how to register will be updated here
               along the way — follow our social media so you don't miss it.
             </p>
-            <div class="world-clock-buttons" style="margin: 8px 0 40px;">
-              <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=VLX%202027%20%E2%80%94%20Group%20registration%20opens&amp;dates=20261010T110000Z%2F20261010T120000Z&amp;details=Group%20registration%20opens%20at%2018%3A00%20%28GMT%2B7%29.%20Only%2010%20groups.%20All%20details%3A%20thevlx.net&amp;ctz=Asia%2FHo_Chi_Minh" target="_blank" rel="noopener noreferrer">Add group registration to calendar</a>
-            </div>
+
+        <!-- ============ REGISTRATION AROUND THE WORLD ============ -->
+        <div class="world-clock">
+          <p class="world-clock-head">Registration opens — around the world</p>
+          <p class="world-clock-lead">
+            One moment, worldwide: <strong>Saturday 10 October, 18:00 in Hội An (GMT+7)</strong>.
+          </p>
+          <div class="tz-tool">
+            <input id="tzInput" class="tz-input" type="text" autocomplete="off" spellcheck="false"
+                   placeholder="Type your city — e.g. Seoul, Toronto, Perth…" aria-label="Your city or time zone" />
+            <p class="tz-result" id="tzResult">Finding your local time…</p>
+          </div>
+          <div class="tz-quick" id="tzQuick">
+            <button type="button" data-tz="Asia/Ho_Chi_Minh" data-label="Vietnam">Vietnam</button>
+            <button type="button" data-tz="Asia/Bangkok" data-label="Bangkok">Bangkok</button>
+            <button type="button" data-tz="Asia/Shanghai" data-label="Shanghai">Shanghai</button>
+            <button type="button" data-tz="Asia/Singapore" data-label="Singapore">Singapore</button>
+            <button type="button" data-tz="Asia/Seoul" data-label="Seoul">Seoul</button>
+            <button type="button" data-tz="Australia/Sydney" data-label="Sydney">Sydney</button>
+            <button type="button" data-tz="Europe/Paris" data-label="Paris">Paris</button>
+            <button type="button" data-tz="America/New_York" data-label="New York">New York</button>
+            <button type="button" data-tz="America/Vancouver" data-label="Vancouver">Vancouver</button>
+          </div>
+              <div class="world-clock-buttons">
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=VLX%202027%20%E2%80%94%20Group%20registration%20opens&amp;dates=20261010T110000Z%2F20261010T120000Z&amp;details=Group%20registration%20opens%20at%2018%3A00%20%28GMT%2B7%29.%20Only%2010%20groups.%20All%20details%3A%20thevlx.net&amp;ctz=Asia%2FHo_Chi_Minh" target="_blank" rel="noopener noreferrer">Add group registration to calendar</a>
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=VLX%202027%20%E2%80%94%20Individual%20registration%20opens&amp;dates=20261017T110000Z%2F20261017T120000Z&amp;details=Individual%20registration%20opens%20at%2018%3A00%20%28GMT%2B7%29.%20First%2050%20dancers%20get%20the%20early-bird%20price.%20All%20details%3A%20thevlx.net&amp;ctz=Asia%2FHo_Chi_Minh" target="_blank" rel="noopener noreferrer">Add individual registration to calendar</a>
+              </div>
+          <p class="world-clock-note">Add to your calendar and it converts to your local time automatically.</p>
+        </div>
 
             <div class="registration-info">
               <div class="info-section">
@@ -246,6 +274,42 @@
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- ============ REGISTRATION GUIDE ============ -->
+        <div class="guide-container" id="registration-guide">
+          <div class="guide-content">
+            <h2 class="guide-title">REGISTRATION</h2>
+            <div class="guide-grid">
+              <div class="guide-col">
+                <h4>Group Registration</h4>
+                <p class="guide-when">Opens Saturday 10 October · 18:00 (GMT+7)</p>
+                <ol>
+                  <li>Your group leader fills in the group form when the window opens.</li>
+                  <li>If your group is among the first 10, we email you payment details.</li>
+                  <li>Complete payment within 24 hours to hold your places.</li>
+                  <li>The leader shares the individual form — every member submits it to confirm.</li>
+                </ol>
+                <p class="venue-text" style="font-size: 0.9rem; margin: 10px 0 0;">
+                  Groups of <strong>6–10 dancers</strong> · maximum <strong>10 groups</strong>.
+                </p>
+              </div>
+              <div class="guide-col">
+                <h4>Individual Registration</h4>
+                <p class="guide-when">Opens Saturday 17 October · 18:00 (GMT+7)</p>
+                <ol>
+                  <li>Fill in the individual form when the window opens.</li>
+                  <li>The first 50 dancers take the early-bird price.</li>
+                  <li>Watch your inbox for payment instructions, then pay within 24 hours.</li>
+                  <li>Your place is confirmed once we receive your payment.</li>
+                </ol>
+                <p class="venue-text" style="font-size: 0.9rem; margin: 10px 0 0;">
+                  The <strong>first 50 dancers</strong> get the early-bird price.
+                </p>
+              </div>
+            </div>
+            <p class="guide-note">Full instructions and the registration forms will appear here when each window opens.</p>
           </div>
         </div>
 
@@ -481,6 +545,26 @@
               <p class="band-teaser-text">
                 The full line-up will be announced soon. Follow us on social media and be the first to
                 know who's taking the stage.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ VENUE ============ -->
+        <div class="venue-container" id="venue">
+          <div class="venue-content">
+            <h2 class="venue-title">Where we dance</h2>
+            <p class="venue-lead">Palm Garden Resort — our home for VLX 2027.</p>
+            <p class="venue-text">
+              VLX 2027 returns to <strong>Palm Garden Resort</strong>, a beachfront resort just minutes from
+              Hội An Ancient Town. Our evening dances, the gala dinner and the late-night sessions all take
+              place here — so we can dance the night away, rain or shine.
+            </p>
+            <div class="venue-flag">
+              <p class="venue-flag-title">Accommodation offer — coming soon</p>
+              <p class="venue-text" style="margin: 0;">
+                Special room rates for VLXers are being finalised with the resort. Full details — rooms,
+                rates and how to book — will be announced here.
               </p>
             </div>
           </div>
