@@ -45,8 +45,8 @@
   }
 
   /* ----------------------------------------------------- registration timer
-     Three registration windows. Opening times are Vietnam time (UTC+7).
-     Group registration opens at a confirmed 16:00 ICT; the later windows are
+     Two registration windows. Opening times are Vietnam time (UTC+7).
+     Group registration opens at a confirmed 18:00 ICT; the later windows are
      assumed at the same time of day until confirmed. Counts down at second
      resolution to the next window, then advances on its own. */
   var countdownBox = document.getElementById('countdown');
