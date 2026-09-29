@@ -3111,3 +3111,12 @@ a {
   transition: all 0.2s ease;
 }
 .tz-quick button:hover { border-color: var(--ink); color: var(--ink); }
+
+/* Live bands — single featured act */
+.band-solo {
+  grid-template-columns: 1fr;
+  max-width: 520px;
+}
+.band-solo .band-image {
+  aspect-ratio: 3 / 4;
+}
