@@ -3181,3 +3181,19 @@ a {
   font-family: var(--sans); font-size: 0.54rem; font-weight: 800; letter-spacing: 0.22em;
   text-transform: uppercase; background: var(--red); color: var(--paper); padding: 5px 12px;
 }
+
+/* Live bands — full line-up grid (three posters, portrait) */
+.bands-grid { grid-template-columns: repeat(3, 1fr); gap: 34px; max-width: 1000px; }
+.bands-grid .band-image { aspect-ratio: 4 / 5; }
+.bands-grid .band-photo { filter: none; }
+.band-eyebrow {
+  font-family: var(--sans); font-size: 0.6rem; font-weight: 800; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--red); margin: 16px 0 0;
+}
+@media (max-width: 900px) { .bands-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .bands-grid { grid-template-columns: 1fr; } }
+
+/* Live bands — 1-line names (Linked to Instagram) */
+.bands-grid .band-name { font-size: 0.64rem; letter-spacing: 0.1em; white-space: nowrap; }
+.band-name a { color: inherit; text-decoration: none; }
+.band-name a:hover { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
