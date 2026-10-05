@@ -143,7 +143,8 @@
         t.classList.toggle('active', i === current);
       });
       var img = thumbs[current].querySelector('img');
-      mainImage.src = img.getAttribute('src');
+      var full = thumbs[current].getAttribute('data-full');
+      mainImage.src = full || img.getAttribute('src');
       mainImage.alt = img.getAttribute('alt');
       if (counter) {
         counter.textContent = current + 1 + ' / ' + total;
