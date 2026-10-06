@@ -19,7 +19,8 @@
 
 - The **live site (`thevlx.net`) is the `static` branch**; GitHub Pages source = `static`.
 - Edit the site in the **git worktree at `~/ai-projects/vlx-static-wt`** (checked out on `static`).
-  Do NOT edit the main working dir for site content (it's on `vlx-2027-minimal-homepage`).
+  (`static` is the single source of truth; the `vlx-2027-minimal-homepage` and `production`
+  branches have been deleted.)
 - Preview: from that worktree, `python3 -m http.server 8810`, then open http://localhost:8810/
 - Everything is committed & pushed. **Do not push without the user's explicit OK** (see above).
 - **Pending:** the two daytime-event venues in the Programme — Sat "Dance By The Beach" and
