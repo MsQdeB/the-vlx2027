@@ -1214,7 +1214,7 @@ a {
 
 .tshirt-content {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 340px 1fr;
   gap: 30px;
   align-items: start;
   max-width: 760px;
@@ -1231,7 +1231,7 @@ a {
 .tshirt-image {
   width: 100%;
   display: block;
-  filter: grayscale(30%) sepia(10%);
+  background: var(--paper);
 }
 
 .tshirt-details p {
@@ -1279,8 +1279,27 @@ a {
   border: 1px solid var(--ink);
   padding: 13px 30px;
   margin-top: 16px;
-  cursor: not-allowed;
-  opacity: 0.85;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.tshirt-preorder-button:hover {
+  opacity: 0.82;
+}
+
+.tshirt-callout {
+  font-family: var(--serif);
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-top: 14px;
+}
+
+.tshirt-callout a {
+  color: var(--red);
+  text-decoration: underline;
 }
 
 @media (max-width: 860px) {
