@@ -750,7 +750,7 @@ a {
 .announcement-container {
   width: 100%;
   background: var(--paper);
-  padding: 64px 0 40px;
+  padding: 64px 0 16px;
   color: var(--ink);
 }
 
@@ -1050,7 +1050,7 @@ a {
 .registrations-container {
   width: 100%;
   background: var(--paper);
-  padding: 64px 0 50px;
+  padding: 36px 0 50px;
   color: var(--ink);
 }
 
@@ -1165,7 +1165,8 @@ a {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--ink-soft);
-  margin-top: 16px;
+  text-align: center;
+  margin: 8px 0 0;
 }
 
 .features-list {
@@ -3084,6 +3085,32 @@ a {
   line-height: 1.6;
   color: var(--ink-soft);
   margin: 10px 0 0;
+}
+
+.announce-includes {
+  max-width: 640px;
+  margin: 4px auto 30px;
+  text-align: center;
+}
+
+.announce-includes-label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.announce-includes-list {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: var(--ink);
+  margin: 0;
 }
 
 /* ============================================================
