@@ -1227,7 +1227,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 760px;
-  margin: 0 auto 34px;
+  margin: 18px auto 34px;
 }
 
 .tshirt-mockup {
@@ -3033,6 +3033,91 @@ a {
   line-height: 1.6;
   color: var(--ink-faint);
   margin-top: 12px;
+}
+
+/* ===== extras (optional add-ons) ===== */
+.extras-section {
+  width: 100%;
+  background: var(--paper-2);
+  padding: 64px 0;
+  border-top: 3px double var(--rule);
+}
+
+.extras-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.extras-title {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 22px;
+}
+
+.extras-title::after {
+  content: 'Optional add-ons';
+  display: block;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0;
+  margin-top: 8px;
+}
+
+.extras-intro {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.extra-card {
+  margin-top: 44px;
+  padding-top: 40px;
+  border-top: 1px solid var(--hair);
+}
+
+.extra-title {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.6rem;
+  margin: 0 0 6px;
+}
+
+.extra-when {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 14px;
+}
+
+.extra-text {
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  max-width: 680px;
+  margin: 0 0 12px;
+}
+
+.extra-note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  margin: 0 0 6px;
 }
 
 @media (max-width: 860px) {
