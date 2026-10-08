@@ -1509,6 +1509,7 @@ a {
   background: var(--paper-2);
   padding: 64px 0;
   color: var(--ink);
+  border-top: 3px double var(--rule);
 }
 
 .transportation-content {
@@ -2115,6 +2116,7 @@ a {
   background: var(--paper-2);
   padding: 64px 0;
   color: var(--ink);
+  border-top: 3px double var(--rule);
 }
 
 .faq-content {
