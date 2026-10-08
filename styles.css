@@ -3080,48 +3080,68 @@ a {
   margin: 0 auto;
 }
 
+.extras-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-top: 34px;
+}
+
 .extra-card {
-  margin-top: 44px;
-  padding-top: 40px;
-  border-top: 1px solid var(--hair);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  box-shadow: 4px 4px 0 var(--paper-3);
+  padding: 26px 26px 22px;
 }
 
 .extra-title {
   font-family: var(--display);
   font-weight: 800;
-  font-size: 1.6rem;
-  margin: 0 0 6px;
+  font-size: 1.35rem;
+  margin: 0 0 8px;
 }
 
-.extra-when {
-  font-family: var(--sans);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 14px;
-}
-
-.extra-text {
+.extra-desc {
   font-family: var(--serif);
-  font-size: 0.98rem;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.65;
   color: var(--ink-soft);
-  max-width: 680px;
-  margin: 0 0 12px;
+  margin: 0 0 16px;
 }
 
-.extra-note {
+.extra-price {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+
+.extra-unit {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+}
+
+.extra-meta {
   font-family: var(--serif);
-  font-style: italic;
   font-size: 0.9rem;
-  color: var(--ink-faint);
-  margin: 0 0 6px;
+  margin: 12px 0 0;
+}
+
+.extra-meta a {
+  color: var(--red);
+  text-decoration: underline;
 }
 
 @media (max-width: 860px) {
   .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .extras-grid {
     grid-template-columns: 1fr;
   }
 }
