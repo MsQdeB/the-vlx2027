@@ -1212,6 +1212,38 @@ a {
   margin: 0 0 34px;
 }
 
+.tshirt-mockups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 760px;
+  margin: 0 auto 34px;
+}
+
+.tshirt-mockup {
+  margin: 0;
+  border: 1px solid var(--rule);
+  padding: 6px;
+  background: var(--paper);
+  box-shadow: 3px 3px 0 var(--paper-3);
+}
+
+.tshirt-mockup img {
+  width: 100%;
+  display: block;
+}
+
+.tshirt-mockup figcaption {
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 0 4px;
+  color: var(--ink-soft);
+}
+
 .tshirt-content {
   display: grid;
   grid-template-columns: 340px 1fr;
@@ -1308,6 +1340,10 @@ a {
   }
 
   .tshirt-content {
+    grid-template-columns: 1fr;
+  }
+
+  .tshirt-mockups {
     grid-template-columns: 1fr;
   }
 
