@@ -62,7 +62,6 @@
             <li class="nav-item"><a href="index.html#extras" class="nav-link">Extras</a></li>
             <li class="nav-item"><a href="index.html#live-bands" class="nav-link">Live Bands</a></li>
             <li class="nav-item"><a href="index.html#venue" class="nav-link">Venue</a></li>
-            <li class="nav-item"><a href="index.html#transportation" class="nav-link">Transportation</a></li>
             <li class="nav-item"><a href="index.html#highlights" class="nav-link">In Motion</a></li>
             <li class="nav-item"><a href="index.html#gallery" class="nav-link">Archives</a></li>
             <li class="nav-item"><a href="terms.html" class="nav-link">Terms</a></li>
@@ -89,7 +88,6 @@
             <li class="mobile-nav-item"><a href="index.html#extras" class="mobile-nav-link">Extras</a></li>
             <li class="mobile-nav-item"><a href="index.html#live-bands" class="mobile-nav-link">Live Bands</a></li>
             <li class="mobile-nav-item"><a href="index.html#venue" class="mobile-nav-link">Venue</a></li>
-            <li class="mobile-nav-item"><a href="index.html#transportation" class="mobile-nav-link">Transportation</a></li>
             <li class="mobile-nav-item"><a href="index.html#highlights" class="mobile-nav-link">In Motion</a></li>
             <li class="mobile-nav-item"><a href="index.html#gallery" class="mobile-nav-link">Archives</a></li>
             <li class="mobile-nav-item"><a href="terms.html" class="mobile-nav-link">Terms</a></li>
@@ -639,6 +637,10 @@
               shine. A big VLX favourite back in 2026.
             </p>
 
+            <p class="venue-travel">
+              <button type="button" class="venue-travel-btn" data-lightbox-panel="#transfer-panel">Getting here — airport transfers &amp; private car</button>
+            </p>
+
             <hr class="accommodation-divider" />
 
             <h3 class="accommodation-subtitle">Accommodation offer</h3>
@@ -668,29 +670,20 @@
               of options near the main venue. These are not affiliated with VLX — book directly with each
               property.
             </p>
-          </div>
-        </div>
 
-        <!-- ============ TRANSPORTATION ============ -->
-        <div class="transportation-container" id="transportation">
-          <div class="transportation-content">
-            <h2 class="transportation-title">Transportation</h2>
-
-            <div class="transportation-info">
+            <div id="transfer-panel" hidden>
+              <h3 class="transfer-title">Getting here</h3>
               <p class="info-text">
                 Fly into Da Nang International Airport (DAD) — about a 45-minute drive to Hoi An. Sort your
                 own transfer: share a ride via our Facebook group, or take a Grab Car / Xanh SM.
               </p>
-
               <p class="info-text highlight-text">Or pre-book a private car with Mr Hai:</p>
-
               <ul class="price-list">
                 <li class="price-item">4 seaters: 250,000 VND per trip (2 people)</li>
                 <li class="price-item">7 seaters: 300,000 VND per trip (max 4 people with luggage)</li>
                 <li class="price-item">16-seat van: 400,000 VND per trip (max 10 people with luggage)</li>
                 <li class="price-item">Before 6am and after 10pm pick-up: add 50,000 VND/trip</li>
               </ul>
-
               <p class="contact-info">Email: honghainguyen143@gmail.com · Mobile: +84 (0)919 433 201</p>
             </div>
           </div>
@@ -903,9 +896,10 @@
     </button>
 
     <!-- ============ LIGHTBOX ============ -->
-    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Enlarged image">
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Details">
       <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
       <img class="lightbox-img" src="" alt="" />
+      <div class="lightbox-panel" hidden></div>
     </div>
 
     <script src="app.js"></script>
