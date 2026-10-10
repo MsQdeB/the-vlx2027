@@ -3173,6 +3173,20 @@ a {
   padding-top: 6px;
 }
 
+.extra-thumbs.extra-thumbs-single {
+  grid-template-columns: 1fr;
+  max-width: 240px;
+}
+
+.extra-note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--ink-faint);
+  margin: 0 0 6px;
+}
+
 /* ===== lightbox (image zoom) ===== */
 .lightbox {
   position: fixed;
