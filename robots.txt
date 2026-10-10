@@ -1,3 +1,5 @@
 # The VLX 2027 — robots.txt
 User-agent: *
 Allow: /
+
+Sitemap: https://thevlx.net/sitemap.xml
