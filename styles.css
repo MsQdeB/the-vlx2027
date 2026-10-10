@@ -3178,6 +3178,11 @@ a {
   max-width: 240px;
 }
 
+.extra-thumbs.extra-thumbs-single img {
+  height: 178px;
+  object-fit: cover;
+}
+
 .extra-note {
   font-family: var(--serif);
   font-style: italic;
