@@ -3560,6 +3560,10 @@ body.lightbox-open {
   text-transform: uppercase; background: var(--red); color: var(--paper); padding: 5px 12px;
 }
 
+.price-flag-sold {
+  background: var(--ink);
+}
+
 /* Live bands — full line-up grid (three posters, portrait) */
 .bands-grid { grid-template-columns: repeat(3, 1fr); gap: 34px; max-width: 1000px; }
 .bands-grid .band-image { aspect-ratio: 4 / 5; }
