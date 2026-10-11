@@ -224,7 +224,7 @@
 })();
 
 /* ------------------------------------------ registration local-time converter
-   Shows the registration moment (Sat 10 Oct 2026, 18:00 ICT = 11:00 UTC) in the
+   Shows the registration moment (Sat 17 Oct 2026, 18:00 ICT = 11:00 UTC) in the
    visitor's own time zone, and converts a typed city via Open-Meteo geocoding. */
 (function () {
   var input = document.getElementById('tzInput');
@@ -233,7 +233,7 @@
     return;
   }
 
-  var INSTANT = Date.UTC(2026, 9, 10, 11, 0, 0); // 18:00 ICT (UTC+7)
+  var INSTANT = Date.UTC(2026, 9, 17, 11, 0, 0); // 18:00 ICT (UTC+7) — individual registration (Sat 17 Oct 2026)
 
   var timeIn = function (tz) {
     try {
